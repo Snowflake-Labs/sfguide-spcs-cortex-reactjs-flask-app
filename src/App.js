@@ -5,6 +5,9 @@ import 'leaflet/dist/leaflet.css';
 import axios from 'axios';
 import L from 'leaflet';
 import { FaSun, FaMoon } from 'react-icons/fa';
+import { Collapse } from 'react-collapse';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 const initialCities = [
   { name: 'New York', coordinates: [40.7128, -74.0060] },
@@ -14,7 +17,7 @@ const initialCities = [
 
 const initialCityHistory = initialCities.map(city => ({
   cityName: city.name,
-  timestamp: new Date()
+  timestamp: formatDate(new Date())
 }));
 
 // Define the default icon
@@ -85,7 +88,7 @@ function PanToNewCity({ coordinates }) {
 function Header({ darkMode, toggleDarkMode }) {
   return (
     <div className="header">
-      <h1>Snowday</h1>
+      <h1>Snowday: Dash To Location</h1>
       <div className="dark-mode-toggle" onClick={toggleDarkMode}>
         {darkMode ? <FaSun /> : <FaMoon />}
       </div>
@@ -95,12 +98,12 @@ function Header({ darkMode, toggleDarkMode }) {
 
 function CityTimeline({ history }) {
   return (
-    <div className="city-timeline">
+    <div>
       <h4>Timeline</h4>
       <ul>
         {history.map((item, index) => (
           <li key={index}>
-            {item.timestamp.toLocaleString()} : {item.cityName}
+            {item.timestamp} : {item.cityName}
           </li>
         ))}
       </ul>
@@ -116,6 +119,18 @@ function getPolylinePositions(cities) {
   return positions;
 }
 
+function formatDate(date) {
+  console.log(date)
+  return new Intl.DateTimeFormat('en-US', { 
+    year: 'numeric', 
+    month: 'short', 
+    day: '2-digit', 
+    hour: '2-digit', 
+    minute: '2-digit', 
+    second: '2-digit' 
+  }).format(date);
+}
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [cityHistory, setCityHistory] = useState(initialCityHistory);
@@ -128,6 +143,9 @@ function App() {
   const mapRef = useRef();
   const [connectedCitiesCount, setConnectedCitiesCount] = useState(-1);
   const polylinePositions = getPolylinePositions(cities);
+  const [isTimelineOpen, setIsTimelineOpen] = useState(false); // Assuming the timeline starts collapsed
+  const [activeSection, setActiveSection] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     // Only run this effect once when the component mounts
@@ -135,7 +153,6 @@ function App() {
       const timer = setTimeout(() => {
         setConnectedCitiesCount(prevCount => prevCount + 1);
       }, 1000);  // 1000ms delay for each connection
-  
       return () => clearTimeout(timer);  // Cleanup timeout if the component is unmounted
     }
   }, [connectedCitiesCount]);  
@@ -183,14 +200,14 @@ function App() {
         lat >= US_BOUNDS.lat.min && lat <= US_BOUNDS.lat.max &&
         lng >= US_BOUNDS.lng.min && lng <= US_BOUNDS.lng.max
     );
-}
+  }
 
   const handleAddCity = async () => {
     const coordinates = await getCoordinatesForCity(city);
     if (coordinates) {
       setCities([...cities, { name: city, coordinates }]);
       // Update the cityHistory state with the new city and current timestamp
-      setCityHistory(prevHistory => [...prevHistory, {cityName: city, timestamp: new Date(), coordinates: coordinates}]);
+      setCityHistory(prevHistory => [...prevHistory, {cityName: city, timestamp: formatDate(new Date()), coordinates: coordinates}]);
       setIsNewCityAdded(true);  // Set to true after adding city
 
       // After setting the city in state, check if it's outside the current view
@@ -202,7 +219,7 @@ function App() {
         }
       }
     } else {
-      alert('Unable to find city. Please try another name.');
+      alert('Please enter a valid city name.');
     }
   };
 
@@ -212,13 +229,17 @@ function App() {
     }
   };  
 
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className={`container ${darkMode ? 'dark' : ''}`}>
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Container className={`container ${darkMode ? 'dark' : ''}`}>
           <div>
             <Input 
-              placeholder="Enter city name to dash to"
+              placeholder="Enter a city name"
               value={city}
               onChange={e => setCity(e.target.value)}
               onKeyDown={handleKeyDown}
@@ -249,7 +270,14 @@ function App() {
               {/* {positions.length > 1 && <Polyline positions={cities.slice(0, connectedCitiesCount + 2).map(cityData => cityData.coordinates)} color="#13C2C2" dashArray="5,5"/>} */}
               {positions.length > 1 && <Polyline positions={positions} color="#13C2C2" dashArray="5,5"/>}
             </MapContainer>
-            <CityTimeline className='city-timeline' history={cityHistory} />
+            <button onClick={() => setActiveSection('timeline')}>
+                <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} onClick={toggle}/>
+            </button>
+            <Collapse isOpened={isOpen}>
+              <div className={`city-timeline ${darkMode ? 'dark' : ''}`}>
+                <CityTimeline history={cityHistory} />
+              </div>
+            </Collapse>
           </div>
         </Container>
     </div>

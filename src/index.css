@@ -122,6 +122,10 @@ body.dark-mode .dark-mode-toggle {
   /* padding: 20px 10px; */
   /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
   font-family: 'San Francisco', 'Helvetica Neue', sans-serif;
+  flex-basis: 25%; /* Starts off with 25% of parent width */
+  flex-grow: 1;
+  overflow-y: auto;
+  height: calc(100vh - some_value);
 }
 
 .city-timeline h4 {
@@ -129,6 +133,10 @@ body.dark-mode .dark-mode-toggle {
   margin-bottom: 20px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.city-timeline.dark h4 {
+  color: #fff;                /* White text color for contrast */
 }
 
 .city-timeline ul {
@@ -157,6 +165,10 @@ body.dark-mode .dark-mode-toggle {
   transform: translateY(-50%);
 }
 
+.city-timeline.dark li {
+  color: #fff;                /* White text color for contrast */
+}
+
 .content {
   display: flex;
   justify-content: space-between;
@@ -170,13 +182,6 @@ body.dark-mode .dark-mode-toggle {
   flex-grow: 3;   
   flex-shrink: 0; /* Prevents the map from shrinking */
   height: calc(100vh - some_value); 
-}
-
-.city-timeline {
-  flex-basis: 25%; /* Starts off with 25% of parent width */
-  flex-grow: 1;
-  overflow-y: auto;
-  height: calc(100vh - some_value);
 }
 
 .city-input {
