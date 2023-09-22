@@ -6,6 +6,17 @@ import axios from 'axios';
 import L from 'leaflet';
 import { FaSun, FaMoon } from 'react-icons/fa';
 
+const initialCities = [
+  { name: 'New York', coordinates: [40.7128, -74.0060] },
+  { name: 'Los Angeles', coordinates: [34.0522, -118.2437] },
+  { name: 'Chicago', coordinates: [41.8781, -87.6298] }
+];
+
+const initialCityHistory = initialCities.map(city => ({
+  cityName: city.name,
+  timestamp: new Date()
+}));
+
 // Define the default icon
 const defaultIcon = L.icon({
     iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
@@ -99,15 +110,15 @@ function CityTimeline({ history }) {
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const [cityHistory, setCityHistory] = useState([]);
+  const [cityHistory, setCityHistory] = useState(initialCityHistory);
   const [city, setCity] = useState('');
-  const [cities, setCities] = useState([]);
+  const [cities, setCities] = useState(initialCities);
   const [position] = useState([39.8283, -98.5795]); // Center of the contiguous United States
   const [zoom] = useState(4); // Adjust the zoom level as necessary
   const positions = cities.map(cityData => cityData.coordinates);
   const [isNewCityAdded, setIsNewCityAdded] = useState(false);
   const mapRef = useRef();
-
+  
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add('dark-mode');
