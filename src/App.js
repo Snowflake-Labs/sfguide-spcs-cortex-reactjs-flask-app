@@ -263,7 +263,10 @@ function App() {
                     }
                   }}
                 >
-                  <Popup>{cityData.name}</Popup>
+                  <Popup>
+                      <strong>{cityData.name}</strong><br />
+                      {cityData.coordinates[0]}&nbsp;&nbsp;{cityData.coordinates[1]}
+                  </Popup>
                 </Marker>
               ))}
               {/* {cities.length > 0 && <PanToNewCity coordinates={cities[cities.length - 1].coordinates} />} */}
