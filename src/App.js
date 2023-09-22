@@ -108,6 +108,14 @@ function CityTimeline({ history }) {
   );
 }
 
+function getPolylinePositions(cities) {
+  let positions = [];
+  for (let i = 1; i < cities.length; i++) {
+    positions.push([cities[i-1].coordinates, cities[i].coordinates]);
+  }
+  return positions;
+}
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [cityHistory, setCityHistory] = useState(initialCityHistory);
@@ -118,6 +126,19 @@ function App() {
   const positions = cities.map(cityData => cityData.coordinates);
   const [isNewCityAdded, setIsNewCityAdded] = useState(false);
   const mapRef = useRef();
+  const [connectedCitiesCount, setConnectedCitiesCount] = useState(-1);
+  const polylinePositions = getPolylinePositions(cities);
+
+  useEffect(() => {
+    // Only run this effect once when the component mounts
+    if (connectedCitiesCount < initialCities.length - 1) {
+      const timer = setTimeout(() => {
+        setConnectedCitiesCount(prevCount => prevCount + 1);
+      }, 1000);  // 1000ms delay for each connection
+  
+      return () => clearTimeout(timer);  // Cleanup timeout if the component is unmounted
+    }
+  }, [connectedCitiesCount]);  
   
   useEffect(() => {
     if (darkMode) {
@@ -225,7 +246,8 @@ function App() {
                 </Marker>
               ))}
               {/* {cities.length > 0 && <PanToNewCity coordinates={cities[cities.length - 1].coordinates} />} */}
-              {positions.length > 1 && <Polyline positions={positions} color="blue" dashArray="5,5" />}
+              {/* {positions.length > 1 && <Polyline positions={cities.slice(0, connectedCitiesCount + 2).map(cityData => cityData.coordinates)} color="#13C2C2" dashArray="5,5"/>} */}
+              {positions.length > 1 && <Polyline positions={positions} color="#13C2C2" dashArray="5,5"/>}
             </MapContainer>
             <CityTimeline className='city-timeline' history={cityHistory} />
           </div>

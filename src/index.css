@@ -183,3 +183,14 @@ body.dark-mode .dark-mode-toggle {
   width: 300px;
   margin-right: 10px;
 }
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.animated-polyline path {
+  animation: marching-ants 1s linear infinite;
+}
+
