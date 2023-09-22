@@ -1,0 +1,16 @@
+spec:
+  container:  
+  - name: snowday
+    image: sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday
+    volumeMounts: 
+    - name: workspace
+      mountPath: /home/snowday/
+  endpoint:
+  - name: snowday
+    port: 8888
+    public: true
+  volume:
+  - name: workspace
+    source: local
+    uid: 1000
+    gid: 1000

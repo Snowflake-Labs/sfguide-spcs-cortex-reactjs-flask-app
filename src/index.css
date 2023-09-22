@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  padding: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  color: #ddd;
+  background-color: #2c2c2c;
+}
+
+body.dark-mode button {
+  background-color: #444;
+  color: #ddd;
+}
+
+/* Additional dark mode styles for other components and elements */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  position: relative; /* Added for absolute positioning of the toggle */
+}
+
+.header h1 {
+  margin: 0;
+  width: 100%; /* Makes sure the title takes the full width */
+  text-align: center; /* Centers the title */
+}
+
+.dark-mode-toggle {
+  cursor: pointer;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 5px;
+  transition: color 0.3s ease;
+  position: absolute; /* This will position the toggle relative to the header */
+  right: 20px; /* 20px from the right edge of the header */
+  top: 50%; /* Vertically centered */
+  transform: translateY(-50%); /* Adjusts for the exact center */
+}
+
+body.dark-mode .header {
+  background-color: #2c2c2c;
+}
+
+body.dark-mode .dark-mode-toggle {
+  color: #ddd;
+}
+
+/* Light mode styles (default) */
+.container {
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+}
+
+.map {
+  /* You might not need a specific color for the map in light mode, but add if necessary */
+  transition: background-color 0.3s ease; /* Add other transitions if necessary */
+}
+
+/* Dark mode styles */
+.container.dark {
+  background-color: #2c2c2c; 
+}
+
+.map.dark {
+  /* If you want a specific background or other styling for the map in dark mode */
+  background-color: #444; 
+}
+
+.add-city-button {
+  background-color: #13C2C2;  /* Snowflake blue */
+  color: #fff;                /* White text color for contrast */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;         /* Optional, for rounded corners */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-city-button:hover {
+  background-color: #0aa6a6;  /* Slightly darker shade of Snowflake blue for hover effect */
+}
+
+.add-city-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #0aa6a6; /* A subtle glow effect on focus */
+}
+
+.city-timeline {
+  /* margin-top: 40px; */
+  /* padding: 20px 10px; */
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+  font-family: 'San Francisco', 'Helvetica Neue', sans-serif;
+}
+
+.city-timeline h4 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.city-timeline ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.city-timeline li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.city-timeline li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  width: 100%; /* Ensures full width */
+}
+
+.map-container {
+  flex-basis: 75%; /* Starts off with 75% of parent width */
+  flex-grow: 3;   
+  flex-shrink: 0; /* Prevents the map from shrinking */
+  height: calc(100vh - some_value); 
+}
+
+.city-timeline {
+  flex-basis: 25%; /* Starts off with 25% of parent width */
+  flex-grow: 1;
+  overflow-y: auto;
+  height: calc(100vh - some_value);
+}
+
