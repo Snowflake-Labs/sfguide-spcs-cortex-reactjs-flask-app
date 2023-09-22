@@ -85,7 +85,7 @@ function Header({ darkMode, toggleDarkMode }) {
 function CityTimeline({ history }) {
   return (
     <div className="city-timeline">
-      <h4>City Addition History</h4>
+      <h4>Timeline</h4>
       <ul>
         {history.map((item, index) => (
           <li key={index}>
@@ -174,16 +174,26 @@ function App() {
     }
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleAddCity();
+    }
+  };  
+
   return (
     <div className={`container ${darkMode ? 'dark' : ''}`}>
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Container className={`container ${darkMode ? 'dark' : ''}`}>
-          <Input 
-            placeholder="Enter city name"
-            value={city}
-            onChange={e => setCity(e.target.value)}
-          />
-          <Button className="add-city-button" onClick={handleAddCity}>Dash To Location</Button>
+          <div>
+            <Input 
+              placeholder="Enter city name to dash to"
+              value={city}
+              onChange={e => setCity(e.target.value)}
+              onKeyDown={handleKeyDown}
+              className='city-input'
+            />
+            <Button className="add-city-button" onClick={handleAddCity}>Dash To Location</Button>
+          </div>
           <div className={`content container ${darkMode ? 'dark' : ''}`}>
             <MapContainer className='map-container' ref={mapRef} whenCreated={mapInstance => mapRef.current = mapInstance} center={position} zoom={zoom} style={{ width: '1200px', height: '600px', marginTop: '20px', borderRadius: '8px', overflow: 'hidden' }}>
               <TileLayer
