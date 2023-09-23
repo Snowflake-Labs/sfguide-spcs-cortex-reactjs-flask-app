@@ -9,17 +9,6 @@ import { Collapse } from 'react-collapse';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-const initialCities = [
-  { name: 'New York', coordinates: [40.7128, -74.0060] },
-  { name: 'Los Angeles', coordinates: [34.0522, -118.2437] },
-  { name: 'Chicago', coordinates: [41.8781, -87.6298] }
-];
-
-const initialCityHistory = initialCities.map(city => ({
-  cityName: city.name,
-  timestamp: formatDate(new Date())
-}));
-
 // Define the default icon
 const defaultIcon = L.icon({
     iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
@@ -96,13 +85,13 @@ function Header({ darkMode, toggleDarkMode }) {
   );
 }
 
-function CityTimeline({ history }) {
+function CityTimeline({ history, highlightedCity }) {
   return (
     <div>
       <h4>Timeline</h4>
       <ul>
         {history.map((item, index) => (
-          <li key={index}>
+          <li key={index} className={item.cityName === highlightedCity ? 'highlighted' : ''}>
             {item.timestamp} : {item.cityName}
           </li>
         ))}
@@ -133,9 +122,9 @@ function formatDate(date) {
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const [cityHistory, setCityHistory] = useState(initialCityHistory);
+  const [cityHistory, setCityHistory] = useState([]);
   const [city, setCity] = useState('');
-  const [cities, setCities] = useState(initialCities);
+  const [cities, setCities] = useState([]);
   const [position] = useState([39.8283, -98.5795]); // Center of the contiguous United States
   const [zoom] = useState(4); // Adjust the zoom level as necessary
   const positions = cities.map(cityData => cityData.coordinates);
@@ -145,18 +134,9 @@ function App() {
   const polylinePositions = getPolylinePositions(cities);
   const [isTimelineOpen, setIsTimelineOpen] = useState(false); // Assuming the timeline starts collapsed
   const [activeSection, setActiveSection] = useState(null);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
+  const [highlightedCity, setHighlightedCity] = useState(null);
 
-  useEffect(() => {
-    // Only run this effect once when the component mounts
-    if (connectedCitiesCount < initialCities.length - 1) {
-      const timer = setTimeout(() => {
-        setConnectedCitiesCount(prevCount => prevCount + 1);
-      }, 1000);  // 1000ms delay for each connection
-      return () => clearTimeout(timer);  // Cleanup timeout if the component is unmounted
-    }
-  }, [connectedCitiesCount]);  
-  
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add('dark-mode');
@@ -169,18 +149,22 @@ function App() {
     setDarkMode(prev => !prev);
   };
 
-  // Loading history from local storage when the app initializes
+  // Load cities from the backend
   useEffect(() => {
-    const loadedHistory = localStorage.getItem('cityHistory');
-    if (loadedHistory) {
-      setCityHistory(JSON.parse(loadedHistory));
-    }
-  }, []);
-
-  // Storing history in local storage whenever it changes
-  useEffect(() => {
-    localStorage.setItem('cityHistory', JSON.stringify(cityHistory));
-  }, [cityHistory]); 
+    fetch('http://localhost:5000/cities')
+    .then(response => response.json())
+    .then(data => {
+        setCities(data);
+        const history = data.map(city => ({
+            cityName: city.name,
+            timestamp: formatDate(new Date())
+        }));
+        setCityHistory(history);
+    })
+    .catch(error => {
+        console.error("Error fetching cities:", error);
+    });
+}, []); // Empty dependency array means this useEffect runs once when the component mounts
   
   const isCityInUS = (coordinates) => {
     // Rough bounding box for continental US
@@ -209,7 +193,6 @@ function App() {
       // Update the cityHistory state with the new city and current timestamp
       setCityHistory(prevHistory => [...prevHistory, {cityName: city, timestamp: formatDate(new Date()), coordinates: coordinates}]);
       setIsNewCityAdded(true);  // Set to true after adding city
-
       // After setting the city in state, check if it's outside the current view
       if (mapRef.current && coordinates) {
         const bounds = mapRef.current.getBounds();
@@ -218,6 +201,10 @@ function App() {
           mapRef.current.flyTo(coordinates, zoomLevel);
         }
       }
+      // Update the highlightedCity state with the new city
+      setHighlightedCity(city);
+      // Reset the highlighted city after a delay (e.g., 2 seconds)
+      setTimeout(() => setHighlightedCity(null), 2000);
     } else {
       alert('Please enter a valid city name.');
     }
@@ -278,7 +265,7 @@ function App() {
             </button>
             <Collapse isOpened={isOpen}>
               <div className={`city-timeline ${darkMode ? 'dark' : ''}`}>
-                <CityTimeline history={cityHistory} />
+                <CityTimeline history={cityHistory} highlightedCity={highlightedCity} />
               </div>
             </Collapse>
           </div>
