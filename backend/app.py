@@ -11,7 +11,9 @@ from snowflake.snowpark.version import VERSION
 import pandas as pd
 import json
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='', static_folder='/app/build')
+app.config['DEBUG'] = True
+
 CORS(app)
 
 # Create Snowflake Session object
@@ -31,13 +33,7 @@ print('Warehouse                   : {}'.format(session.get_current_warehouse())
 print('Snowflake version           : {}'.format(snowflake_environment[0][1]))
 print('Snowpark for Python version : {}.{}.{}'.format(snowpark_version[0],snowpark_version[1],snowpark_version[2]))
 
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
-def serve(path):
-    if path != "" and os.path.exists("build/" + path):
-        return send_from_directory('build', path)
-    else:
-        return send_from_directory('build', 'index.html')
+print("Current Directory:", os.getcwd())
 
 @app.route('/test', methods=['GET'])
 def test():
@@ -57,6 +53,22 @@ def get_cities():
     # print("cities")
     # print(cities)
     return jsonify(cities)
+
+@app.route('/cwd')
+def print_cwd():
+    return os.getcwd()
+
+@app.route('/')
+def index():
+    return send_from_directory('/app/build/static', 'index.html')
+
+@app.route('/static/<path:filename>')  
+def send_file(filename):
+    return send_from_directory('/app/build/static', filename)
+
+@app.route('/<path:path>')
+def serve_static(path):
+    return send_from_directory('/app/build/static', path)
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=5000)

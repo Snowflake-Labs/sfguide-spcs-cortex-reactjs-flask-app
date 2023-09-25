@@ -7,7 +7,7 @@ spec:
       mountPath: /home/snowday/
   endpoint:
   - name: snowday
-    port: 8888
+    port: 5000
     public: true
   volume:
   - name: workspace

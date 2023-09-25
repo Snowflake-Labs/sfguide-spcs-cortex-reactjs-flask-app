@@ -4,7 +4,9 @@ FROM python:3.9-slim as build-stage
 WORKDIR /app
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y wget build-essential patch
+RUN apt-get update && apt-get install -y wget build-essential patch curl && \
+    curl -fsSL https://deb.nodesource.com/setup_16.x | bash - && \
+    apt-get install -y nodejs
 
 # Install Miniconda and set up the environment
 RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
@@ -12,12 +14,33 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh &
     /opt/conda/bin/conda create -n myenv python=3.9 -y && \
     /opt/conda/bin/conda install -n myenv -c https://repo.anaconda.com/pkgs/snowflake/ snowflake-snowpark-python pandas -y
 
+RUN apt-get update && apt-get install -y wget curl build-essential && \
+    curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs
+
+
 # Set up the PATH for the new environment
 ENV PATH=/opt/conda/envs/myenv/bin:$PATH
 
+# Copy and install React app dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy React source and public folders
+COPY src ./src
+COPY public ./public
+
+# Build the React app
+RUN npm run build
+RUN ls -l build
+RUN chmod -R a+r /app/build
+
+# Set working directory to Flask backend
+WORKDIR /app/backend
+
 # Copy the requirements and install them
-COPY backend/requirements.txt /backend/requirements.txt
-RUN pip install -r /backend/requirements.txt
+COPY backend/requirements.txt .
+RUN pip install -r requirements.txt
 
 # Copy the patch for oscrypto
 COPY support-openssl-3.0.10.patch /tmp/
