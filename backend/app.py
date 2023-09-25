@@ -50,8 +50,8 @@ def get_cities():
     df = session.table('cities').select('name','lat','lon').to_pandas()
     cities = [{'name': row['NAME'], 'coordinates': [row['LAT'], row['LON']]} for index, row in df.iterrows()]
 
-    # print("cities")
-    # print(cities)
+    print("In get_cities")
+    print(cities)
     return jsonify(cities)
 
 @app.route('/cwd')
@@ -60,10 +60,12 @@ def print_cwd():
 
 @app.route('/')
 def index():
+    print("In index....")
     return send_from_directory('/app/build', 'index.html')
 
 @app.route('/static/<path:filename>')
 def send_file(filename):
+    print("In send_file")
     return send_from_directory('/app/build/static', filename)
 
 if __name__ == "__main__":
