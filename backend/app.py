@@ -60,15 +60,11 @@ def print_cwd():
 
 @app.route('/')
 def index():
-    return send_from_directory('/app/build/static', 'index.html')
+    return send_from_directory('/app/build', 'index.html')
 
-@app.route('/static/<path:filename>')  
+@app.route('/static/<path:filename>')
 def send_file(filename):
     return send_from_directory('/app/build/static', filename)
-
-@app.route('/<path:path>')
-def serve_static(path):
-    return send_from_directory('/app/build/static', path)
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=5000)
