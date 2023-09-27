@@ -41,17 +41,18 @@ def test():
 
 @app.route('/cities', methods=['GET'])
 def get_cities():
-    # cities = [
-    #     {'name': 'New York', 'coordinates': [40.7128, -74.0060]},
-    #     {'name': 'Los Angeles', 'coordinates': [34.0522, -118.2437]},
-    #     {'name': 'Chicago', 'coordinates': [41.8781, -87.6298]}
-    # ]
-
-    df = session.table('cities').select('name','lat','lon').to_pandas()
-    cities = [{'name': row['NAME'], 'coordinates': [row['LAT'], row['LON']]} for index, row in df.iterrows()]
-
     print("In get_cities")
+
+    cities = [
+        {'name': 'New York', 'coordinates': [40.7128, -74.0060]},
+        {'name': 'LA', 'coordinates': [34.0522, -118.2437]},
+        {'name': 'Chicago', 'coordinates': [41.8781, -87.6298]}
+    ]
     print(cities)
+
+    # df = session.table('cities').select('name','lat','lon').to_pandas()
+    # s_cities = [{'name': row['NAME'], 'coordinates': [row['LAT'], row['LON']]} for index, row in df.iterrows()]
+    # print(s_cities)
     return jsonify(cities)
 
 @app.route('/cwd')

@@ -1,7 +1,7 @@
 spec:
   container:  
   - name: snowday
-    image: sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday
+    image: sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday:latest
     volumeMounts: 
     - name: workspace
       mountPath: /home/snowday/

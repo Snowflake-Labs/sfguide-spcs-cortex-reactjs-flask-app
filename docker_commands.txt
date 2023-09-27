@@ -3,9 +3,9 @@ docker run -p 5000:5000 snowday
 
 --- prod3
 
-docker tag snowday sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday
+docker tag snowday:latest sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday:latest
 docker login sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday
-docker push sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday
+docker push sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday:latest
 
 --- temptest002038
 
