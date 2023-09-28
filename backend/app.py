@@ -44,7 +44,7 @@ def get_cities():
     print("In get_cities")
 
     cities = [
-        {'name': 'New York', 'coordinates': [40.7128, -74.0060]},
+        {'name': 'NYC', 'coordinates': [40.7128, -74.0060]},
         {'name': 'LA', 'coordinates': [34.0522, -118.2437]},
         {'name': 'Chicago', 'coordinates': [41.8781, -87.6298]}
     ]
