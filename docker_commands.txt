@@ -1,17 +1,17 @@
 docker build --platform linux/amd64 -t snowday . 
 docker run -p 5000:5000 snowday
 
---- prod3
+--- 
 
 docker tag snowday:latest sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday:latest
 docker login sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday
 docker push sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday:latest
 
---- temptest002038
+--- 
 
-docker tag xgboost temptest002038-servicesnow.registry-dev.snowflakecomputing.com/dash_db/public/dash_repo/snowday
-docker login temptest002038-servicesnow.registry-dev.snowflakecomputing.com/dash_db/public/dash_repo/snowday
-docker push temptest002038-servicesnow.registry-dev.snowflakecomputing.com/dash_db/public/dash_repo/snowday
+docker tag snowday:latest SFSENORTHAMERICA-JHOLLAN.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest
+docker login SFSENORTHAMERICA-JHOLLAN.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday
+docker push SFSENORTHAMERICA-JHOLLAN.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest
 
 ---
 

@@ -151,7 +151,7 @@ function App() {
 
   // Load cities from the backend
   useEffect(() => {
-    fetch('http://localhost:5000/cities')
+    fetch('http://127.0.0.1:5000/cities')
     .then(response => response.json())
     .then(data => {
         setCities(data);
