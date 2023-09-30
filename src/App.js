@@ -9,6 +9,8 @@ import { Collapse } from 'react-collapse';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
+const baseURL = window.location.href;
+
 // Define the default icon
 const defaultIcon = L.icon({
     iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
@@ -109,7 +111,7 @@ function getPolylinePositions(cities) {
 }
 
 function formatDate(date) {
-  console.log(date)
+  // console.log(date)
   return new Intl.DateTimeFormat('en-US', { 
     year: 'numeric', 
     month: 'short', 
@@ -151,7 +153,7 @@ function App() {
 
   // Load cities from the backend
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/cities')
+    fetch(baseURL + 'cities')
     .then(response => response.json())
     .then(data => {
         setCities(data);

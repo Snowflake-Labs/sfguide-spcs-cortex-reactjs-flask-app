@@ -18,7 +18,6 @@ RUN apt-get update && apt-get install -y wget curl build-essential && \
     curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
     apt-get install -y nodejs
 
-
 # Set up the PATH for the new environment
 ENV PATH=/opt/conda/envs/myenv/bin:$PATH
 
