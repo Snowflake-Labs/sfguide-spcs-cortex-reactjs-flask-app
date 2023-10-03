@@ -9,6 +9,12 @@ docker push sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/pu
 
 --- 
 
+docker tag snowday:latest qa6-llmpfs.registry-dev.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest
+docker login qa6-llmpfs.registry-dev.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday
+docker push qa6-llmpfs.registry-dev.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest
+
+---
+
 docker tag snowday:latest SFSENORTHAMERICA-JHOLLAN.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest
 docker login SFSENORTHAMERICA-JHOLLAN.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday
 docker push SFSENORTHAMERICA-JHOLLAN.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest

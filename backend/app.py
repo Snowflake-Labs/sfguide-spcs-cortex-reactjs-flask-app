@@ -1,6 +1,5 @@
 import os
-from flask import send_from_directory
-from flask import Flask, jsonify
+from flask import Flask, jsonify, send_from_directory, request
 from flask_cors import CORS
 from snowflake.snowpark.session import Session
 from snowflake.snowpark.types import Variant
@@ -26,7 +25,13 @@ SNOWFLAKE_SCHEMA = os.getenv("SNOWFLAKE_SCHEMA")
 SNOWFLAKE_USER = os.getenv("SNOWFLAKE_USER")
 SNOWFLAKE_PASSWORD = os.getenv("SNOWFLAKE_PASSWORD")
 SNOWFLAKE_ROLE = os.getenv("SNOWFLAKE_ROLE")
-SNOWFLAKE_WAREHOUSE = "SERVICESNOW"   #os.getenv("SNOWFLAKE_WAREHOUSE")
+SNOWFLAKE_WAREHOUSE = "DASH_L"   #os.getenv("SNOWFLAKE_WAREHOUSE")
+
+# Current Environment Details
+print('Account                     : {}'.format(SNOWFLAKE_ACCOUNT))
+print('Host                        : {}'.format(SNOWFLAKE_HOST))
+print('User                        : {}'.format(SNOWFLAKE_USER))
+print('Role                        : {}'.format(SNOWFLAKE_ROLE))
 
 def get_login_token():
   """
@@ -70,6 +75,8 @@ snowflake_environment = session.sql('select current_user(), current_version()').
 snowpark_version = VERSION
 
 # Current Environment Details
+print('Account                     : {}'.format(SNOWFLAKE_ACCOUNT))
+print('Host                        : {}'.format(SNOWFLAKE_HOST))
 print('User                        : {}'.format(snowflake_environment[0][0]))
 print('Role                        : {}'.format(session.get_current_role()))
 print('Database                    : {}'.format(session.get_current_database()))
@@ -95,6 +102,19 @@ def get_cities():
     cities = [{'name': row['NAME'], 'coordinates': [row['LAT'], row['LON']]} for index, row in df.iterrows()]
     print(cities)
     return jsonify(cities)
+
+@app.route('/llmpfs', methods=['GET', 'POST'])
+def llmpfs():
+    data = request.get_json()
+    user_input = data['cityName']
+    print("In llmpfs for: " + user_input)
+    # session.sql("select snowflake.ml.complete('llama2-7b-chat-hf', '[INST] What are Large Language Models? [/INST]') as response")
+    llmpfs_prompt = "'[INST] What are your thoughts on the city of " + user_input + "? [/INST]'"
+    print(llmpfs_prompt)
+    df = session.sql("select snowflake.ml.complete('llama2-7b-chat-hf', " + llmpfs_prompt + ") as response").to_pandas()
+    llmpfs_response = df.iloc[0]['RESPONSE']
+    print(llmpfs_response)
+    return jsonify([{'llmpfs_response': llmpfs_response}])
 
 @app.route('/cwd')
 def print_cwd():

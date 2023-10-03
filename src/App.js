@@ -8,8 +8,10 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 import { Collapse } from 'react-collapse';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { BeatLoader } from 'react-spinners';
 
 const baseURL = window.location.href;
+console.log('baseURL: '+baseURL)
 
 // Define the default icon
 const defaultIcon = L.icon({
@@ -111,7 +113,6 @@ function getPolylinePositions(cities) {
 }
 
 function formatDate(date) {
-  // console.log(date)
   return new Intl.DateTimeFormat('en-US', { 
     year: 'numeric', 
     month: 'short', 
@@ -138,6 +139,9 @@ function App() {
   const [activeSection, setActiveSection] = useState(null);
   const [isOpen, setIsOpen] = useState(true);
   const [highlightedCity, setHighlightedCity] = useState(null);
+  const [cityInfo, setCityInfo] = useState({});
+  const [loading, setLoading] = useState(false);
+  const [loadingCities, setLoadingCities] = useState({}); // This state will store loading status for each city
 
   useEffect(() => {
     if (darkMode) {
@@ -166,7 +170,21 @@ function App() {
     .catch(error => {
         console.error("Error fetching cities:", error);
     });
-}, []); // Empty dependency array means this useEffect runs once when the component mounts
+  }, []); // Empty dependency array means this useEffect runs once when the component mounts
+
+  const getCityInfo = async (cityName) => {
+    try {
+      const response = await axios.post(baseURL + 'llmpfs', {
+        cityName: cityName
+      });
+      const cityInfo = response.data[0].llmpfs_response;
+      // Do something with the cityInfo here, like updating your component state
+      return cityInfo;
+    } catch (error) {
+      console.error('Error fetching city info', error);
+      return null;
+    }
+  };  
   
   const isCityInUS = (coordinates) => {
     // Rough bounding box for continental US
@@ -243,20 +261,31 @@ function App() {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               />
               {cities.map((cityData, idx) => (
-                <Marker key={idx} position={cityData.coordinates} icon={defaultIcon}
-                  eventHandlers={{
-                    click: () => {
-                        if(mapRef.current) {
-                            // mapRef.current.flyTo(cityData.coordinates, 10);
-                        }
-                    }
-                  }}
-                >
+                  <Marker key={idx} position={cityData.coordinates} icon={defaultIcon}
+                      eventHandlers={{
+                          click: async () => {
+                              if(mapRef.current) {
+                                  setLoadingCities((prevLoading) => ({ ...prevLoading, [cityData.name]: true }));
+                                  const info = await getCityInfo(cityData.name);
+                                  if (info) {
+                                      setCityInfo({ ...cityInfo, [cityData.name]: info });
+                                  }
+                                  setLoadingCities((prevLoading) => ({ ...prevLoading, [cityData.name]: false }));
+                              }
+                          }
+                      }}
+                  >
                   <Popup>
                       <strong>{cityData.name}</strong><br />
-                      {cityData.coordinates[0]}&nbsp;&nbsp;{cityData.coordinates[1]}
+                      {cityData.coordinates[0]}&nbsp;&nbsp;{cityData.coordinates[1]}<br />
+                      
+                      {loadingCities[cityData.name] ? (
+                          <BeatLoader color="#3498db" size={8} />
+                      ) : (
+                          cityInfo[cityData.name] && <div>{cityInfo[cityData.name]}</div>
+                      )}
                   </Popup>
-                </Marker>
+                  </Marker>
               ))}
               {/* {cities.length > 0 && <PanToNewCity coordinates={cities[cities.length - 1].coordinates} />} */}
               {/* {positions.length > 1 && <Polyline positions={cities.slice(0, connectedCitiesCount + 2).map(cityData => cityData.coordinates)} color="#13C2C2" dashArray="5,5"/>} */}
