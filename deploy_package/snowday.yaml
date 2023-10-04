@@ -1,7 +1,7 @@
 spec:
   container:  
   - name: snowday
-    image: /dash_db/public/dash_repo/snowday:latest
+    image: /dash_db/dash_schema/dash_repo/snowday:latest
     volumeMounts: 
     - name: workspace
       mountPath: /home/snowday/

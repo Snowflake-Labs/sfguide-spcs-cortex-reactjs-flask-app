@@ -25,13 +25,16 @@ SNOWFLAKE_SCHEMA = os.getenv("SNOWFLAKE_SCHEMA")
 SNOWFLAKE_USER = os.getenv("SNOWFLAKE_USER")
 SNOWFLAKE_PASSWORD = os.getenv("SNOWFLAKE_PASSWORD")
 SNOWFLAKE_ROLE = os.getenv("SNOWFLAKE_ROLE")
-SNOWFLAKE_WAREHOUSE = "DASH_L"   #os.getenv("SNOWFLAKE_WAREHOUSE")
+SNOWFLAKE_WAREHOUSE = os.getenv("SNOWFLAKE_WAREHOUSE")
 
 # Current Environment Details
 print('Account                     : {}'.format(SNOWFLAKE_ACCOUNT))
 print('Host                        : {}'.format(SNOWFLAKE_HOST))
 print('User                        : {}'.format(SNOWFLAKE_USER))
 print('Role                        : {}'.format(SNOWFLAKE_ROLE))
+print('Database                    : {}'.format(SNOWFLAKE_DATABASE))
+print('Schema                      : {}'.format(SNOWFLAKE_SCHEMA))
+print('Warehouse                   : {}'.format(SNOWFLAKE_WAREHOUSE))
 
 def get_login_token():
   """
@@ -56,6 +59,7 @@ def get_connection_params():
       "schema": SNOWFLAKE_SCHEMA
     }
   else:
+    print('Pwd: {}'.format(SNOWFLAKE_PASSWORD))
     return {
       "account": SNOWFLAKE_ACCOUNT,
       "host": SNOWFLAKE_HOST,
@@ -68,20 +72,12 @@ def get_connection_params():
     }
 
 # Create Snowflake Session object
-# connection_parameters = json.load(open('connection.json'))
 session = Session.builder.configs(get_connection_params()).create()
 session.sql_simplifier_enabled = True
 snowflake_environment = session.sql('select current_user(), current_version()').collect()
 snowpark_version = VERSION
 
 # Current Environment Details
-print('Account                     : {}'.format(SNOWFLAKE_ACCOUNT))
-print('Host                        : {}'.format(SNOWFLAKE_HOST))
-print('User                        : {}'.format(snowflake_environment[0][0]))
-print('Role                        : {}'.format(session.get_current_role()))
-print('Database                    : {}'.format(session.get_current_database()))
-print('Schema                      : {}'.format(session.get_current_schema()))
-print('Warehouse                   : {}'.format(session.get_current_warehouse()))
 print('Snowflake version           : {}'.format(snowflake_environment[0][1]))
 print('Snowpark for Python version : {}.{}.{}'.format(snowpark_version[0],snowpark_version[1],snowpark_version[2]))
 print("Current Directory           :", os.getcwd())

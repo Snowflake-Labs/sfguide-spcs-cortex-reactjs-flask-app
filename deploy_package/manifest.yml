@@ -1,0 +1,16 @@
+#version identifier
+version:
+  name: V1
+  label: Version One
+  comment: The first version of the application
+
+privileges:
+  - IMPORTED PRIVILEGES ON SNOWFLAKE DB:
+      description: "To access account_usage views"
+
+#artifacts that are distributed from this version of the package
+artifacts:
+  setup_script: setup.sql
+  container_services:
+    images:
+        - /dash_db/dash_schema/dash_repo/snowday:latest
