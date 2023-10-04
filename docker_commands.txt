@@ -1,5 +1,5 @@
 docker build --platform linux/amd64 -t snowday . 
-docker run --env-file ~/Users/ddesai/env.list -p 5000:5000 snowday
+docker run --env-file /Users/ddesai/env.list -p 5000:5000 snowday
 
 --- 
 

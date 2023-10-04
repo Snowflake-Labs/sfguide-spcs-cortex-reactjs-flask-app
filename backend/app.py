@@ -35,6 +35,7 @@ print('Role                        : {}'.format(SNOWFLAKE_ROLE))
 print('Database                    : {}'.format(SNOWFLAKE_DATABASE))
 print('Schema                      : {}'.format(SNOWFLAKE_SCHEMA))
 print('Warehouse                   : {}'.format(SNOWFLAKE_WAREHOUSE))
+print("Current Directory           :", os.getcwd())
 
 def get_login_token():
   """
@@ -59,7 +60,7 @@ def get_connection_params():
       "schema": SNOWFLAKE_SCHEMA
     }
   else:
-    print('Pwd: {}'.format(SNOWFLAKE_PASSWORD))
+    # print('Pwd: {}'.format(SNOWFLAKE_PASSWORD))
     return {
       "account": SNOWFLAKE_ACCOUNT,
       "host": SNOWFLAKE_HOST,
@@ -71,16 +72,19 @@ def get_connection_params():
       "schema": SNOWFLAKE_SCHEMA
     }
 
-# Create Snowflake Session object
-session = Session.builder.configs(get_connection_params()).create()
-session.sql_simplifier_enabled = True
-snowflake_environment = session.sql('select current_user(), current_version()').collect()
-snowpark_version = VERSION
+def get_snowflake_session():
+  # Create Snowflake Session object
+  session = Session.builder.configs(get_connection_params()).create()
+  session.sql_simplifier_enabled = True
+  snowflake_environment = session.sql('select current_user(), current_version()').collect()
+  snowpark_version = VERSION
 
-# Current Environment Details
-print('Snowflake version           : {}'.format(snowflake_environment[0][1]))
-print('Snowpark for Python version : {}.{}.{}'.format(snowpark_version[0],snowpark_version[1],snowpark_version[2]))
-print("Current Directory           :", os.getcwd())
+  # Current Environment Details
+  print('Snowflake version           : {}'.format(snowflake_environment[0][1]))
+  print('Snowpark for Python version : {}.{}.{}'.format(snowpark_version[0],snowpark_version[1],snowpark_version[2]))
+  return session
+
+session = get_snowflake_session()
 
 @app.route('/hello', methods=['GET'])
 def hello():
@@ -94,9 +98,19 @@ def get_cities():
     #     {'name': 'LA', 'coordinates': [34.0522, -118.2437]},
     #     {'name': 'Chicago', 'coordinates': [41.8781, -87.6298]}
     # ]
-    df = session.table('cities').select('name','lat','lon').to_pandas()
-    cities = [{'name': row['NAME'], 'coordinates': [row['LAT'], row['LON']]} for index, row in df.iterrows()]
-    print(cities)
+
+    cities = []
+    try:
+        df = session.table('cities').select('name','lat','lon').to_pandas()
+        cities = [{'name': row['NAME'], 'coordinates': [row['LAT'], row['LON']]} for index, row in df.iterrows()]
+    except Exception as e:
+        print("In get_cities: error has occured. Retrying...", e)
+        session = get_snowflake_session()
+        df = session.table('cities').select('name','lat','lon').to_pandas()
+        cities = [{'name': row['NAME'], 'coordinates': [row['LAT'], row['LON']]} for index, row in df.iterrows()]
+    finally:
+       print(cities)
+
     return jsonify(cities)
 
 @app.route('/llmpfs', methods=['GET', 'POST'])
@@ -104,12 +118,21 @@ def llmpfs():
     data = request.get_json()
     user_input = data['cityName']
     print("In llmpfs for: " + user_input)
-    # session.sql("select snowflake.ml.complete('llama2-7b-chat-hf', '[INST] What are Large Language Models? [/INST]') as response")
     llmpfs_prompt = "'[INST] What are your thoughts on the city of " + user_input + "? [/INST]'"
-    print(llmpfs_prompt)
-    df = session.sql("select snowflake.ml.complete('llama2-7b-chat-hf', " + llmpfs_prompt + ") as response").to_pandas()
-    llmpfs_response = df.iloc[0]['RESPONSE']
-    print(llmpfs_response)
+    # print(llmpfs_prompt)
+
+    llmpfs_response = ""
+    try:
+        df = session.sql("select snowflake.ml.complete('llama2-7b-chat-hf', " + llmpfs_prompt + ") as response").to_pandas()
+        llmpfs_response = df.iloc[0]['RESPONSE']
+    except Exception as e:
+        print("In llmps: error has occured. Retrying...", e)
+        session = get_snowflake_session()
+        df = session.sql("select snowflake.ml.complete('llama2-7b-chat-hf', " + llmpfs_prompt + ") as response").to_pandas()
+        llmpfs_response = df.iloc[0]['RESPONSE']
+    finally:
+       print(llmpfs_response)
+       
     return jsonify([{'llmpfs_response': llmpfs_response}])
 
 @app.route('/cwd')
