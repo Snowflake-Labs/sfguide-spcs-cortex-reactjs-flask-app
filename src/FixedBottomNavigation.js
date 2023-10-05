@@ -63,23 +63,22 @@ function FixedBottomNavigation() {
 
 const messageExamples = [
   {
-    primary: 'Brunch this week?',
-    secondary: "I'll be in the neighbourhood this week. Let's grab a bite to eat",
+    primary: 'Transcript',
+    secondary: "**Customer:** Hello, I recently booked a flight from New York to London on your website. I just realized I mistakenly selected the wrong date. It should be for the 12th of September, not the 2nd. Can you help? **Representative:** Of course, I apologize for any inconvenience. Let me check the availability on the 12th of September for you. Can you provide your booking reference number, please? **Customer:** Yes, it\'s A1B2C3. **Representative:** Thank you. I found your booking. Give me a moment to see the options for the 12th. **Customer:** No problem, thank you for the help. **Representative:** I\'m glad to inform you that we have seats available on the 12th. However, there\'s a slight difference in the fare. Would you like me to go ahead and make the change for you? **Customer:** Yes, that would be great. How much is the difference? **Representative:** The difference is $50. Would that be acceptable? **Customer:** Yes, that\'s fine. Please make the change. **Representative:** Perfect, I\'ve successfully changed your booking date to the 12th of September. You will be charged an additional $50. Is there anything else I can assist you with? **Customer:** No, that\'s it. Thank you for your help! **Representative:** You\'re welcome! Safe travels, and thank you for choosing our airline. Have a great day! **Customer:** You too! Goodbye. **Representative:** Goodbye!",
     person: '/static/images/avatar/5.jpg',
   },
   {
-    primary: 'Birthday Gift',
-    secondary: `Do you have a suggestion for a good present for John on his work
-      anniversary. I am really confused & would love your thoughts on it.`,
+    primary: 'Transcript',
+    secondary: "**Customer:** Hi, I booked a flight from New York to Paris for October 15th, but I didn\'t receive a confirmation email. **Representative:** I\'m sorry for the inconvenience. Can I have your booking reference number, please? **Customer:** Yes, it\'s ABCD1234. **Representative:** Thank you. I see your booking. It looks like the email was sent to john.doe@example.com. Is that the correct email address? **Customer:** Oh, I made a typo. It should be john.doe@exampel.com. **Representative:** I see. Let me update that for you and resend the confirmation email. Please check your inbox in a few minutes. **Customer:** Thank you. Also, can I request a vegetarian meal for the flight? **Representative:** Of course! I\'ve added a request for a vegetarian meal to your booking. Anything else I can assist with? **Customer:** That\'s all for now. Thank you for your help! **Representative:** You\'re welcome. Safe travels! ",
     person: '/static/images/avatar/1.jpg',
   },
   {
-    primary: 'Recipe to try',
+    primary: 'Transcript',
     secondary: 'I am try out this new BBQ recipe, I think this might be amazing',
     person: '/static/images/avatar/2.jpg',
   },
   {
-    primary: 'Yes!',
+    primary: 'Transcript',
     secondary: 'I have the tickets to the ReactConf for this year.',
     person: '/static/images/avatar/3.jpg',
   },
