@@ -84,8 +84,6 @@ def get_snowflake_session():
   print('Snowpark for Python version : {}.{}.{}'.format(snowpark_version[0],snowpark_version[1],snowpark_version[2]))
   return session
 
-session = get_snowflake_session()
-
 @app.route('/hello', methods=['GET'])
 def hello():
     return jsonify({"message": f"Hello from Dash!"})
@@ -99,40 +97,25 @@ def get_cities():
     #     {'name': 'Chicago', 'coordinates': [41.8781, -87.6298]}
     # ]
 
-    cities = []
-    try:
-        df = session.table('cities').select('name','lat','lon').to_pandas()
-        cities = [{'name': row['NAME'], 'coordinates': [row['LAT'], row['LON']]} for index, row in df.iterrows()]
-    except Exception as e:
-        print("In get_cities: error has occured. Retrying...", e)
-        session = get_snowflake_session()
-        df = session.table('cities').select('name','lat','lon').to_pandas()
-        cities = [{'name': row['NAME'], 'coordinates': [row['LAT'], row['LON']]} for index, row in df.iterrows()]
-    finally:
-       print(cities)
-
+    session = get_snowflake_session() # Not ideal to create a session every time. This is a hack for dealing with timeouts.
+    df = session.table('cities').select('name','lat','lon').to_pandas()
+    cities = [{'name': row['NAME'], 'coordinates': [row['LAT'], row['LON']]} for index, row in df.iterrows()]
+    print(cities)
     return jsonify(cities)
 
 @app.route('/llmpfs', methods=['GET', 'POST'])
 def llmpfs():
     data = request.get_json()
-    user_input = data['cityName']
+    user_input = data['transcript']
+    # user_input = "Customer: Hello, this is Jane. I recently purchased a Snow49 winter jacket and I wanted to let you know how thrilled I am with it.\nSnow49 Representative: Hello Jane! Thank you for reaching out. We are so glad to hear that. What in particular did you like about the jacket?\nCustomer: It is incredibly warm, yet light. I wore it on a trip to the mountains and was amazed at how comfortable I felt. And the pockets are so well-designed!\nSnow49 Representative: We always aim for high quality. Your feedback is much appreciated, Jane. Enjoy your adventures in the mountains!\nCustomer: I certainly will. Thank you and kudos to the Snow49 team."
     print("In llmpfs for: " + user_input)
-    llmpfs_prompt = "'[INST] What are your thoughts on the city of " + user_input + "? [/INST]'"
+    llmpfs_prompt = "'[INST] In less than 200 words, provide sentiment and summarize this call transcript between representative and a customer. And do not use any special characters or apostrophes: " + user_input + "? [/INST]'"
     # print(llmpfs_prompt)
 
-    llmpfs_response = ""
-    try:
-        df = session.sql("select snowflake.ml.complete('llama2-7b-chat-hf', " + llmpfs_prompt + ") as response").to_pandas()
-        llmpfs_response = df.iloc[0]['RESPONSE']
-    except Exception as e:
-        print("In llmps: error has occured. Retrying...", e)
-        session = get_snowflake_session()
-        df = session.sql("select snowflake.ml.complete('llama2-7b-chat-hf', " + llmpfs_prompt + ") as response").to_pandas()
-        llmpfs_response = df.iloc[0]['RESPONSE']
-    finally:
-       print(llmpfs_response)
-       
+    session = get_snowflake_session() # Not ideal to create a session every time. This is a hack for dealing with timeouts.
+    df = session.sql("select snowflake.ml.complete('llama2-7b-chat-hf', " + llmpfs_prompt + ") as response").to_pandas()
+    llmpfs_response = df.iloc[0]['RESPONSE']
+    print(llmpfs_response)
     return jsonify([{'llmpfs_response': llmpfs_response}])
 
 @app.route('/cwd')

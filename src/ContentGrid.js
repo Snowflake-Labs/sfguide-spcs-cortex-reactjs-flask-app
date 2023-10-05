@@ -24,7 +24,7 @@ function ContentGrid() {
     <div>
       <Grid container spacing={.0}>
         <Grid xs sx={{ marginRight: '1px' }}>
-          <Item sx={{ height: '100%', paddingLeft: '50px' }}>
+          <Item sx={{ height: '100%', paddingLeft: '30px' }}>
             <Typography variant="h5" paragraph sx={{ textAlign: 'left' }}>
               Inbox
             </Typography>
@@ -32,7 +32,6 @@ function ContentGrid() {
           </Item>
         </Grid>
         <Grid xs={6} sx={{ marginRight: '1px' }}>
-          {/* <Item sx={{ height: '100%' }}><FixedBottomNavigation></FixedBottomNavigation></Item> */}
           <Item sx={{ height: '100%' }}>
             <TabPanel></TabPanel>
           </Item>
