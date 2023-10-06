@@ -10,6 +10,7 @@ privileges:
 
 #artifacts that are distributed from this version of the package
 artifacts:
+  readme: readme.md
   setup_script: setup.sql
   container_services:
     images:
