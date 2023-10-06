@@ -21,7 +21,7 @@ SNOWFLAKE_HOST = os.getenv("SNOWFLAKE_HOST")
 SNOWFLAKE_DATABASE = os.getenv("SNOWFLAKE_DATABASE")
 SNOWFLAKE_SCHEMA = os.getenv("SNOWFLAKE_SCHEMA")
 
-# Custom environment variables
+# Custom environment variables for LOCAL Testing only
 SNOWFLAKE_USER = os.getenv("SNOWFLAKE_USER")
 SNOWFLAKE_PASSWORD = os.getenv("SNOWFLAKE_PASSWORD")
 SNOWFLAKE_ROLE = os.getenv("SNOWFLAKE_ROLE")
@@ -30,8 +30,6 @@ SNOWFLAKE_WAREHOUSE = os.getenv("SNOWFLAKE_WAREHOUSE")
 # Current Environment Details
 print('Account                     : {}'.format(SNOWFLAKE_ACCOUNT))
 print('Host                        : {}'.format(SNOWFLAKE_HOST))
-print('User                        : {}'.format(SNOWFLAKE_USER))
-print('Role                        : {}'.format(SNOWFLAKE_ROLE))
 print('Database                    : {}'.format(SNOWFLAKE_DATABASE))
 print('Schema                      : {}'.format(SNOWFLAKE_SCHEMA))
 print('Warehouse                   : {}'.format(SNOWFLAKE_WAREHOUSE))
