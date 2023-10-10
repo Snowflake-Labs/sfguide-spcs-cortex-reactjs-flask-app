@@ -15,9 +15,24 @@ import AdbIcon from '@mui/icons-material/Adb';
 import TuneIcon from '@mui/icons-material/Tune';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AssessmentIcon from '@mui/icons-material/Assessment';
+import ChatIcon from '@mui/icons-material/Chat';
+import PeopleIcon from '@mui/icons-material/People';
+import GroupIcon from '@mui/icons-material/Group';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import SchoolIcon from '@mui/icons-material/School';
+import BookIcon from '@mui/icons-material/Book';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Conversations', 'Customers', 'Agents', 'Notifications', 'Training', 'Knowledgebase'];
 const settings = ['Profile', 'Account', 'Logout'];
+
+const pageIcons = {
+  'Conversations': <ChatIcon />,
+  'Customers': <PeopleIcon />,
+  'Agents': <GroupIcon />,
+  'Notifications': <NotificationsIcon />,
+  'Training': <SchoolIcon />,
+  'Knowledgebase': <BookIcon />
+};
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -90,11 +105,12 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {/* {pages.map((page) => (
+              {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  {pageIcons[page]}  {/* Render the icon */}
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
-              ))} */}
+              ))}
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -117,22 +133,24 @@ function ResponsiveAppBar() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {/* {pages.map((page) => (
+            {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{
+                  my: 2,
+                  color: page === 'Conversations' ? 'yellow' : 'white',
+                  display: 'block'
+                }}
               >
+                {pageIcons[page]}  {/* Render the icon */}
                 {page}
               </Button>
-            ))} */}
+            ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Settings">
-              {/* <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <TuneIcon/>
-              </IconButton> */}
               <TuneIcon onClick={handleOpenUserMenu} sx={{ p: 0 }}></TuneIcon>
             </Tooltip>
             <Menu

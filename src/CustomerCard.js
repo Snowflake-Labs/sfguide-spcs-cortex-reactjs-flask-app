@@ -18,6 +18,7 @@ import Box from '@mui/material/Box';
 import customer from './customer.jpg'
 import PlaceIcon from '@mui/icons-material/Place';
 import CameraFrontIcon from '@mui/icons-material/CameraFront';
+import { Divider } from '@mui/material';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -94,6 +95,7 @@ function CustomerCard() {
           <ExpandMoreIcon />
         </ExpandMore>
       </CardActions>
+      <Divider></Divider>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent sx={{ textAlign: 'left' }}>
           {/* <Typography sx={{ fontSize: 14 }} gutterBottom>

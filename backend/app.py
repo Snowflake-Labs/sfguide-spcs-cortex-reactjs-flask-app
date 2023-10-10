@@ -5,7 +5,7 @@ from snowflake.snowpark.session import Session
 from snowflake.snowpark.types import Variant
 from snowflake.snowpark.functions import udf,sum,col,array_construct,month,year,call_udf,lit
 from snowflake.snowpark.version import VERSION
-
+ 
 # # Misc
 import pandas as pd
 import json

@@ -92,11 +92,12 @@ const StyledTreeItem = React.forwardRef(function StyledTreeItem(props, ref) {
   );
 });
 
-function GmailTreeView() {
+function InboxView() {
   return (
     <TreeView
       aria-label="email"
       defaultExpanded={['5']}
+      defaultSelected={['4']} 
       defaultCollapseIcon={<ArrowDropDownIcon />}
       defaultExpandIcon={<ArrowRightIcon />}
       defaultEndIcon={<div style={{ width: 24 }} />}
@@ -173,13 +174,13 @@ function GmailTreeView() {
       />
       <StyledTreeItem nodeId="7" labelText="Trash" labelIcon={DeleteIcon} labelInfo="1991" sx={{ textAlign: 'left' }} paragraph/>
       <br/>
-      <Typography variant="h6" sx={{ textAlign: 'left' }} paragraph>
+      {/* <Typography variant="h6" sx={{ textAlign: 'left' }} paragraph>
         Assignment rules
       </Typography>
       <Typography variant="h6" sx={{ textAlign: 'left' }} paragraph>
         Reports
-      </Typography>
+      </Typography> */}
     </TreeView>
   );
 }
-export default GmailTreeView;
+export default InboxView;
