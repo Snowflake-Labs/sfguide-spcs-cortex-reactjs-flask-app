@@ -206,7 +206,7 @@ function VerticalTabs() {
             SkiGear Co
         </Typography>
 
-        <Box sx={{minHeight: '400px'}}>
+        <Box sx={{height: '400px', overflow: 'auto'}}>
             <CallerTypography>
                 Jane: Hello, this is Jane. I recently purchased a Snow49 winter jacket and I wanted to let you know how thrilled I am with it.
             </CallerTypography>
@@ -237,7 +237,7 @@ function VerticalTabs() {
             SportsGear Co
         </Typography>
 
-        <Box sx={{minHeight: '400px'}}>
+        <Box sx={{height: '400px', overflow: 'auto'}}>
             <CallerTypography>
                 Lisa: Hey, I am Lisa. I ordered a pair of Snow49 gloves but they arrived with a tear on one of them. I am quite disappointed.
             </CallerTypography>
@@ -267,7 +267,7 @@ function VerticalTabs() {
             SnowGear Co
         </Typography>
 
-        <Box sx={{minHeight: '400px'}}>
+        <Box sx={{height: '400px', overflow: 'auto'}}>
             <CallerTypography>
             Alex: Hi, I am Alex. I just wanted to check the warranty period for the Snow49 thermal wear?
             </CallerTypography>
