@@ -117,7 +117,7 @@ def llmpfs():
     llmpfs_response = df.iloc[0]['RESPONSE']
 
     # Update ticket with the call summary
-    session.sql(f"update {SNOWFLAKE_DATABASE}.{SNOWFLAKE_SCHEMA}.support_tickets set call_summary = '{llmpfs_response}' where ticket_id = {ticket_id}").collect()
+    session.sql(f"update support_tickets_ht set call_summary = '{llmpfs_response}' where ticket_id = {ticket_id}").collect()
     print(llmpfs_response)
     return jsonify([{'llmpfs_response': llmpfs_response}])
 
