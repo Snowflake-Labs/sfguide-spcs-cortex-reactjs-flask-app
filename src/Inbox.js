@@ -143,7 +143,7 @@ function InboxView() {
           nodeId="4"
           labelText="VIP Support"
           labelIcon={InfoIcon}
-          labelInfo="250"
+          labelInfo="49"
           color="#e3742f"
           bgColor="#fcefe3"
           colorForDarkMode="#FFE2B7"
