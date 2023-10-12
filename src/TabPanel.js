@@ -1,20 +1,17 @@
 import * as React from 'react';
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import TabList from '@mui/joy/TabList';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import PersonPinIcon from '@mui/icons-material/PersonPin';
-import ListItemDecorator from '@mui/joy/ListItemDecorator';
 import Stack from '@mui/material/Stack';
 import axios from 'axios';
 import Button from '@mui/material/Button';
 import SummarizeIcon from '@mui/icons-material/Summarize';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import EmailIcon from '@mui/icons-material/Email';
-import CustomerCard from './CustomerCard';
 import { Skeleton } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import Chip from '@mui/material/Chip';
@@ -88,9 +85,11 @@ function TranscriptTypography(props){
                 ( 
                     <div>
                         <Divider sx={{paddingTop: '40px'}}><Chip label="Call Summary"/></Divider>
-                        <Typography color="grey" paragraph sx={{paddingTop: '20px', textAlign: 'justify', width: '550px'}}>
+                        <Box sx={{height: '150px', overflow: 'auto'}}>
+                          <Typography color="white" paragraph sx={{paddingTop: '20px', textAlign: 'justify', width: '550px'}}>
                             {children}
-                        </Typography>
+                          </Typography>
+                        </Box>
                     </div>
                 ) : 
                 ('')

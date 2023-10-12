@@ -1,14 +1,10 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import InboxView from './Inbox';
-import FixedBottomNavigation from './FixedBottomNavigation';
 import CustomerCard from './CustomerCard';
-import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
-import Chat from './Chat';
 import TabPanel from './TabPanel';
 import { Stack } from '@mui/system';
 import SupportTicketChart from './SupportTicketChart';

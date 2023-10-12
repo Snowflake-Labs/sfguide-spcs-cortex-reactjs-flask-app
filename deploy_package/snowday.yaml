@@ -14,3 +14,5 @@ spec:
   volume:
   - name: workspace
     source: local
+  networkPolicyConfig:
+    allowInternetEgress: false
