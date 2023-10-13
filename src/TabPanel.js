@@ -230,7 +230,6 @@ function VerticalTabs() {
 
         <Divider></Divider>
         <TranscriptCTA>{0}</TranscriptCTA>
-
       </TabPanel>
 
       <TabPanel value={value} index={1} sx={{textAlign: 'left'}}>
@@ -265,8 +264,8 @@ function VerticalTabs() {
 
         <Divider></Divider>
         <TranscriptCTA>{1}</TranscriptCTA>
-
       </TabPanel>
+
       <TabPanel value={value} index={2} sx={{textAlign: 'left'}}>
         {/* 1014	114	Mia Perez	mia.perez@example.com	SnowTech	Ski Pole Defect	Ski pole is bent and unusable.	High	Closed	Support A	2023-10-08 10:45:00	2023-10-08 11:30:00	2023-10-08 11:30:00	Ski pole replaced due to manufacturing defect.		Technical Issue		2 hours	24 hours		Issue Resolved	3/5				 */}
         <CallerNameTypography>
@@ -296,7 +295,6 @@ function VerticalTabs() {
 
         <Divider></Divider>
         <TranscriptCTA>{2}</TranscriptCTA>
-
       </TabPanel>
     </Box>
   );
