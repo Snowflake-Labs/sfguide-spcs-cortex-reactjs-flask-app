@@ -48,38 +48,38 @@ function SupportTicketChart() {
   }, [chartData]);
 
   return (
-    <div style={{ overflow: 'auto' }}>
-      <Typography variant="h6" sx={{ textAlign: 'left' }}>
-        Customer Support Tickets Report
-      </Typography>
-      <ComposedChart
-        width={450}
-        height={400}
-        data={chartData}
-        margin={{ top: 20, right: 0, left: -30, bottom: 5 }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" tick={<CustomTick />} height={70} interval={0} />
-        <YAxis orientation="left" yAxisId="left" domain={[0, 'dataMax + 50']} angle={-45} textAnchor="end"/>
-        <YAxis orientation="right" yAxisId="right" domain={[0, 100]} />
-        <Tooltip />
-        <Legend verticalAlign="bottom" wrapperStyle={{ lineHeight: '40px' }} />
-        <Bar yAxisId="left" dataKey="resolvedTickets" fill="#82ca9d" name="Resolved Tickets" />
-        <Bar yAxisId="left" dataKey="totalTickets" fill="#8884d8" name="Total Tickets" />
-        <Line
-          yAxisId="right"
-          type="monotone"
-          dataKey="satisfaction"
-          stroke="#ff7300"
-          name="Cust Satisfaction"
-          dot={({ cx, cy, payload, value }) => {
-            if (payload.name === 'Nov 1') {
-              return <circle cx={cx} cy={cy} r={8} fill="#ff7300" />; // r specifies the radius. Adjust it as needed.
-            }
-            return <circle cx={cx} cy={cy} r={4} fill="#ff7300" />; // Default size for the other dots
-          }}
-        />
-      </ComposedChart>
+    <div>
+        <Typography variant="h6" sx={{ textAlign: 'left' }}>
+            Support Tickets Report
+        </Typography>
+        <ComposedChart
+            width={400}
+            height={400}
+            data={chartData}
+            margin={{ top: 20, right: 0, left: -30, bottom: 5 }}
+        >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" tick={<CustomTick />} height={70} interval={0} />
+            <YAxis orientation="left" yAxisId="left" domain={[0, 'dataMax + 50']} angle={-45} textAnchor="end" />
+            <YAxis orientation="right" yAxisId="right" domain={[0, 100]} hide={true} />
+            <Tooltip />
+            <Legend verticalAlign="bottom" wrapperStyle={{ lineHeight: '40px', marginLeft: '25px' }} />
+            <Bar yAxisId="left" dataKey="resolvedTickets" fill="#82ca9d" name="Resolved Tickets" />
+            <Bar yAxisId="left" dataKey="totalTickets" fill="#8884d8" name="Total Tickets" />
+            <Line
+                yAxisId="right"
+                type="monotone"
+                dataKey="satisfaction"
+                stroke="#ff7300"
+                name="Cust Satisfaction"
+                dot={({ cx, cy, payload, value }) => {
+                    if (payload.name === 'Nov 1') {
+                        return <circle cx={cx} cy={cy} r={8} fill="#ff7300" />;
+                    }
+                    return <circle cx={cx} cy={cy} r={4} fill="#ff7300" />;
+                }}
+            />
+        </ComposedChart>
     </div>
   );
 }
