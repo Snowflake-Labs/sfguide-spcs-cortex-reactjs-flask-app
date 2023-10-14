@@ -20,6 +20,8 @@ SNOWFLAKE_ACCOUNT = os.getenv("SNOWFLAKE_ACCOUNT")
 SNOWFLAKE_HOST = os.getenv("SNOWFLAKE_HOST")
 SNOWFLAKE_DATABASE = os.getenv("SNOWFLAKE_DATABASE")
 SNOWFLAKE_SCHEMA = os.getenv("SNOWFLAKE_SCHEMA")
+HT_DATABASE = os.getenv("HT_DATABASE")
+HT_SCHEMA = os.getenv("HT_SCHEMA")
 
 # Custom environment variables for LOCAL Testing only
 SNOWFLAKE_USER = os.getenv("SNOWFLAKE_USER")
@@ -105,20 +107,21 @@ def get_cities():
 @app.route('/llmpfs', methods=['GET', 'POST'])
 def llmpfs():
     data = request.get_json()
-    transcript = data['transcript']
+    transcript = data['transcript'].replace("'","\\'")
     ticket_id = data['ticket_id']
     # transcript = "Customer: Hello, this is Jane. I recently purchased a Snow49 winter jacket and I wanted to let you know how thrilled I am with it.\nSnow49 Representative: Hello Jane! Thank you for reaching out. We are so glad to hear that. What in particular did you like about the jacket?\nCustomer: It is incredibly warm, yet light. I wore it on a trip to the mountains and was amazed at how comfortable I felt. And the pockets are so well-designed!\nSnow49 Representative: We always aim for high quality. Your feedback is much appreciated, Jane. Enjoy your adventures in the mountains!\nCustomer: I certainly will. Thank you and kudos to the Snow49 team."
     print(f"In llmpfs for ticket id {ticket_id} and transcript {transcript}")
-    llmpfs_prompt = "'[INST] In less than 200 words, summarize this call transcript between representative and a customer. And do not use any special characters or apostrophes: " + transcript + " [/INST]'"
+    llmpfs_prompt = "'[INST] Summarize this transcript in less than 200 words without using any special characters or apostrophes. Put the product name, category and summary in JSON format : " + transcript + " [/INST]'"
     # print(llmpfs_prompt)
 
     session = get_snowflake_session() # Not ideal to create a session every time. This is a hack for dealing with timeouts.
-    df = session.sql(f"select snowflake.ml.complete('llama2-7b-chat-hf', {llmpfs_prompt}) as response").to_pandas()
-    llmpfs_response = df.iloc[0]['RESPONSE']
+    df = session.sql(f"select snowflake.ml.complete('llama2-7b-chat', {llmpfs_prompt}) as response").to_pandas()
+    llmpfs_response = df.iloc[0]['RESPONSE'].replace("'","\\'")
+    print(llmpfs_response)
 
     # Update ticket with the call summary
-    session.sql(f"update DASH_APP.DASH_SCHEMA.support_tickets_ht set call_summary = '{llmpfs_response}' where ticket_id = {ticket_id}").collect()
-    print(llmpfs_response)
+    session.sql(f"update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary = '{llmpfs_response}' where ticket_id = {ticket_id}").collect()
+
     return jsonify([{'llmpfs_response': llmpfs_response}])
 
 @app.route('/cwd')
