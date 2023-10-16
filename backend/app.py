@@ -35,6 +35,8 @@ print('User                        : {}'.format(SNOWFLAKE_USER))
 print('Host                        : {}'.format(SNOWFLAKE_HOST))
 print('Database                    : {}'.format(SNOWFLAKE_DATABASE))
 print('Schema                      : {}'.format(SNOWFLAKE_SCHEMA))
+print('HT Database                 : {}'.format(HT_DATABASE))
+print('HT Schema                   : {}'.format(HT_SCHEMA))
 print('Warehouse                   : {}'.format(SNOWFLAKE_WAREHOUSE))
 print("Current Directory           :", os.getcwd())
 
@@ -119,7 +121,8 @@ def llmpfs():
     llmpfs_response = df.iloc[0]['RESPONSE'].replace("'","\\'")
     print(llmpfs_response)
 
-    # Update ticket with the call summary
+    # Update ticket with the generated call summary
+    print("Updating ticket with the generated call summary...")
     session.sql(f"update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary = '{llmpfs_response}' where ticket_id = {ticket_id}").collect()
 
     return jsonify([{'llmpfs_response': llmpfs_response}])

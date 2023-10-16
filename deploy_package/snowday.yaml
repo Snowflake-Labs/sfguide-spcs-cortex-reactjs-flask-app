@@ -4,7 +4,7 @@ spec:
     image: /dash_db/dash_schema/dash_repo/snowday:latest
     env:
       SNOWFLAKE_WAREHOUSE: DASH_L
-      HT_DATABASE: DASH_APP
+      HT_DATABASE: DASH_DB
       HT_SCHEMA: DASH_SCHEMA
     volumeMounts: 
     - name: workspace
