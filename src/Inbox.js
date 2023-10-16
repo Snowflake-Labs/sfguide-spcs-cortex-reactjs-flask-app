@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -50,7 +50,6 @@ const StyledTreeItem = React.forwardRef(function StyledTreeItem(props, ref) {
     bgColor,
     color,
     labelIcon: LabelIcon,
-    labelInfo,
     labelText,
     colorForDarkMode,
     bgColorForDarkMode,
@@ -79,7 +78,7 @@ const StyledTreeItem = React.forwardRef(function StyledTreeItem(props, ref) {
             {labelText}
           </Typography>
           <Typography variant="caption" color="inherit">
-            {labelInfo}
+            {other.labelInfo}
           </Typography>
         </Box>
       }
@@ -91,11 +90,51 @@ const StyledTreeItem = React.forwardRef(function StyledTreeItem(props, ref) {
 });
 
 function InboxView() {
+  const [numbers, setNumbers] = useState({
+    all: 2200,
+    unassigned: 90,
+    sales: 24,
+    vipSupport: 49,
+    globalSales: 33,
+    mentions: 13,
+    trash: 1991,
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Generate random numbers for demonstration purposes
+      const newNumbers = {
+        all: Math.abs(Math.floor(Math.random() * 2200)), 
+        unassigned: Math.abs(Math.floor(Math.random() * 50)),
+        sales: Math.abs(Math.floor(Math.random() * 50)),
+        globalSales: Math.abs(Math.floor(Math.random() * 50)),
+        vipSupport: Math.abs(Math.floor(Math.random() * 50)),
+        mentions: Math.abs(Math.floor(Math.random() * 50)),
+        trash: Math.abs(Math.floor(Math.random() * 1000)),
+      };
+
+      // Calculate the total for the rest of the categories
+      newNumbers.globalSales = numbers.all - (newNumbers.unassigned + newNumbers.sales + newNumbers.vipSupport + newNumbers.mentions + newNumbers.trash);
+
+      // Highlight "All" when it changes
+      if (numbers.all !== newNumbers.all) {
+        document.getElementById("all-category").classList.add("highlight");
+        setTimeout(() => {
+          document.getElementById("all-category").classList.remove("highlight");
+        }, 1000); // Remove highlight after 1 second
+      }
+
+      setNumbers(newNumbers);
+    }, 10000); // Update every 10 seconds
+
+    return () => clearInterval(interval);
+  }, [numbers]);
+
   return (
     <TreeView
       aria-label="email"
       defaultExpanded={['5']}
-      defaultSelected={['4']} 
+      defaultSelected={['4']}
       defaultCollapseIcon={<ArrowDropDownIcon />}
       defaultExpandIcon={<ArrowRightIcon />}
       defaultEndIcon={<div style={{ width: 24 }} />}
@@ -105,54 +144,55 @@ function InboxView() {
         Conversations
       </Typography>
       <StyledTreeItem
-          nodeId="1"
-          labelText="All"
-          labelIcon={MailIcon}
-          labelInfo="3,101"
-          color="#1a73e8"
-          bgColor="#e8f0fe"
-          colorForDarkMode="#B8E7FB"
-          bgColorForDarkMode="#071318"
-          sx={{ textAlign: 'left' }}
+        nodeId="1"
+        labelText="All"
+        labelIcon={MailIcon}
+        labelInfo={numbers.sales + numbers.globalSales  + numbers.unassigned + numbers.vipSupport + numbers.mentions + numbers.trash} 
+        color="#1a73e8"
+        bgColor="#e8f0fe"
+        colorForDarkMode="#B8E7FB"
+        bgColorForDarkMode="#071318"
+        sx={{ textAlign: 'left' }}
+        id="all-category" // Add an ID for highlighting
       />
       <StyledTreeItem
-          nodeId="2"
-          labelText="Unassigned"
-          labelIcon={SupervisorAccountIcon}
-          labelInfo="90"
-          color="#1a73e8"
-          bgColor="#e8f0fe"
-          colorForDarkMode="#B8E7FB"
-          bgColorForDarkMode="#071318"
-          sx={{ textAlign: 'left' }}
+        nodeId="2"
+        labelText="Unassigned"
+        labelIcon={SupervisorAccountIcon}
+        labelInfo={numbers.unassigned} // Use dynamic numbers
+        color="#1a73e8"
+        bgColor="#e8f0fe"
+        colorForDarkMode="#B8E7FB"
+        bgColorForDarkMode="#071318"
+        sx={{ textAlign: 'left' }}
       />
       <StyledTreeItem
-          nodeId="3"
-          labelText="Sales"
-          labelIcon={LocalOfferIcon}
-          labelInfo="24"
-          color="#e3742f"
-          bgColor="#fcefe3"
-          colorForDarkMode="#FFE2B7"
-          bgColorForDarkMode="#191207"
-          sx={{ textAlign: 'left' }}
+        nodeId="3"
+        labelText="Sales"
+        labelIcon={LocalOfferIcon}
+        labelInfo={numbers.sales} // Use dynamic numbers
+        color="#e3742f"
+        bgColor="#fcefe3"
+        colorForDarkMode="#FFE2B7"
+        bgColorForDarkMode="#191207"
+        sx={{ textAlign: 'left' }}
       />
       <StyledTreeItem
-          nodeId="4"
-          labelText="VIP Support"
-          labelIcon={InfoIcon}
-          labelInfo="49"
-          color="#e3742f"
-          bgColor="#fcefe3"
-          colorForDarkMode="#FFE2B7"
-          bgColorForDarkMode="#191207"
-          sx={{ textAlign: 'left' }}
+        nodeId="4"
+        labelText="VIP Support"
+        labelIcon={InfoIcon}
+        labelInfo={49} //{numbers.vipSupport.toString()} // Use dynamic numbers
+        color="#e3742f"
+        bgColor="#fcefe3"
+        colorForDarkMode="#FFE2B7"
+        bgColorForDarkMode="#191207"
+        sx={{ textAlign: 'left' }}
       />
       <StyledTreeItem
         nodeId="5"
         labelText="Global Sales"
         labelIcon={LocalOfferIcon}
-        labelInfo="733"
+        labelInfo={numbers.globalSales} // Use dynamic numbers
         color="#3c8039"
         bgColor="#e6f4ea"
         colorForDarkMode="#CCE8CD"
@@ -163,22 +203,24 @@ function InboxView() {
         nodeId="6"
         labelText="Mentions"
         labelIcon={ForumIcon}
-        labelInfo="13"
+        labelInfo={numbers.mentions} // Use dynamic numbers
         color="#a250f5"
         bgColor="#f3e8fd"
         colorForDarkMode="#D9B8FB"
         bgColorForDarkMode="#100719"
         sx={{ textAlign: 'left' }}
       />
-      <StyledTreeItem nodeId="7" labelText="Trash" labelIcon={DeleteIcon} labelInfo="1991" sx={{ textAlign: 'left' }} paragraph/>
-      <br/>
-      {/* <Typography variant="h6" sx={{ textAlign: 'left' }} paragraph>
-        Assignment rules
-      </Typography>
-      <Typography variant="h6" sx={{ textAlign: 'left' }} paragraph>
-        Reports
-      </Typography> */}
+      <StyledTreeItem
+        nodeId="7"
+        labelText="Trash"
+        labelIcon={DeleteIcon}
+        labelInfo={numbers.trash} // Use dynamic numbers
+        sx={{ textAlign: 'left' }}
+        paragraph
+      />
+      <br />
     </TreeView>
   );
 }
+
 export default InboxView;

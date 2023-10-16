@@ -20,7 +20,7 @@ const baseURL = window.location.href;
 console.log('baseURL: '+baseURL)
 
 function TabPanel(props) {
-  const { children, value, index, ...other } = props;
+  const { children, value, index} = props;
 
     // Load data from the backend
     // useEffect(() => {
@@ -45,7 +45,6 @@ function TabPanel(props) {
       hidden={value !== index}
       id={`vertical-tabpanel-${index}`}
       aria-labelledby={`vertical-tab-${index}`}
-      {...other}
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
@@ -57,28 +56,28 @@ function TabPanel(props) {
 }
 
 function CallerNameTypography(props){
-    const { children, value, index, ...other } = props;
+    const { children } = props;
     return (
         <Typography variant="h5" sx={{textAlign: 'left', width: '450px'}}>{children}</Typography>
       );    
 }
 
 function CallerTypography(props){
-    const { children, value, index, ...other } = props;
+    const { children } = props;
     return (
         <Typography color="lightblue" paragraph sx={{textAlign: 'justify', width: '550px'}}>{children}</Typography>
       );    
 }
 
 function RepTypography(props){
-    const { children, value, index, ...other } = props;
+    const { children } = props;
     return (
         <Typography color="white" paragraph sx={{textAlign: 'justify', width: '550px', fontStyle: 'italic'}}>{children}</Typography>
       );    
 }
 
 function TranscriptTypography(props){
-    const {children, value, index, ...other } = props;
+    const {children } = props;
     return (
         <div>
             {children ? 
@@ -143,7 +142,7 @@ function VerticalTabs() {
   };  
 
   function TranscriptCTA(props){
-    const {children, value, index, ...other } = props;
+    const {children } = props;
     const transcript = transcripts[children].content;
     const ticket_id = transcripts[children].ticket_id
     // console.log(transcripts[children].content);
@@ -194,9 +193,9 @@ function VerticalTabs() {
         aria-label="Conversations"
         sx={{ borderRight: 1, borderColor: 'divider'}}
       >
-        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Emily Brown SnowSense" {...a11yProps(1)} sx={{textAlign: 'left', width: '75%'}}></Tab>
-        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Michael Green SnowSolutions" {...a11yProps(1)} sx={{textAlign: 'left', width: '75%'}}/>
-        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Mia Perez SnowTech" {...a11yProps(1)} sx={{textAlign: 'left', width: '75%'}}/>
+        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Emily Brown SnowSense" {...a11yProps(1)} sx={{textAlign: 'left',  fontSize: '16px'}}></Tab>
+        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Michael Green SnowSolutions" {...a11yProps(1)} sx={{textAlign: 'left', fontSize: '16px'}}></Tab>
+        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Mia Perez SnowTech" {...a11yProps(1)} sx={{textAlign: 'left', fontSize: '16px'}}></Tab>
       </Tabs>
       <TabPanel value={value} index={0}>
         {/* 1005	105	Emily Brown	emily.brown@example.com	SnowSense	Snowboard Delamination	Snowboard layers delaminating.	High	In Progress	Support B	2023-10-05 13:55:00	2023-10-05 13:55:00		Investigating snowboard delamination issue reported by the customer.		Gear Quality		1 hour	24 hours							 */}
@@ -205,10 +204,11 @@ function VerticalTabs() {
         </CallerNameTypography>
         <Typography variant="h7" paragraph sx={{textAlign: 'left', width: '100%'}}>
           SnowSense
-          <Typography variant="caption" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '57%'}}>
+          <Typography variant="caption" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '57%', color: 'white'}}>
             Ticket Status: In Progress
           </Typography>
         </Typography>
+        <Divider></Divider>
 
         <Box sx={{height: '400px', overflow: 'auto'}}>
             <CallerTypography>
@@ -239,10 +239,11 @@ function VerticalTabs() {
         </CallerNameTypography>
         <Typography variant="h7" paragraph sx={{textAlign: 'left'}}>
           SnowSolutions
-          <Typography variant="caption" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '59%'}}>
+          <Typography variant="caption" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '59%', color: 'white'}}>
               Ticket Status: Open
           </Typography>
         </Typography>
+        <Divider></Divider>
 
         <Box sx={{height: '400px', overflow: 'auto'}}>
             <CallerTypography>
@@ -273,10 +274,11 @@ function VerticalTabs() {
         </CallerNameTypography>
         <Typography variant="h7" paragraph sx={{textAlign: 'left'}}>
           SnowTech
-          <Typography variant="caption" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '64%'}}>
-              Ticket Status: Closed
+          <Typography variant="caption" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '65%', color: 'white'}}>
+              Ticket Status: Open
           </Typography>
         </Typography>
+        <Divider></Divider>
 
         <Box sx={{height: '400px', overflow: 'auto'}}>
             <CallerTypography>
