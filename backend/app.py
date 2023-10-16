@@ -123,9 +123,12 @@ def llmpfs():
 
     # Update ticket with the generated call summary
     print("Updating ticket with the generated call summary...")
-    session.sql(f"update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary = '{llmpfs_response}' where ticket_id = {ticket_id}").collect()
-
-    return jsonify([{'llmpfs_response': llmpfs_response}])
+    try:
+      session.sql(f"update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary = '{llmpfs_response}' where ticket_id = {ticket_id}").collect()
+    except Exception as e:
+       print(f'Caught {type(e)} while executing update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary...')
+    finally:
+       return jsonify([{'llmpfs_response': llmpfs_response}])
 
 @app.route('/cwd')
 def print_cwd():
