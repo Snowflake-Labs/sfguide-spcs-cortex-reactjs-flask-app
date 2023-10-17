@@ -206,7 +206,7 @@ function VerticalTabs() {
         </CallerNameTypography>
         <Typography variant="h7" paragraph sx={{textAlign: 'left', width: '100%'}}>
           SnowSense
-          <Typography variant="caption" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '57%', color: 'white'}}>
+          <Typography variant="h7" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '50%', color: 'white'}}>
             Ticket Status: In Progress
           </Typography>
         </Typography>
@@ -284,7 +284,7 @@ function VerticalTabs() {
         </CallerNameTypography>
         <Typography variant="h7" paragraph sx={{textAlign: 'left'}}>
           SnowSolutions
-          <Typography variant="caption" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '59%', color: 'white'}}>
+          <Typography variant="h7" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '54%', color: 'white'}}>
               Ticket Status: Open
           </Typography>
         </Typography>
@@ -359,7 +359,7 @@ function VerticalTabs() {
         </CallerNameTypography>
         <Typography variant="h7" paragraph sx={{textAlign: 'left'}}>
           SnowTech
-          <Typography variant="caption" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '65%', color: 'white'}}>
+          <Typography variant="h7" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '60%', color: 'white'}}>
               Ticket Status: Open
           </Typography>
         </Typography>

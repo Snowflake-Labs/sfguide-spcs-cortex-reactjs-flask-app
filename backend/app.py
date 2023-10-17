@@ -118,7 +118,7 @@ def llmpfs():
 
     session = get_snowflake_session() # Not ideal to create a session every time. This is a hack for dealing with timeouts.
     df = session.sql(f"select snowflake.ml.complete('llama2-70b-chat', {llmpfs_prompt}) as response").to_pandas()
-    llmpfs_response = df.iloc[0]['RESPONSE']
+    llmpfs_response = df.iloc[0]['RESPONSE'].replace("'","\\'")
     print(llmpfs_response)
 
     # Update ticket with the generated call summary
