@@ -225,3 +225,24 @@ body.dark-mode .dark-mode-toggle {
   border-radius: 5px;
   background-color: rgba(0,0,0,0.1);
 }
+
+.blended-scrollbar-tabpanel {
+  height: 400px;
+  overflow-y: auto; /* This allows vertical scrolling */
+  overflow-x: hidden; /* This hides the horizontal scrollbar */
+}
+
+.blended-scrollbar-tabpanel::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.blended-scrollbarv-tabpanel::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+
+.blended-scrollbar-tabpanel::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.1);
+}

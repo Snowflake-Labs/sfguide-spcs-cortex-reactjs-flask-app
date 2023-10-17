@@ -116,9 +116,9 @@ function VerticalTabs() {
   const [loading, setLoading] = useState(false);
   const [summary, setSummary] = React.useState('')
   const transcripts = [
-    {id: 1, ticket_id: 1005, customer: 'Emily Brown', content: 'Emily: Hello, this is Emily. I recently purchased a snowboard and I wanted to let you know that the snowboard layers are delaminating. I am quite disappointed.Representative: Oh, I am terribly sorry to hear that, Emily. This is not the experience we want for our customers. Let us get this sorted right away. Would you like a replacement or a refund?\nI would prefer a replacement. I really liked the Snowboard, just need one without a defect.\nAbsolutely, Emily. We will send out a replacement ASAP. Once again, I apologize for the inconvenience and thank you for bringing it to our attention.\nThanks for understanding. I hope the next Snowboard will be perfect.'},
-    {id: 2, ticket_id: 1008, customer: 'Michael Green', content: 'Customer: Hey, I am Michael. I ordered a pair of gloves but they arrived with a tear on one of them. I am quite disappointed.\nRepresentative: Oh, I am terribly sorry to hear that, Michael. This is not the experience we want for our customers. Let us get this sorted right away. Would you like a replacement or a refund?\nCustomer: I would prefer a replacement. I really liked the gloves, just need one without a defect.\nRepresentative: Absolutely, Michael. We will send out a replacement ASAP. Once again, I apologize for the inconvenience and thank you for bringing it to our attention.\nCustomer: Thanks for understanding. I hope the next pair will be perfect.'},
-    {id: 3, ticket_id: 1014, customer: 'Mia Perez', content: 'Customer: Hi, I am Mia. I just wanted to check the warranty period for the thermal wear?\nRepresentative: Hello, Mia! All thermal wear comes with a one-year warranty from the date of purchase. This covers any manufacturing defects. Do you have a specific issue or just inquiring?\nCustomer: No specific issue. I was just checking before making a purchase. Thanks for the info.\nRepresentative: You are welcome, Mia. If you have any other questions, feel free to ask. Have a great day!'}
+    {id: 1, ticket_id: 1005, customer: 'Emily Brown', content: "Customer: Hello there\nAgent: Hello, I hope you're having a great day. To provide you with the most help, can you please share your first and last name and the company you are calling from?\nCustomer: Hi, I'm Emily Brown from SnowSense.\nAgent: Thanks Emily, tell me what are you calling about today?\nCustomer: We recently received an order of XtremeX helmets, and some of them came in with noticeable scratches on the surface. We were hoping to get them replaced since we need them to be in pristine condition for our customers. Our order number is 21649.\nAgent: I'm sorry to hear that, Emily. I understand how having scratched helmets can affect your business image. Let me check your order details, and I'll see what we can do for you.\nCustomer: Thank you, I appreciate your help.\nAgent: I've reviewed the order Emily, and we'll be able to replace all the scratched helmets for you. To expedite this process, could you please provide the exact number of helmets with scratches, and if possible, their respective sizes?\nCustomer: Sure, we have 4 medium-sized helmets and 3 large helmets with scratches.\nAgent: Thanks for the information, Emily. I've processed the replacement for those helmets, and you should receive them within the next 3-5 business days. Additionally, I'll arrange for a courier to pick up the damaged helmets from your location. You'll be provided with pre-paid return labels in the new shipment.\nCustomer: That's great, thank you for your assistance.\nAgent: You're welcome, Emily. If you have any other questions or concerns, please let me know. Have a great day!\nCustomer: You too! Goodbye.Agent: Goodbye, Emily! Take care."},
+    {id: 2, ticket_id: 1008, customer: 'Michael Green', content: "Customer: Hello!\nAgent: Hello! I hope you're having a great day. To best assist you, can you please share your first and last name and the company you're calling from?\nCustomer: Sure, I'm Michael Green from SnowSolutions.\nAgent: Thanks, Michael! What can I help you with today?\nCustomer: We recently ordered several DryProof670 jackets for our store, but when we opened the package, we noticed that half of the jackets have broken zippers. We need to replace them quickly to ensure we have sufficient stock for our customers. Our order number is 60877.\nAgent: I apologize for the inconvenience, Michael. Let me look into your order. It might take me a moment.\nCustomer: Thank you.\nAgent: Michael, I've confirmed your order and the damage. Fortunately, we currently have enough stock to replace the damaged jackets. We'll send out the replacement jackets immediately, and they should arrive within 3-5 business days.\nCustomer: That's great to hear! How should we handle returning the damaged jackets?\nAgent: We will provide you with a return shipping label so that you can send the damaged jackets back to us at no cost to you. Please place the jackets in the original packaging or a similar box.\nCustomer: Sounds good! Thanks for your help.\nAgent: You're welcome, Michael! We apologize for the inconvenience, and thank you for your patience. Please don't hesitate to contact us if you have any further questions or concerns. Have a great day!\nCustomer: Thank you! You too."},
+    {id: 3, ticket_id: 1014, customer: 'Mia Perez', content: "Customer: Hello\nAgent: Hello, I hope you're having a great day. To best assist you, can you please share your first and last name and the company you are calling from?\nCustomer: Yes, I'm Mia Perez from SnowTech.\nAgent: Thanks, Mia. Tell me what you're calling about today.\nCustomer: Well, we received 40 new DryProof670 jackets that we ordered for our rental store. However, it seems that about half of them have broken zippers. Is there any way we can get these jackets replaced or repaired?\nAgent: I understand that can be quite troublesome for your business. Let me check what's going on with your order. To confirm, your order ends in 18851, correct?\nCustomer: Yes, that's the one.\nAgent: I see. It looks like this is the first time we've heard of this specific model having such poor quality, and we're genuinely sorry about that. We'd like to make this right for you. I can arrange for a new shipment containing replacement jackets in the correct size to be sent out right away. Additionally, we'll organize a pick-up for the damaged jackets at no cost to you. Would this work for you?\nCustomer: That would be great. I appreciate your help with this issue.\nAgent: You're welcome, Mia. We'll make sure to get this taken care of as soon as possible. Once again, we apologize for the inconvenience, and hope that you continue to choose our products in the future. Have a great day."}
   ];
 
   const handleChange = (event, newValue) => {
@@ -200,7 +200,7 @@ function VerticalTabs() {
         <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Mia Perez SnowTech" {...a11yProps(1)} sx={{textAlign: 'left', fontSize: '16px', height: '250px'}}></Tab>
       </Tabs>
       <TabPanel value={value} index={0}>
-        {/* 1005	105	Emily Brown	emily.brown@example.com	SnowSense	Snowboard Delamination	Snowboard layers delaminating.	High	In Progress	Support B	2023-10-05 13:55:00	2023-10-05 13:55:00		Investigating snowboard delamination issue reported by the customer.		Gear Quality		1 hour	24 hours							 */}
+        {/* 1005	105	Emily Brown	SnowSense */}
         <CallerNameTypography>
           Emily Brown
         </CallerNameTypography>
@@ -212,22 +212,65 @@ function VerticalTabs() {
         </Typography>
         <Divider></Divider>
 
-        <Box sx={{height: '400px', overflow: 'auto'}}>
-            <CallerTypography>
-              Emily: Hello, this is Emily. I recently purchased a Snowboard and I wanted to let you know that the snowboard layers are delaminating. I am quite disappointed.
-            </CallerTypography>
-            <RepTypography>
-              Representative: Oh, I am terribly sorry to hear that, Emily. This is not the experience we want for our customers. Let us get this sorted right away. Would you like a replacement or a refund?
-            </RepTypography>
-            <CallerTypography>
-              Emily: I would prefer a replacement. I really liked the Snowboard, just need one without a defect.
-            </CallerTypography>
-            <RepTypography>
-              Representative: Absolutely, Emily. We will send out a replacement ASAP. Once again, I apologize for the inconvenience and thank you for bringing it to our attention.
-            </RepTypography>
-            <CallerTypography>
-              Emily: Thanks for understanding. I hope the next Snowboard will be perfect.
-            </CallerTypography>
+        <Box className="blended-scrollbar-tabpanel">
+          <CallerTypography>
+            Customer: Hello there
+          </CallerTypography>
+          <RepTypography>
+            Agent: Hello, I hope you're having a great day. To provide you with the most help, can you please share your first and last name and the company you are calling from?
+          </RepTypography>
+          <CallerTypography>
+            Customer: Hi, I'm Emily Brown from SnowSense.
+          </CallerTypography>
+          <RepTypography>
+            Agent: Thanks Emily, tell me what are you calling about today?
+          </RepTypography>
+          <CallerTypography>
+            Customer: We recently received an order of XtremeX helmets, and some of them came in with noticeable scratches on the surface. We were hoping to get them replaced since we need them to be in pristine condition for our customers. Our order number is 21649.
+          </CallerTypography>
+          <RepTypography>
+            Agent: I'm sorry to hear that, Emily. I understand how having scratched helmets can affect your business image. Let me check your order details, and I'll see what we can do for you.
+          </RepTypography>
+          <CallerTypography>
+            Customer: Thank you, I appreciate your help.
+          </CallerTypography>
+          <RepTypography>
+            Agent: I've reviewed the order Emily, and we'll be able to replace all the scratched helmets for you. To expedite this process, could you please provide the exact number of helmets with scratches, and if possible, their respective sizes?
+          </RepTypography>
+          <CallerTypography>
+            Customer: Sure, we have 4 medium-sized helmets and 3 large helmets with scratches.
+          </CallerTypography>
+          <RepTypography>
+            Agent: Thanks for the information, Emily. I've processed the replacement for those helmets, and you should receive them within the next 3-5 business days. Additionally, I'll arrange for a courier to pick up the damaged helmets from your location. You'll be provided with pre-paid return labels in the new shipment.
+          </RepTypography>
+          <CallerTypography>
+            Customer: That's great, thank you for your assistance.
+          </CallerTypography>
+          <RepTypography>
+            Agent: You're welcome, Emily. If you have any other questions or concerns, please let me know. Have a great day!
+          </RepTypography>
+          <CallerTypography>
+            Customer: You too! Goodbye.
+          </CallerTypography>
+          <RepTypography>
+            Agent: Goodbye, Emily! Take care.
+          </RepTypography>
+
+          {/* <CallerTypography>
+            Emily: Hello, this is Emily. I recently purchased a Snowboard and I wanted to let you know that the snowboard layers are delaminating. I am quite disappointed.
+          </CallerTypography>
+          <RepTypography>
+            Representative: Oh, I am terribly sorry to hear that, Emily. This is not the experience we want for our customers. Let us get this sorted right away. Would you like a replacement or a refund?
+          </RepTypography>
+          <CallerTypography>
+            Emily: I would prefer a replacement. I really liked the Snowboard, just need one without a defect.
+          </CallerTypography>
+          <RepTypography>
+            Representative: Absolutely, Emily. We will send out a replacement ASAP. Once again, I apologize for the inconvenience and thank you for bringing it to our attention.
+          </RepTypography>
+          <CallerTypography>
+            Emily: Thanks for understanding. I hope the next Snowboard will be perfect.
+          </CallerTypography> */}
         </Box>
 
         <Divider></Divider>
@@ -235,7 +278,7 @@ function VerticalTabs() {
       </TabPanel>
 
       <TabPanel value={value} index={1} sx={{textAlign: 'left'}}>
-        {/* 1008	108	Michael Green	michael.green@example.com	SnowSolutions	Snow Ski Quality Problem	Ski surface is rough and damaged.	High	Open	Support A	2023-10-06 14:05:00	2023-10-06 14:05:00		Customer complaining about ski surface quality.		Gear Quality		2 hours	24 hours							 */}
+        {/* 1008	108	Michael Green	SnowSolutions */}
         <CallerNameTypography>
           Michael Green
         </CallerNameTypography>
@@ -247,22 +290,62 @@ function VerticalTabs() {
         </Typography>
         <Divider></Divider>
 
-        <Box sx={{height: '400px', overflow: 'auto'}}>
-            <CallerTypography>
-              Michael: Hey, I am Michael. I ordered a pair of gloves but they arrived with a tear on one of them. I am quite disappointed.
+        <Box className="blended-scrollbar-tabpanel">
+          <CallerTypography>
+            Customer: Hello!
+          </CallerTypography>
+          <RepTypography>
+            Agent: Hello! I hope you're having a great day. To best assist you, can you please share your first and last name and the company you're calling from?
+          </RepTypography>
+          <CallerTypography>
+            Customer: Sure, I'm Michael Green from SnowSolutions.
             </CallerTypography>
-            <RepTypography>
-              Representative: Oh, I am terribly sorry to hear that, Michael. This is not the experience we want for our customers. Let us get this sorted right away. Would you like a replacement or a refund?
-            </RepTypography>
-            <CallerTypography>
-              Michael: I would prefer a replacement. I really liked the gloves, just need one without a defect.
-            </CallerTypography>
-            <RepTypography>
-              Representative: Absolutely, Michael. We will send out a replacement ASAP. Once again, I apologize for the inconvenience and thank you for bringing it to our attention.
-            </RepTypography>
-            <CallerTypography>
-              Michael: Thanks for understanding. I hope the next pair will be perfect.
-            </CallerTypography>
+          <RepTypography>
+            Agent: Thanks, Michael! What can I help you with today?
+          </RepTypography>
+          <CallerTypography>
+            Customer: We recently ordered several DryProof670 jackets for our store, but when we opened the package, we noticed that half of the jackets have broken zippers. We need to replace them quickly to ensure we have sufficient stock for our customers. Our order number is 60877.
+          </CallerTypography>
+          <RepTypography>
+            Agent: I apologize for the inconvenience, Michael. Let me look into your order. It might take me a moment.
+          </RepTypography>
+          <CallerTypography>
+            Customer: Thank you.
+          </CallerTypography>
+          <RepTypography>
+            Agent: Michael, I've confirmed your order and the damage. Fortunately, we currently have enough stock to replace the damaged jackets. We'll send out the replacement jackets immediately, and they should arrive within 3-5 business days.
+          </RepTypography>
+          <CallerTypography>
+            Customer: That's great to hear! How should we handle returning the damaged jackets?
+          </CallerTypography>
+          <RepTypography>
+            Agent: We will provide you with a return shipping label so that you can send the damaged jackets back to us at no cost to you. Please place the jackets in the original packaging or a similar box.
+          </RepTypography>
+          <CallerTypography>
+            Customer: Sounds good! Thanks for your help.
+          </CallerTypography>
+          <RepTypography>
+            Agent: You're welcome, Michael! We apologize for the inconvenience, and thank you for your patience. Please don't hesitate to contact us if you have any further questions or concerns. Have a great day!
+          </RepTypography>
+          <CallerTypography>
+            Customer: Thank you! You too.
+          </CallerTypography>
+
+          {/* <CallerTypography>
+            Michael: Hey, I am Michael. I ordered a pair of gloves but they arrived with a tear on one of them. I am quite disappointed.
+          </CallerTypography>
+          <RepTypography>
+            Representative: Oh, I am terribly sorry to hear that, Michael. This is not the experience we want for our customers. Let us get this sorted right away. Would you like a replacement or a refund?
+          </RepTypography>
+          <CallerTypography>
+            Michael: I would prefer a replacement. I really liked the gloves, just need one without a defect.
+          </CallerTypography>
+          <RepTypography>
+            Representative: Absolutely, Michael. We will send out a replacement ASAP. Once again, I apologize for the inconvenience and thank you for bringing it to our attention.
+          </RepTypography>
+          <CallerTypography>
+            Michael: Thanks for understanding. I hope the next pair will be perfect.
+          </CallerTypography> */}
         </Box>
 
         <Divider></Divider>
@@ -282,19 +365,50 @@ function VerticalTabs() {
         </Typography>
         <Divider></Divider>
 
-        <Box sx={{height: '400px', overflow: 'auto'}}>
-            <CallerTypography>
-              Mia: Hi, I am Alex. I just wanted to check the warranty period for the thermal wear?
-            </CallerTypography>
-            <RepTypography>
-              Representative: Hello, Mia! All thermal wear comes with a one-year warranty from the date of purchase. This covers any manufacturing defects. Do you have a specific issue or just inquiring?
-            </RepTypography>
-            <CallerTypography>
-              Mia: No specific issue. I was just checking before making a purchase. Thanks for the info.
-            </CallerTypography>
-            <RepTypography>
-              Representative: You are welcome, Mia. If you have any other questions, feel free to ask. Have a great day!
-            </RepTypography>
+        <Box className="blended-scrollbar-tabpanel">
+          <CallerTypography>
+            Customer: Hello
+          </CallerTypography>
+          <RepTypography>         
+            Agent: Hello, I hope you're having a great day. To best assist you, can you please share your first and last name and the company you are calling from?
+          </RepTypography>         
+          <CallerTypography>
+            Customer: Yes, I'm Mia Perez from SnowTech.
+          </CallerTypography>
+          <RepTypography>
+            Agent: Thanks, Mia. Tell me what you're calling about today.
+          </RepTypography>         
+          <CallerTypography>
+            Customer: Well, we received 40 new DryProof670 jackets that we ordered for our rental store. However, it seems that about half of them have broken zippers. Is there any way we can get these jackets replaced or repaired?
+          </CallerTypography>
+          <RepTypography>
+            Agent: I understand that can be quite troublesome for your business. Let me check what's going on with your order. To confirm, your order ends in 18851, correct?
+          </RepTypography>         
+          <CallerTypography>
+            Customer: Yes, that's the one.
+          </CallerTypography>
+          <RepTypography>
+            Agent: I see. It looks like this is the first time we've heard of this specific model having such poor quality, and we're genuinely sorry about that. We'd like to make this right for you. I can arrange for a new shipment containing replacement jackets in the correct size to be sent out right away. Additionally, we'll organize a pick-up for the damaged jackets at no cost to you. Would this work for you?
+          </RepTypography>         
+          <CallerTypography>
+            Customer: That would be great. I appreciate your help with this issue. 
+          </CallerTypography>
+          <RepTypography>
+            Agent: You're welcome, Mia. We'll make sure to get this taken care of as soon as possible. Once again, we apologize for the inconvenience, and hope that you continue to choose our products in the future. Have a great day.
+          </RepTypography>         
+
+          {/* <CallerTypography>
+            Mia: Hi, I am Alex. I just wanted to check the warranty period for the thermal wear?
+          </CallerTypography>
+          <RepTypography>
+            Representative: Hello, Mia! All thermal wear comes with a one-year warranty from the date of purchase. This covers any manufacturing defects. Do you have a specific issue or just inquiring?
+          </RepTypography>
+          <CallerTypography>
+            Mia: No specific issue. I was just checking before making a purchase. Thanks for the info.
+          </CallerTypography>
+          <RepTypography>
+            Representative: You are welcome, Mia. If you have any other questions, feel free to ask. Have a great day!
+          </RepTypography> */}
         </Box>
 
         <Divider></Divider>

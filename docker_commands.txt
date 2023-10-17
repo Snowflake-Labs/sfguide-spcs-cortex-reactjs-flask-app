@@ -4,8 +4,15 @@ docker run --env-file /Users/ddesai/env.list -p 5000:5000 snowday
 --- 
 
 docker tag snowday:latest qa6-llmpfs.registry-dev.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest
-docker login qa6-llmpfs.registry-dev.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday
+docker login qa6-llmpfs.registry-dev.snowflakecomputing.com
 docker push qa6-llmpfs.registry-dev.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest
+
+
+
+
+
+
+
 
 
 
@@ -19,13 +26,13 @@ docker push qa6-llmpfs.registry-dev.snowflakecomputing.com/dash_db/dash_schema/d
 --- 
 
 docker tag snowday:latest sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday:latest
-docker login sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday
+docker login sfengineering-servicesnow.registry.snowflakecomputing.com
 docker push sfengineering-servicesnow.registry.snowflakecomputing.com/dash_db/public/dash_repo/snowday:latest
 
 ---
 
 docker tag snowday:latest SFSENORTHAMERICA-JHOLLAN.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest
-docker login SFSENORTHAMERICA-JHOLLAN.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday
+docker login SFSENORTHAMERICA-JHOLLAN.registry.snowflakecomputing.com
 docker push SFSENORTHAMERICA-JHOLLAN.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest
 
 ---
