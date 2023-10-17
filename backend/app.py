@@ -113,22 +113,23 @@ def llmpfs():
     ticket_id = data['ticket_id']
     # transcript = "Customer: Hello, this is Jane. I recently purchased a Snow49 winter jacket and I wanted to let you know how thrilled I am with it.\nSnow49 Representative: Hello Jane! Thank you for reaching out. We are so glad to hear that. What in particular did you like about the jacket?\nCustomer: It is incredibly warm, yet light. I wore it on a trip to the mountains and was amazed at how comfortable I felt. And the pockets are so well-designed!\nSnow49 Representative: We always aim for high quality. Your feedback is much appreciated, Jane. Enjoy your adventures in the mountains!\nCustomer: I certainly will. Thank you and kudos to the Snow49 team."
     print(f"In llmpfs for ticket id {ticket_id} and transcript {transcript}")
-    llmpfs_prompt = "'[INST] Summarize this transcript in less than 200 words without using any special characters or apostrophes. Put the product name, category and summary in JSON format : " + transcript + " [/INST]'"
+    llmpfs_prompt = "'[INST] Summarize this transcript in less than 200 words. Put the product name, defect, and summary and insert line breaks literally bewteen each line item. Do not using any special characters or apostrophes or repeat any part of the prompt in your response: " + transcript + " [/INST]'"
     # print(llmpfs_prompt)
 
     session = get_snowflake_session() # Not ideal to create a session every time. This is a hack for dealing with timeouts.
     df = session.sql(f"select snowflake.ml.complete('llama2-7b-chat', {llmpfs_prompt}) as response").to_pandas()
-    llmpfs_response = df.iloc[0]['RESPONSE'].replace("'","\\'")
+    llmpfs_response = df.iloc[0]['RESPONSE']
     print(llmpfs_response)
 
     # Update ticket with the generated call summary
-    print("Updating ticket with the generated call summary...")
     try:
-      session.sql(f"update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary = '{llmpfs_response}' where ticket_id = {ticket_id}").collect()
+      update_sql = f"update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary = '{llmpfs_response}' where ticket_id = {ticket_id}"
+      print(f"Executing {update_sql}")
+      session.sql(update_sql).collect()
     except Exception as e:
-       print(f'Caught {type(e)} while executing update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary...')
+      print(f'Caught {type(e)} while executing {update_sql}')
     finally:
-       return jsonify([{'llmpfs_response': llmpfs_response}])
+      return jsonify([{'llmpfs_response': llmpfs_response}])
 
 @app.route('/cwd')
 def print_cwd():

@@ -83,9 +83,10 @@ function TranscriptTypography(props){
             {children ? 
                 ( 
                     <div>
-                        <Divider sx={{paddingTop: '40px'}}><Chip label="Call Summary"/></Divider>
-                        <Box sx={{height: '150px', overflow: 'auto'}}>
-                          <Typography color="white" paragraph sx={{paddingTop: '20px', textAlign: 'justify', width: '550px'}}>
+                        <Divider sx={{paddingTop: '20px'}}><Chip label="Call Summary"/></Divider>
+                        <Box className="blended-scrollbar">
+                          <Typography color="white" paragraph sx={{paddingTop: '10px', textAlign: 'justify', width: '550px'}}>
+                            {/* Product: Snowboard Defect: Delaminating layers Summary: Emily contacted the representative to report a defect in her recently purchased snowboard. The layers of the snowboard are delaminating, causing disappointment. The representative apologized and offered a replacement or refund. Emily preferred a replacement, and the representative assured her that a new snowboard would be sent out as soon as possible. */}
                             {children}
                           </Typography>
                         </Box>
@@ -168,8 +169,9 @@ function VerticalTabs() {
             {
                 loading ? (
                     <div>
-                        <Skeleton animation="wave" sx={{marginTop: '50px', paddingTop: '10px', alignContent: 'center', height: '100%'}} />
-                        <Skeleton animation="wave" sx={{paddingTop: '50px', alignContent: 'center', height: '100%'}} />
+                        <Skeleton animation="wave" sx={{marginTop: '30px', paddingTop: '5px', alignContent: 'center', height: '100%'}} />
+                        <Skeleton animation="wave" sx={{paddingTop: '30px', alignContent: 'center', height: '100%'}} />
+                        <Skeleton animation="wave" sx={{paddingTop: '40px', alignContent: 'center', height: '100%'}} />
                         <Skeleton animation="wave" sx={{paddingTop: '50px', alignContent: 'center', height: '100%'}} />
                     </div>
                 ) : (
@@ -193,9 +195,9 @@ function VerticalTabs() {
         aria-label="Conversations"
         sx={{ borderRight: 1, borderColor: 'divider'}}
       >
-        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Emily Brown SnowSense" {...a11yProps(1)} sx={{textAlign: 'left',  fontSize: '16px'}}></Tab>
-        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Michael Green SnowSolutions" {...a11yProps(1)} sx={{textAlign: 'left', fontSize: '16px'}}></Tab>
-        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Mia Perez SnowTech" {...a11yProps(1)} sx={{textAlign: 'left', fontSize: '16px'}}></Tab>
+        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Emily Brown SnowSense" {...a11yProps(1)} sx={{textAlign: 'left',  fontSize: '16px', height: '250px'}}></Tab>
+        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Michael Green SnowSolutions" {...a11yProps(1)} sx={{textAlign: 'left', fontSize: '16px', height: '250px'}}></Tab>
+        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Mia Perez SnowTech" {...a11yProps(1)} sx={{textAlign: 'left', fontSize: '16px', height: '250px'}}></Tab>
       </Tabs>
       <TabPanel value={value} index={0}>
         {/* 1005	105	Emily Brown	emily.brown@example.com	SnowSense	Snowboard Delamination	Snowboard layers delaminating.	High	In Progress	Support B	2023-10-05 13:55:00	2023-10-05 13:55:00		Investigating snowboard delamination issue reported by the customer.		Gear Quality		1 hour	24 hours							 */}
