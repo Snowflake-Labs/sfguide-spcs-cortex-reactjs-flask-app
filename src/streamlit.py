@@ -25,7 +25,7 @@ def get_llmfps_response(prompt):
     prompt = prompt.replace("'", "\\'")
     # print(prompt)
     llmpfs_prompt = "'[INST] " + prompt + " [/INST]'"
-    df = session.sql(f"select snowflake.ml.complete('llama2-7b-chat-hf', {llmpfs_prompt}) as response").to_pandas()
+    df = session.sql(f"select snowflake.ml.complete('llama2-7b-chat', {llmpfs_prompt}) as response").to_pandas()
     return df.iloc[0]['RESPONSE']
     
 def sentiment_analysis():

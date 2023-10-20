@@ -22,23 +22,6 @@ console.log('baseURL: '+baseURL)
 function TabPanel(props) {
   const { children, value, index} = props;
 
-    // Load data from the backend
-    // useEffect(() => {
-    // fetch(baseURL + 'cities')
-    // .then(response => response.json())
-    // .then(data => {
-    //     console.log(data);
-    //     const history = data.map(city => ({
-    //         cityName: city.name,
-    //         coords: city.coordinates
-    //     }));
-    //     console.log(history);
-    // })
-    // .catch(error => {
-    //     console.log(error);
-    // });
-    // }, []); // Empty dependency array means this useEffect runs once when the component mounts
-
   return (
     <div
       role="tabpanel"
