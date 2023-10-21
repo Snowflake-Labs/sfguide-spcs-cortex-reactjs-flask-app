@@ -29,6 +29,8 @@ SNOWFLAKE_PASSWORD = os.getenv("SNOWFLAKE_PASSWORD")
 SNOWFLAKE_ROLE = os.getenv("SNOWFLAKE_ROLE")
 SNOWFLAKE_WAREHOUSE = os.getenv("SNOWFLAKE_WAREHOUSE")
 
+LLAMA2_MODEL = os.getenv("LLAMA2_MODEL")
+
 # Current Environment Details
 print('Account                     : {}'.format(SNOWFLAKE_ACCOUNT))
 print('User                        : {}'.format(SNOWFLAKE_USER))
@@ -38,6 +40,7 @@ print('Schema                      : {}'.format(SNOWFLAKE_SCHEMA))
 print('HT Database                 : {}'.format(HT_DATABASE))
 print('HT Schema                   : {}'.format(HT_SCHEMA))
 print('Warehouse                   : {}'.format(SNOWFLAKE_WAREHOUSE))
+print('Llama 2 Model               : {}'.format(LLAMA2_MODEL))
 print("Current Directory           :", os.getcwd())
 
 def get_login_token():
@@ -112,12 +115,12 @@ def llmpfs():
     transcript = data['transcript'].replace("'","\\'")
     ticket_id = data['ticket_id']
     # transcript = "Customer: Hello, this is Jane. I recently purchased a Snow49 winter jacket and I wanted to let you know how thrilled I am with it.\nSnow49 Representative: Hello Jane! Thank you for reaching out. We are so glad to hear that. What in particular did you like about the jacket?\nCustomer: It is incredibly warm, yet light. I wore it on a trip to the mountains and was amazed at how comfortable I felt. And the pockets are so well-designed!\nSnow49 Representative: We always aim for high quality. Your feedback is much appreciated, Jane. Enjoy your adventures in the mountains!\nCustomer: I certainly will. Thank you and kudos to the Snow49 team."
-    print(f"In llmpfs for ticket id {ticket_id} and transcript {transcript}")
-    llmpfs_prompt = "'[INST] Summarize this transcript in less than 200 words. Put the product name, defect, and summary and insert line breaks literally bewteen each line item. Do not using any special characters or apostrophes and do no repeat any part of the prompt in your response: " + transcript + " [/INST]'"
-    # print(llmpfs_prompt)
-
+    print(f"In llmpfs for ticket id {ticket_id}")
+    llmpfs_prompt = "'[INST] Summarize this transcript in less than 200 words. Also include the product name in a new line, defect in a new line, along with summary in a new line. Do not using any special characters or apostrophes and do no repeat any part of the prompt in your response: " + transcript + " [/INST]'"
     session = get_snowflake_session() # Not ideal to create a session every time. This is a hack for dealing with timeouts.
-    df = session.sql(f"select snowflake.ml.complete('llama2-70b-chat', {llmpfs_prompt}) as response").to_pandas()
+    llmpfs_sql = f"select snowflake.ml.complete('{LLAMA2_MODEL}', {llmpfs_prompt}) as response"
+    print(llmpfs_sql)
+    df = session.sql(llmpfs_sql).to_pandas()
     llmpfs_response = df.iloc[0]['RESPONSE'].replace("'","\\'")
     print(llmpfs_response)
 
