@@ -131,7 +131,7 @@ def llmpfs():
 @app.route('/llmpfs_save', methods=['GET', 'POST'])
 def llmpfs_save():
     data = request.get_json()
-    summary = data['summary'].replace("'","\\'")
+    summary = data['summary']
     # summary = 'Product: XtremeX helmets Defect: Noticeable scratches on the surface Summary: Emily Brown from SnowSense called to report that their recent order of XtremeX helmets arrived with scratches on the surface. The agent apologized for the issue and arranged for a replacement shipment of helmets to be sent within 3-5 business days. The agent also offered to arrange for a courier to pick up the damaged helmets and provided pre-paid return labels. Emily thanked the agent for their assistance and ended the call.'
     ticket_id = data['ticket_id']
     print(f"In llmpfs_save for ticket id {ticket_id}")
