@@ -90,6 +90,8 @@ def get_snowflake_session():
   print('Snowpark for Python version : {}.{}.{}'.format(snowpark_version[0],snowpark_version[1],snowpark_version[2]))
   return session
 
+session = get_snowflake_session()
+
 @app.route('/hello', methods=['GET'])
 def hello():
     return jsonify({"message": f"Hello from Dash!"})
@@ -117,7 +119,7 @@ def llmpfs():
     # transcript = "Customer: Hello, this is Jane. I recently purchased a Snow49 winter jacket and I wanted to let you know how thrilled I am with it.\nSnow49 Representative: Hello Jane! Thank you for reaching out. We are so glad to hear that. What in particular did you like about the jacket?\nCustomer: It is incredibly warm, yet light. I wore it on a trip to the mountains and was amazed at how comfortable I felt. And the pockets are so well-designed!\nSnow49 Representative: We always aim for high quality. Your feedback is much appreciated, Jane. Enjoy your adventures in the mountains!\nCustomer: I certainly will. Thank you and kudos to the Snow49 team."
     print(f"In llmpfs for ticket id {ticket_id}")
     llmpfs_prompt = "'[INST] Summarize this transcript in less than 200 words. Also include the product name in a new line, defect in a new line, along with summary in a new line. Do not using any special characters or apostrophes and do no repeat any part of the prompt in your response: " + transcript + " [/INST]'"
-    session = get_snowflake_session() # Not ideal to create a session every time. This is a hack for dealing with timeouts.
+    # session = get_snowflake_session() # Not ideal to create a session every time. This is a hack for dealing with timeouts.
     llmpfs_sql = f"select snowflake.ml.complete('{LLAMA2_MODEL}', {llmpfs_prompt}) as response"
     print(llmpfs_sql)
     df = session.sql(llmpfs_sql).to_pandas()
@@ -125,14 +127,34 @@ def llmpfs():
     print(llmpfs_response)
 
     # Update ticket with the generated call summary
+    # try:
+    #   update_sql = f"update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary = '{llmpfs_response}' where ticket_id = {ticket_id}"
+    #   print(f"Executing {update_sql}")
+    #   session.sql(update_sql).collect()
+    # except Exception as e:
+    #   print(f'Caught {type(e)} while executing {update_sql}')
+    # finally:
+    #   return jsonify([{'llmpfs_response': llmpfs_response}])
+    
+    return jsonify([{'llmpfs_response': llmpfs_response}])
+
+@app.route('/llmpfs_save', methods=['GET', 'POST'])
+def llmpfs_save():
+    data = request.get_json()
+    summary = data['summary'].replace("'","\\'")
+    # summary = 'Product: XtremeX helmets Defect: Noticeable scratches on the surface Summary: Emily Brown from SnowSense called to report that their recent order of XtremeX helmets arrived with scratches on the surface. The agent apologized for the issue and arranged for a replacement shipment of helmets to be sent within 3-5 business days. The agent also offered to arrange for a courier to pick up the damaged helmets and provided pre-paid return labels. Emily thanked the agent for their assistance and ended the call.'
+    ticket_id = data['ticket_id']
+    print(f"In llmpfs_save for ticket id {ticket_id}")
+    # session = get_snowflake_session() # Not ideal to create a session every time. This is a hack for dealing with timeouts.
+    # Update ticket with the generated call summary
     try:
-      update_sql = f"update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary = '{llmpfs_response}' where ticket_id = {ticket_id}"
+      update_sql = f"update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary = '{summary}' where ticket_id = {ticket_id}"
       print(f"Executing {update_sql}")
       session.sql(update_sql).collect()
     except Exception as e:
       print(f'Caught {type(e)} while executing {update_sql}')
     finally:
-      return jsonify([{'llmpfs_response': llmpfs_response}])
+      return jsonify([{'Status': 'Ok'}])
 
 @app.route('/cwd')
 def print_cwd():

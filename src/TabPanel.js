@@ -116,8 +116,11 @@ function VerticalTabs() {
         ticket_id: data['ticket_id']
       });
       const llmpfs_response = response.data[0].llmpfs_response;
-      // Do something with the summary here, like updating your component state
       setLoading(false);
+      const llmpfs_response_save = await axios.post(baseURL + 'llmpfs_save', {
+        summary: llmpfs_response,
+        ticket_id: data['ticket_id']
+      });      
       return llmpfs_response;
     } catch (error) {
       console.error('Error fetching call summary', error);
