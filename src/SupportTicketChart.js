@@ -38,11 +38,10 @@ function SupportTicketChart() {
       // Generate random resolved tickets ensuring it's less than or equal to total tickets
       const randomResolvedTickets = Math.floor(Math.random() * 15); // increasing the max random value for more drastic change
       nov1Data.resolvedTickets = Math.min(nov1Data.resolvedTickets + randomResolvedTickets, nov1Data.totalTickets);
-
-      nov1Data.satisfaction = 50 + Math.floor(Math.random() * 50); // making the change more drastic
+      nov1Data.satisfaction = 50 + Math.floor(Math.random() * 20); // making the change more drastic
 
       setChartData(newData);
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [chartData]);

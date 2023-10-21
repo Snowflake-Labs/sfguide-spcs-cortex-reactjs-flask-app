@@ -125,16 +125,6 @@ def llmpfs():
     df = session.sql(llmpfs_sql).to_pandas()
     llmpfs_response = df.iloc[0]['RESPONSE'].replace("'","\\'")
     print(llmpfs_response)
-
-    # Update ticket with the generated call summary
-    # try:
-    #   update_sql = f"update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary = '{llmpfs_response}' where ticket_id = {ticket_id}"
-    #   print(f"Executing {update_sql}")
-    #   session.sql(update_sql).collect()
-    # except Exception as e:
-    #   print(f'Caught {type(e)} while executing {update_sql}')
-    # finally:
-    #   return jsonify([{'llmpfs_response': llmpfs_response}])
     
     return jsonify([{'llmpfs_response': llmpfs_response}])
 
@@ -152,7 +142,7 @@ def llmpfs_save():
       print(f"Executing {update_sql}")
       session.sql(update_sql).collect()
     except Exception as e:
-      print(f'Caught {type(e)} while executing {update_sql}')
+      print(f'Caught {type(e)} >>> {str(e)} <<< while executing {update_sql}')
     finally:
       return jsonify([{'Status': 'Ok'}])
 

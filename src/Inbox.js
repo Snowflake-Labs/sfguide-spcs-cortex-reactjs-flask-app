@@ -113,19 +113,8 @@ function InboxView() {
         trash: Math.abs(Math.floor(Math.random() * 1000)),
       };
 
-      // Calculate the total for the rest of the categories
-      newNumbers.globalSales = numbers.all - (newNumbers.unassigned + newNumbers.sales + newNumbers.vipSupport + newNumbers.mentions + newNumbers.trash);
-
-      // Highlight "All" when it changes
-      if (numbers.all !== newNumbers.all) {
-        document.getElementById("all-category").classList.add("highlight");
-        setTimeout(() => {
-          document.getElementById("all-category").classList.remove("highlight");
-        }, 1000); // Remove highlight after 1 second
-      }
-
       setNumbers(newNumbers);
-    }, 10000); // Update every 10 seconds
+    }, 5000); // Update every n seconds
 
     return () => clearInterval(interval);
   }, [numbers]);

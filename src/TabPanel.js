@@ -241,22 +241,6 @@ function VerticalTabs() {
           <RepTypography>
             Agent: Goodbye, Emily! Take care.
           </RepTypography>
-
-          {/* <CallerTypography>
-            Emily: Hello, this is Emily. I recently purchased a Snowboard and I wanted to let you know that the snowboard layers are delaminating. I am quite disappointed.
-          </CallerTypography>
-          <RepTypography>
-            Representative: Oh, I am terribly sorry to hear that, Emily. This is not the experience we want for our customers. Let us get this sorted right away. Would you like a replacement or a refund?
-          </RepTypography>
-          <CallerTypography>
-            Emily: I would prefer a replacement. I really liked the Snowboard, just need one without a defect.
-          </CallerTypography>
-          <RepTypography>
-            Representative: Absolutely, Emily. We will send out a replacement ASAP. Once again, I apologize for the inconvenience and thank you for bringing it to our attention.
-          </RepTypography>
-          <CallerTypography>
-            Emily: Thanks for understanding. I hope the next Snowboard will be perfect.
-          </CallerTypography> */}
         </Box>
 
         <Divider></Divider>
@@ -316,22 +300,6 @@ function VerticalTabs() {
           <CallerTypography>
             Customer: Thank you! You too.
           </CallerTypography>
-
-          {/* <CallerTypography>
-            Michael: Hey, I am Michael. I ordered a pair of gloves but they arrived with a tear on one of them. I am quite disappointed.
-          </CallerTypography>
-          <RepTypography>
-            Representative: Oh, I am terribly sorry to hear that, Michael. This is not the experience we want for our customers. Let us get this sorted right away. Would you like a replacement or a refund?
-          </RepTypography>
-          <CallerTypography>
-            Michael: I would prefer a replacement. I really liked the gloves, just need one without a defect.
-          </CallerTypography>
-          <RepTypography>
-            Representative: Absolutely, Michael. We will send out a replacement ASAP. Once again, I apologize for the inconvenience and thank you for bringing it to our attention.
-          </RepTypography>
-          <CallerTypography>
-            Michael: Thanks for understanding. I hope the next pair will be perfect.
-          </CallerTypography> */}
         </Box>
 
         <Divider></Divider>
@@ -381,20 +349,7 @@ function VerticalTabs() {
           </CallerTypography>
           <RepTypography>
             Agent: You're welcome, Mia. We'll make sure to get this taken care of as soon as possible. Once again, we apologize for the inconvenience, and hope that you continue to choose our products in the future. Have a great day.
-          </RepTypography>         
-
-          {/* <CallerTypography>
-            Mia: Hi, I am Alex. I just wanted to check the warranty period for the thermal wear?
-          </CallerTypography>
-          <RepTypography>
-            Representative: Hello, Mia! All thermal wear comes with a one-year warranty from the date of purchase. This covers any manufacturing defects. Do you have a specific issue or just inquiring?
           </RepTypography>
-          <CallerTypography>
-            Mia: No specific issue. I was just checking before making a purchase. Thanks for the info.
-          </CallerTypography>
-          <RepTypography>
-            Representative: You are welcome, Mia. If you have any other questions, feel free to ask. Have a great day!
-          </RepTypography> */}
         </Box>
 
         <Divider></Divider>
