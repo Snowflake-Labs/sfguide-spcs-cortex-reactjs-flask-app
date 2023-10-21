@@ -6,7 +6,7 @@ spec:
       SNOWFLAKE_WAREHOUSE: DASH_L
       HT_DATABASE: DASH_DB
       HT_SCHEMA: DASH_SCHEMA
-      LLAMA_MODEL: llama2-70b-chat
+      LLAMA2_MODEL: llama2-70b-chat
     volumeMounts: 
     - name: workspace
       mountPath: /home/snowday/
