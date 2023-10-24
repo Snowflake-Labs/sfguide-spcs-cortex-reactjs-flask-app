@@ -5,7 +5,10 @@ from snowflake.snowpark.session import Session
 from snowflake.snowpark.types import Variant
 from snowflake.snowpark.functions import udf,sum,col,array_construct,month,year,call_udf,lit
 from snowflake.snowpark.version import VERSION
- 
+from time import gmtime, strftime
+import logging
+import sys
+
 # # Misc
 import pandas as pd
 import json
@@ -30,6 +33,14 @@ SNOWFLAKE_ROLE = os.getenv("SNOWFLAKE_ROLE")
 SNOWFLAKE_WAREHOUSE = os.getenv("SNOWFLAKE_WAREHOUSE")
 
 LLAMA2_MODEL = os.getenv("LLAMA2_MODEL")
+
+# logger = logging.getLogger("snowflake.connector")
+# logger.setLevel(logging.DEBUG)
+# handler = logging.StreamHandler(sys.stderr)
+# handler.setLevel(logging.DEBUG)
+# formatter = logging.Formatter("%(name)s - %(levelname)s - %(message)s")
+# handler.setFormatter(formatter)
+# logger.addHandler(handler)
 
 # Current Environment Details
 print('Account                     : {}'.format(SNOWFLAKE_ACCOUNT))
@@ -63,10 +74,10 @@ def get_connection_params():
       "token": get_login_token(),
       "warehouse": SNOWFLAKE_WAREHOUSE,
       "database": SNOWFLAKE_DATABASE,
-      "schema": SNOWFLAKE_SCHEMA
+      "schema": SNOWFLAKE_SCHEMA,
+      "insecure_mode": True
     }
   else:
-    # print('Pwd: {}'.format(SNOWFLAKE_PASSWORD))
     return {
       "account": SNOWFLAKE_ACCOUNT,
       "host": SNOWFLAKE_HOST,
@@ -119,12 +130,12 @@ def llmpfs():
     # transcript = "Customer: Hello, this is Jane. I recently purchased a Snow49 winter jacket and I wanted to let you know how thrilled I am with it.\nSnow49 Representative: Hello Jane! Thank you for reaching out. We are so glad to hear that. What in particular did you like about the jacket?\nCustomer: It is incredibly warm, yet light. I wore it on a trip to the mountains and was amazed at how comfortable I felt. And the pockets are so well-designed!\nSnow49 Representative: We always aim for high quality. Your feedback is much appreciated, Jane. Enjoy your adventures in the mountains!\nCustomer: I certainly will. Thank you and kudos to the Snow49 team."
     print(f"In llmpfs for ticket id {ticket_id}")
     llmpfs_prompt = "'[INST] Summarize this transcript in less than 200 words. Also include the product name in a new line, defect in a new line, along with summary in a new line. Do not using any special characters or apostrophes and do no repeat any part of the prompt in your response: " + transcript + " [/INST]'"
-    # session = get_snowflake_session() # Not ideal to create a session every time. This is a hack for dealing with timeouts.
+    session = get_snowflake_session() # Not ideal to create a session every time. This is a hack for dealing with timeouts.
     llmpfs_sql = f"select snowflake.ml.complete('{LLAMA2_MODEL}', {llmpfs_prompt}) as response"
-    print(llmpfs_sql)
+    print(f"{strftime('%Y-%m-%d %H:%M:%S', gmtime())} >> {llmpfs_sql}")
     df = session.sql(llmpfs_sql).to_pandas()
     llmpfs_response = df.iloc[0]['RESPONSE'].replace("'","\\'")
-    print(llmpfs_response)
+    print(f"{strftime('%Y-%m-%d %H:%M:%S', gmtime())} >> {llmpfs_response}")
     
     return jsonify([{'llmpfs_response': llmpfs_response}])
 
@@ -135,7 +146,7 @@ def llmpfs_save():
     # summary = 'Product: XtremeX helmets Defect: Noticeable scratches on the surface Summary: Emily Brown from SnowSense called to report that their recent order of XtremeX helmets arrived with scratches on the surface. The agent apologized for the issue and arranged for a replacement shipment of helmets to be sent within 3-5 business days. The agent also offered to arrange for a courier to pick up the damaged helmets and provided pre-paid return labels. Emily thanked the agent for their assistance and ended the call.'
     ticket_id = data['ticket_id']
     print(f"In llmpfs_save for ticket id {ticket_id}")
-    # session = get_snowflake_session() # Not ideal to create a session every time. This is a hack for dealing with timeouts.
+    session = get_snowflake_session() # Not ideal to create a session every time. This is a hack for dealing with timeouts.
     # Update ticket with the generated call summary
     try:
       update_sql = f"update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary = '{summary}' where ticket_id = {ticket_id}"

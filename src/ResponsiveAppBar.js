@@ -55,9 +55,9 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AssessmentIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          {/* <AssessmentIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
-            variant="h6"
+            variant="h4"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
@@ -69,9 +69,10 @@ function ResponsiveAppBar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              marginRight: '50px'
             }}
           >
-            Snowday
+            SkiGear Co
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -100,7 +101,7 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none'},
               }}
             >
               {pages.map((page) => (

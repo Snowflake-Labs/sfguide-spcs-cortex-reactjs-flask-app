@@ -114,7 +114,7 @@ function InboxView() {
       };
 
       setNumbers(newNumbers);
-    }, 5000); // Update every n seconds
+    }, 50000000); // Update every n seconds
 
     return () => clearInterval(interval);
   }, [numbers]);

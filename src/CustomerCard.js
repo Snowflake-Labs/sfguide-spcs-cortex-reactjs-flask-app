@@ -39,7 +39,7 @@ const bull = (
 );
 
 function CustomerCard() {
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = React.useState(true);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -70,8 +70,7 @@ function CustomerCard() {
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'left' }} paragraph>
-          As a Lead Developer Advocate at Snowflake, he is passionate about evaluating new ideas, trends, 
-          and helping articulate how technology can address a given business problem.
+          When Dash is not a customer support rep at SkiGear Co., he is a Lead Developer Advocate at Snowflake.
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'left' }}>
           <PlaceIcon sx={{verticalAlign:"middle"}}/> San Francisco, CA, USA
@@ -112,10 +111,10 @@ function CustomerCard() {
             Products: All
           </Typography>
           <Typography color="text.secondary">
-            Last Viewed: 3mins ago
+            Last Viewed: 1min ago
           </Typography>
           <Typography color="text.secondary">
-            Last Contacted: 2d ago
+            Last Contacted: Snowday
           </Typography>
         </CardContent>
       </Collapse>

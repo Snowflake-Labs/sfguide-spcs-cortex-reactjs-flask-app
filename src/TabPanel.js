@@ -120,7 +120,8 @@ function VerticalTabs() {
       const llmpfs_response_save = await axios.post(baseURL + 'llmpfs_save', {
         summary: llmpfs_response,
         ticket_id: data['ticket_id']
-      });      
+      });
+      console.log(llmpfs_response_save)    
       return llmpfs_response;
     } catch (error) {
       console.error('Error fetching call summary', error);
@@ -181,18 +182,18 @@ function VerticalTabs() {
         aria-label="Conversations"
         sx={{ borderRight: 1, borderColor: 'divider'}}
       >
-        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Emily Brown SnowSense" {...a11yProps(1)} sx={{textAlign: 'left',  fontSize: '16px', height: '250px'}}></Tab>
-        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Michael Green SnowSolutions" {...a11yProps(1)} sx={{textAlign: 'left', fontSize: '16px', height: '250px'}}></Tab>
-        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Mia Perez SnowTech" {...a11yProps(1)} sx={{textAlign: 'left', fontSize: '16px', height: '250px'}}></Tab>
+        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Emily Brown Mountain Gear" {...a11yProps(1)} sx={{textAlign: 'left',  fontSize: '17px', height: '250px'}}></Tab>
+        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Michael Green Winter Apparel" {...a11yProps(1)} sx={{textAlign: 'left', fontSize: '17px', height: '250px'}}></Tab>
+        <Tab wrapped icon={<PersonPinIcon />} iconPosition="start" label="Mia Perez Outdoor Outfits" {...a11yProps(1)} sx={{textAlign: 'left', fontSize: '17px', height: '250px'}}></Tab>
       </Tabs>
       <TabPanel value={value} index={0}>
-        {/* 1005	105	Emily Brown	SnowSense */}
+        {/* 1005	105	Emily Brown	Mountain Gear */}
         <CallerNameTypography>
           Emily Brown
         </CallerNameTypography>
         <Typography variant="h7" paragraph sx={{textAlign: 'left', width: '100%'}}>
-          SnowSense
-          <Typography variant="h7" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '50%', color: 'white'}}>
+          Mountain Gear
+          <Typography variant="h7" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '46%', color: 'white'}}>
             Ticket Status: In Progress
           </Typography>
         </Typography>
@@ -206,7 +207,7 @@ function VerticalTabs() {
             Agent: Hello, I hope you're having a great day. To provide you with the most help, can you please share your first and last name and the company you are calling from?
           </RepTypography>
           <CallerTypography>
-            Customer: Hi, I'm Emily Brown from SnowSense.
+            Customer: Hi, I'm Emily Brown from Mountain Gear.
           </CallerTypography>
           <RepTypography>
             Agent: Thanks Emily, tell me what are you calling about today?
@@ -248,12 +249,12 @@ function VerticalTabs() {
       </TabPanel>
 
       <TabPanel value={value} index={1} sx={{textAlign: 'left'}}>
-        {/* 1008	108	Michael Green	SnowSolutions */}
+        {/* 1008	108	Michael Green	Winter Apparel */}
         <CallerNameTypography>
           Michael Green
         </CallerNameTypography>
         <Typography variant="h7" paragraph sx={{textAlign: 'left'}}>
-          SnowSolutions
+          Winter Apparel
           <Typography variant="h7" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '54%', color: 'white'}}>
               Ticket Status: Open
           </Typography>
@@ -268,7 +269,7 @@ function VerticalTabs() {
             Agent: Hello! I hope you're having a great day. To best assist you, can you please share your first and last name and the company you're calling from?
           </RepTypography>
           <CallerTypography>
-            Customer: Sure, I'm Michael Green from SnowSolutions.
+            Customer: Sure, I'm Michael Green from Winter Apparel.
             </CallerTypography>
           <RepTypography>
             Agent: Thanks, Michael! What can I help you with today?
@@ -307,13 +308,13 @@ function VerticalTabs() {
       </TabPanel>
 
       <TabPanel value={value} index={2} sx={{textAlign: 'left'}}>
-        {/* 1014	114	Mia Perez	mia.perez@example.com	SnowTech	Ski Pole Defect	Ski pole is bent and unusable.	High	Closed	Support A	2023-10-08 10:45:00	2023-10-08 11:30:00	2023-10-08 11:30:00	Ski pole replaced due to manufacturing defect.		Technical Issue		2 hours	24 hours		Issue Resolved	3/5				 */}
+        {/* 1014	114	Mia Perez	Outdoor Outfits*/}
         <CallerNameTypography>
           Mia Perez
         </CallerNameTypography>
         <Typography variant="h7" paragraph sx={{textAlign: 'left'}}>
-          SnowTech
-          <Typography variant="h7" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '60%', color: 'white'}}>
+          Outdoor Outfits
+          <Typography variant="h7" paragraph sx={{textAlign: 'right', display: 'inline', marginLeft: '54%', color: 'white'}}>
               Ticket Status: Open
           </Typography>
         </Typography>
@@ -327,7 +328,7 @@ function VerticalTabs() {
             Agent: Hello, I hope you're having a great day. To best assist you, can you please share your first and last name and the company you are calling from?
           </RepTypography>         
           <CallerTypography>
-            Customer: Yes, I'm Mia Perez from SnowTech.
+            Customer: Yes, I'm Mia Perez from Outdoor Outfits.
           </CallerTypography>
           <RepTypography>
             Agent: Thanks, Mia. Tell me what you're calling about today.
