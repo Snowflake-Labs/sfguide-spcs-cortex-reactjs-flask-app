@@ -1,5 +1,5 @@
-date_created,language,country,product,category,damage_type,transcript
-10/27/2023,German,Germany,XtremeX,helmet,broken buckle,"Kunde: Hallo
+DATE_CREATED,LANGUAGE,COUNTRY,PRODUCT,CATEGORY,DAMAGE_TYPE,TRANSCRIPT
+2023-10-27,German,Germany,XtremeX,helmet,broken buckle,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, es geht Ihnen gut. Um Ihnen am besten helfen zu können, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen der Firma, von der aus Sie anrufen.
 
@@ -26,7 +26,7 @@ Agent: Kein Problem, Thomas. Ich kümmere mich um die eilige Lieferung. Danke f�
 Kunde: Vielen Dank für Ihre Hilfe. Auf Wiedersehen!
 
 Agent: Bitte, gerne geschehen. Auf Wiedersehen und einen schönen Tag noch!"
-10/27/2023,German,Germany,XtremeX,helmet,broken buckle,"Kunde: Guten Tag
+2023-10-27,German,Germany,XtremeX,helmet,broken buckle,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen der Firma, von der aus Sie anrufen.
 
@@ -53,7 +53,7 @@ Mitarbeiter: Kein Problem, gerne geschehen! Ich werde die Expresslieferung jetzt
 Kunde: Vielen Dank, auf Wiedersehen!
 
 Mitarbeiter: Bitte sehr, Auf Wiedersehen!"
-10/31/2023,German,Germany,XtremeX,helmet,broken buckle,"Kunde: Hallo
+2023-10-31,German,Germany,XtremeX,helmet,broken buckle,"Kunde: Hallo
 
 Mitarbeiter: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen der Firma mit, von der aus Sie anrufen.
 
@@ -76,7 +76,7 @@ Mitarbeiter: Natürlich, wir werden sicherstellen, dass alle Helme in einwandfre
 Kunde: Vielen Dank für Ihre Hilfe. Auf Wiedersehen.
 
 Mitarbeiter: Gerne, auf Wiedersehen und einen schönen Tag noch!"
-10/30/2023,German,Germany,XtremeX,helmet,broken buckle,"Kunde: Hallo
+2023-10-30,German,Germany,XtremeX,helmet,broken buckle,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen tollen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -93,7 +93,7 @@ Kunde: Ja, das ist meine Bestellung.
 Agent: Vielen Dank für die Informationen, Max. Es tut uns leid, dass Sie diese Erfahrung gemacht haben. Wir sind bereit, Ihnen die beschädigten Helme zu ersetzen. Um den Prozess zu beschleunigen, werden wir morgen ein Etikett zum Ausdrucken und auf die Pakete senden. Sobald Sie das Paket an unseren Versandunternehmen übergeben haben, geben Sie uns bitte die Tracking-Nummer durch. Wir werden einen Ersatz für alle defekten Helme auf dem schnellsten Weg zusenden. Wir hoffen, dass Sie Ihr Ersatz in 3-4 Werktagen erhalten. 
 
 Kunde: Danke, das klingt nach einer guten Lösung. Wir freuen uns über Ihre schnelle Hilfe in dieser Angelegenheit."
-10/25/2023,German,Germany,XtremeX,helmet,broken buckle,"Kunde: Hallo
+2023-10-25,German,Germany,XtremeX,helmet,broken buckle,"Kunde: Hallo
 
 Mitarbeiter: Hallo, ich hoffe du hast einen schönen Tag. Damit ich dir am besten helfen kann, teile mir bitte deinen Vornamen, Nachnamen und den Namen des Unternehmens mit, von dem aus du anrufst.
 
@@ -110,7 +110,7 @@ Kunde: Ja, das ist meine Bestellung.
 Mitarbeiter: In Ordnung, ich sehe das. Ich kann eine neue Lieferung mit funktionierenden Schnallen schicken, die in drei Tagen ankommt. Wäre das in Ordnung für Sie?
 
 Kunde: Ich bin mir nicht sicher, ich brauche einige der Helme früher. Ich muss sie woanders kaufen. Ich möchte meine Bestellung halbieren."
-10/31/2023,French,France,XtremeX,helmet,broken buckle,"Client : Bonjour
+2023-10-31,French,France,XtremeX,helmet,broken buckle,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -133,7 +133,7 @@ Agent : Les casques de remplacement devraient vous parvenir dans les 3 jours ouv
 Client : Très bien, merci de votre aide !
 
 Agent : De rien, Claire. Si vous avez besoin d'aide supplémentaire, n'hésitez pas à nous contacter. Passez une excellente journée !"
-10/26/2023,French,France,XtremeX,helmet,broken buckle,"Client : Bonjour
+2023-10-26,French,France,XtremeX,helmet,broken buckle,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -154,7 +154,7 @@ Client : Ce serait parfait, merci. Qu'en est-il des casques défectueux ? Devons
 Agent : Oui, s'il vous plaît, n'hésitez pas à retourner les casques défectueux à notre dépôt, après avoir reçu les casques de remplacement. Nous fournirons un bon de retour prépayé pour couvrir les frais d'expédition.
 
 Client : Très bien, merci. J'attends avec impatience les nouveaux casques."
-10/24/2023,French,France,XtremeX,helmet,broken buckle,"Client : Bonjour
+2023-10-24,French,France,XtremeX,helmet,broken buckle,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -175,7 +175,7 @@ Client : Oui, cela semble bien. J'espère que nous recevrons les nouveaux casque
 Agent : Je vais organiser un enlèvement à notre charge pour les casques endommagés. Vous recevrez les instructions par e-mail dans les prochaines 24 heures concernant le processus de retour. Encore désolé pour les désagréments causés.
 
 Client : Je vous remercie pour votre aide et j'espère que nous pourrons résoudre ce problème rapidement."
-10/29/2023,French,France,XtremeX,helmet,broken buckle,"Client : Bonjour
+2023-10-29,French,France,XtremeX,helmet,broken buckle,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -192,7 +192,7 @@ Client : Oui, c'est ma commande.
 Agent : Je vois, je suis vraiment désolé pour ce désagrément. Je vais lancer le processus d'envoi d'une nouvelle expédition de casques avec des boucles fonctionnelles. Elle devrait arriver dans les 4 jours ouvrables. Est-ce que cela vous conviendra ?
 
 Client : Ce serait parfait. Merci pour votre aide rapide et votre compréhension."
-10/28/2023,French,France,XtremeX,helmet,broken buckle,"Client : Bonjour
+2023-10-28,French,France,XtremeX,helmet,broken buckle,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -213,7 +213,7 @@ Client : Nous avons besoin de ces casques avant le début des vacances d'hiver, 
 Agent : Très bien, je vais m'assurer que les nouveaux casques vous parviennent d'ici cinq jours. De plus, nous organiserons un ramassage pour les casques endommagés, et je vous tiendrai informé des détails. Nous nous excusons pour la gêne occasionnée et nous vous remercions pour votre compréhension.
 
 Client : D'accord, je vous remercie pour votre aide et votre réactivité."
-10/24/2023,English,United Kingdom,XtremeX,helmet,broken buckle,"Customer: Hello
+2023-10-24,English,United Kingdom,XtremeX,helmet,broken buckle,"Customer: Hello
 
 Agent: Hi there, I hope you're having a great day! To better assist you, could you please provide your first and last name and the company you are calling from?
 
@@ -240,7 +240,7 @@ Agent: Thank you for providing me with the quantity. We will expedite a new ship
 Customer: Thank you for your assistance, I appreciate it.
 
 Agent: You're welcome, Jessica! If you have any other questions or concerns, please don't hesitate to contact us. Have a great day!"
-10/25/2023,German,Germany,XtremeX,helmet,scratched,"Kunde: Hallo
+2023-10-25,German,Germany,XtremeX,helmet,scratched,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -257,7 +257,7 @@ Kunde: Ja, das ist korrekt. Das ist meine Bestellnummer.
 Agent: Ich sehe das Problem. Es tut uns leid, von dieser Situation zu hören. Um Ihnen entgegenzukommen, können wir Ihnen anbieten, die beschädigten Helme zurückzuschicken und wir werden Ihnen gleichwertige Ersatzhelme zusenden. Wenn Sie diesen Prozess beschleunigen möchten, können wir auch einen Expressversand für Ihren Ersatz organisieren, damitSie die neuen Helme innerhalb von 2 Tagen erhalten. Wäre das in Ordnung für Sie?
 
 Kunde: Ja, das wäre großartig. Vielen Dank für Ihre Hilfe."
-10/30/2023,German,Germany,XtremeX,helmet,scratched,"Kunde: Hallo
+2023-10-30,German,Germany,XtremeX,helmet,scratched,"Kunde: Hallo
 
 Mitarbeiter: Hallo, ich hoffe, Sie haben einen tollen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -278,7 +278,7 @@ Kunde: Ja, das wäre in Ordnung. Vielen Dank für Ihre Hilfe.
 Mitarbeiter: Kein Problem, Hans. Wir entschuldigen uns nochmals für die Unannehmlichkeiten. Die neuen Helme werden bald bei Ihnen eintreffen. Falls Sie weitere Fragen oder Anliegen haben, zögern Sie bitte nicht, uns jederzeit zu kontaktieren.
 
 Kunde: Vielen Dank, ich werde das im Auge behalten."
-10/27/2023,German,Germany,XtremeX,helmet,scratched,"Kunde: Hallo
+2023-10-27,German,Germany,XtremeX,helmet,scratched,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen sowie den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -297,7 +297,7 @@ Agent: In Ordnung, ich sehe den Fehler aufgenommen. Wir möchten uns aufrichtig 
 Kunde: Ja, das wäre in Ordnung. Vielen Dank für Ihre Hilfe.
 
 Agent: Gern geschehen, Matthias. Wenn Sie in der Zwischenzeit weitere Fragen oder Anliegen haben, zögern Sie bitte nicht, uns zu kontaktieren. Wir sind immer gerne für Sie da."
-10/29/2023,German,Germany,XtremeX,helmet,scratched,"Kunde: Guten Tag
+2023-10-29,German,Germany,XtremeX,helmet,scratched,"Kunde: Guten Tag
 
 Agent: Guten Tag! Ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -316,7 +316,7 @@ Agent: Das tut mir leid. In diesem Fall biete ich an, die beschädigten Helme ge
 Kunde: Entschuldigung, aber das dauert zu lange. Wir benötigen die Helme sofort, und ich werde sie woanders suchen müssen. Ich muss meine Bestellung stornieren.
 
 Agent: Das tut mir leid zu hören. In diesem Fall werde ich den Prozess zur Stornierung Ihrer Bestellung einleiten. Sie erhalten in Kürze eine Bestätigungs-E-Mail dazu. Bitte lassen Sie uns wissen, wenn Sie in Zukunft Hilfe benötigen - wir stehen Ihnen dann gerne zur Verfügung."
-10/31/2023,German,Germany,XtremeX,helmet,scratched,"Kunde: Hallo
+2023-10-31,German,Germany,XtremeX,helmet,scratched,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bei Ihrem Anliegen bestmöglich zu helfen, teilen Sie mir bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen, mit.
 
@@ -337,7 +337,7 @@ Kunde: Ja, das könnte in Ordnung sein, aber wie lange würde es dauern, bis ich
 Agent: Normalerweise dauert der Versand etwa 5-7 Werktage. Wir werden unser Bestes tun, um den Prozess zu beschleunigen, damit Sie Ihre neuen Helme so schnell wie möglich erhalten können.
 
 Kunde: In Ordnung, vielen Dank für Ihre Hilfe."
-10/27/2023,French,France,XtremeX,helmet,scratched,"Client : Bonjour
+2023-10-27,French,France,XtremeX,helmet,scratched,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -360,7 +360,7 @@ Agent : Les casques de remplacement devraient arriver dans un délai de 10 à 15
 Client : D'accord, mon adresse e-mail est leon.dubois@mountainlover.com.
 
 Agent : Parfait, je vous enverrai toutes les informations pertinentes sous peu. Si vous avez besoin d'aide supplémentaire, n'hésitez pas à me recontacter. Merci de choisir notre entreprise pour vos besoins en matériel de ski."
-10/24/2023,French,France,XtremeX,helmet,scratched,"Client : Bonjour
+2023-10-24,French,France,XtremeX,helmet,scratched,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -383,7 +383,7 @@ Agent : Merci de nous fournir ces informations. Vous pouvez envoyer les photos �
 Client : D'accord, je ferai cela tout de suite. Merci pour votre aide.
 
 Agent : Vous êtes les bienvenus, Lucie. Encore désolé pour ce désagrément. N'hésitez pas à nous contacter si vous avez besoin d'aide supplémentaire. Bonne journée!"
-10/25/2023,French,France,XtremeX,helmet,scratched,"Client : Bonjour
+2023-10-25,French,France,XtremeX,helmet,scratched,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Afin de mieux vous aider, pourriez-vous s'il vous plaît partager votre prénom et nom, ainsi que le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -402,7 +402,7 @@ Agent : C'est très regrettable. Je vais créer un rapport pour remplacer les ca
 Client : Cela me convient, merci pour votre aide et j'espère que nous pourrons éviter de tels incidents à l'avenir.
 
 Agent : Je vous assure que nous ferons de notre mieux pour minimiser de tels incidents à l'avenir. Merci de votre compréhension et n'hésitez pas à nous contacter si vous rencontrez d'autres problèmes avec nos produits. Bonne journée !"
-10/25/2023,French,France,XtremeX,helmet,scratched,"Client : Bonjour
+2023-10-25,French,France,XtremeX,helmet,scratched,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -425,7 +425,7 @@ Agent : Je vais créer un bon de retour pour vous avec les instructions sur la f
 Client : Oui, c'est parfait. Merci pour votre aide.
 
 Agent : De rien, Claire. Si vous avez d'autres questions ou préoccupations, n'hésitez pas à nous contacter. Passez une excellente journée."
-10/29/2023,French,France,XtremeX,helmet,scratched,"Client : Bonjour
+2023-10-29,French,France,XtremeX,helmet,scratched,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -444,7 +444,7 @@ Agent : Merci de confirmer. Je tiens à m'excuser pour le problème que vous ren
 Client : Bien sûr, je préparerai cette liste et vous l'enverrai par e-mail.
 
 Agent : Parfait ! Une fois que nous recevons votre liste, nous organiserons un ramassage pour les articles endommagés et expédierons les articles de remplacement. Si vous avez besoin d'aide supplémentaire, n'hésitez pas à nous contacter."
-10/24/2023,French,France,XtremeX,helmet,scratched,"Client : Bonjour
+2023-10-24,French,France,XtremeX,helmet,scratched,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -467,7 +467,7 @@ Agent : Excellent. La nouvelle expédition devrait arriver dans les 5 à 7 jours
 Client : Très bien, merci beaucoup pour votre aide.
 
 Agent : Je vous en prie, Stéphanie. Si vous avez d'autres questions ou préoccupations, n'hésitez pas à nous contacter. Passez une bonne journée!"
-10/24/2023,French,France,XtremeX,helmet,scratched,"Client : Bonjour
+2023-10-24,French,France,XtremeX,helmet,scratched,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -488,7 +488,7 @@ Client : Oui, ça me conviendrait. À quel délai devrais-je m'attendre pour rec
 Agent : Les nouveaux casques devraient vous parvenir dans un délai de 5 à 7 jours ouvrables. Je vais également m'assurer que le ramassage des casques rayés est coordonné avec la livraison. Encore désolé pour les désagréments causés, et merci de nous avoir alertés à ce sujet.
 
 Client : D'accord, merci pour votre aide."
-10/27/2023,French,France,XtremeX,helmet,scratched,"Client : Bonjour
+2023-10-27,French,France,XtremeX,helmet,scratched,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -509,7 +509,7 @@ Agent : Bien sûr, nous pouvons expédier les casques de remplacement sous 3 jou
 Client : Oui, cela me convient. Merci pour votre aide et votre support.
 
 Agent : Je vous en prie, Stéphane. Je vais procéder à la création d'un bon de commande pour les casques de remplacement. Si vous avez besoin d'aide supplémentaire, n'hésitez pas à nous contacter. Passez une excellente journée !"
-10/30/2023,French,Belgium,XtremeX,helmet,scratched,"Client : Salut
+2023-10-30,French,Belgium,XtremeX,helmet,scratched,"Client : Salut
 
 Agent : Salut, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -529,7 +529,7 @@ Client : Oui, cela me convient. Merci pour votre aide et pour la rapide résolut
 
 Agent : De rien, c'est toujours un plaisir d'aider nos clients. Si vous avez besoin d'aide supplémentaire ou si vous rencontrez d'autres problèmes n'hésitez pas à nous contacter à nouveau. Passez une excellente journée!
 "
-10/24/2023,French,Belgium,XtremeX,helmet,scratched,"Client : Bonjour
+2023-10-24,French,Belgium,XtremeX,helmet,scratched,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -556,7 +556,7 @@ Agent : Je vous en prie Nathalie. Si vous avez d'autres questions, n'hésitez pa
 Client : Merci, au revoir !
 
 Agent : Au revoir, et bonne journée !"
-10/29/2023,French,Belgium,XtremeX,helmet,scratched,"Client : Salut
+2023-10-29,French,Belgium,XtremeX,helmet,scratched,"Client : Salut
 
 Agent : Bonjour, j'espère que vous passez une bonne journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise depuis laquelle vous appelez ?
 
@@ -577,7 +577,7 @@ Client : Oui, cela devrait fonctionner. Merci de votre aide et de votre compréh
 Agent : Pas de problème, Marie. Je suis ici pour vous aider. La nouvelle commande sera expédiée sous peu. Si vous avez d'autres questions, n'hésitez pas à les poser.
 
 Client : Merci beaucoup."
-10/26/2023,French,Belgium,XtremeX,helmet,scratched,"Client : Bonjour
+2023-10-26,French,Belgium,XtremeX,helmet,scratched,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -600,7 +600,7 @@ Agent : Compte tenu de l'urgence, nous ferons en sorte que vous receviez les cas
 Client : Très bien, merci de votre aide.
 
 Agent : Vous êtes les bienvenus, Sophie. Si vous avez d'autres questions ou problèmes à l'avenir, n'hésitez pas à nous contacter. Passez une bonne journée!"
-10/28/2023,French,Belgium,XtremeX,helmet,scratched,"Client: Bonjour
+2023-10-28,French,Belgium,XtremeX,helmet,scratched,"Client: Bonjour
 
 Agent: Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom et nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -623,7 +623,7 @@ Agent: Je m'excuse pour tout désagrément causé. Ce que je peux faire pour vou
 Client: D'accord, je ferai cela. Merci pour votre aide.
 
 Agent: Merci de votre compréhension, Marie. N'hésitez pas à nous contacter si vous avez d'autres questions ou préoccupations. Nous vous souhaitons une excellente journée !"
-10/27/2023,French,Belgium,XtremeX,helmet,scratched,"Client : Bonjour
+2023-10-27,French,Belgium,XtremeX,helmet,scratched,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom et nom de famille et le nom de la société à partir de laquelle vous appelez ?
 
@@ -646,7 +646,7 @@ Agent : Très bien, je vais organiser l'expédition de nouveaux casques pour rem
 Client : Merci pour votre aide.
 
 Agent : De rien, Amélie. Si vous avez d'autres questions ou préoccupations, n'hésitez pas à nous contacter. Bonne journée."
-10/25/2023,French,Belgium,XtremeX,helmet,scratched,"Client : Bonjour
+2023-10-25,French,Belgium,XtremeX,helmet,scratched,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -669,7 +669,7 @@ Agent : Bien sûr, nous organiserons le retour des casques endommagés avec l'un
 Client : Merci pour votre aide, j'apprécie vraiment votre assistance avec ce problème.
 
 Agent : Vous êtes les bienvenus, Nathalie. Si vous avez besoin d'aide supplémentaire ou si vous rencontrez d'autres problèmes, n'hésitez pas à nous contacter. Passez une excellente journée !"
-10/25/2023,English,United Kingdom,XtremeX,helmet,scratched,"Customer: Hello there
+2023-10-25,English,United Kingdom,XtremeX,helmet,scratched,"Customer: Hello there
 Agent: Hello, I hope you're having a great day. To provide you with the most help, can you please share your first and last name and the company you are calling from?
 Customer: Hi, I'm Emily Brown from SnowSense.
 Agent: Thanks Emily, tell me what are you calling about today?
@@ -683,7 +683,7 @@ Customer: That's great, thank you for your assistance.
 Agent: You're welcome, Emily. If you have any other questions or concerns, please let me know. Have a great day!
 Customer: You too! Goodbye.
 Agent: Goodbye, Emily! Take care."
-10/30/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-30,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen so gut wie möglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen
 
@@ -700,7 +700,7 @@ Kunde: Ja, das ist meine Bestellung.
 Mitarbeiter: In Ordnung, ich sehe die Bestellung hier. Offensichtlich ist das ein großes Problem, das wir lösen müssen. Ich werde ein kostenloses Ersatzpaket auf den Weg bringen, das bereits morgen bei Ihnen eintreffen sollte. Zudem werden wir die fehlerhaften Jacken in den nächsten Tagen bei Ihnen abholen. Ich hoffe, das ist in Ordnung für Sie?
 
 Kunde: Ja, das klingt gut. Vielen Dank für Ihre Hilfe und schnelle Reaktion."
-10/25/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-25,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich helfen zu können, teilen Sie mir bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -723,7 +723,7 @@ Agent: Die Ersatzjacken sollten innerhalb von 5 Werktagen bei Ihnen eintreffen. 
 Kunde: Ja, das sollte in Ordnung sein. Vielen Dank für Ihre Hilfe.
 
 Agent: Gern geschehen, Franz. Wenn Sie in der Zukunft noch Fragen oder Anliegen haben, zögern Sie bitte nicht, uns zu kontaktieren. Wir wünschen Ihnen noch einen schönen Tag!"
-10/24/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-24,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie mir bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -742,7 +742,7 @@ Agent: Ich sehe. Es tut uns sehr leid, von dieser speziellen Charge von Jacken m
 Kunde: Ja, das ist in Ordnung. Besteht außerdem die Möglichkeit, unsere nächsten 200 Jacken zu einem ermäßigten Preis zu kaufen?
 
 Agent: Wir würden uns freuen, Ihnen aufgrund der Unannehmlichkeiten einen Rabatt von 15 % auf Ihre nächste Bestellung von 200 Jacken zu gewähren. Ich werde diese Information an unser Bestellsystem weitergeben. Vielen Dank für Ihr Verständnis und Ihre Geduld."
-10/30/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-30,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag! Ich hoffe, Sie haben einen schönen Tag. Damit ich Ihnen besser helfen kann, teilen Sie mir bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, für das Sie anrufen.
 
@@ -765,7 +765,7 @@ Agent: Ich werde auch eine Rücksendung für die beschädigten Jacken organisier
 Kunde: Alles klar, das klingt gut. Vielen Dank für Ihre Hilfe.
 
 Agent: Gern geschehen! Wenn Sie in Zukunft noch Fragen oder Probleme haben, zögern Sie bitte nicht, uns zu kontaktieren. Einen schönen Tag noch!"
-10/24/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-24,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen am besten zu helfen, können Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens angeben, von dem aus Sie anrufen?
 
@@ -788,7 +788,7 @@ Agent: Wir werden die Ersatzjacken so schnell wie möglich versenden, normalerwe
 Kunde: Ja, das ist in Ordnung. Vielen Dank für Ihre Hilfe.
 
 Agent: Kein Problem, Johan. Wir sind stets bemüht, unseren Kunden bestmöglich zu helfen. Wenn Sie in der Zwischenzeit weitere Fragen oder Bedenken haben, zögern Sie bitte nicht, sich erneut an uns zu wenden."
-10/31/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-31,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie mir bitte Ihren Vor- und Nachnamen sowie den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -807,7 +807,7 @@ Mitarbeiter: Ich sehe hier, dass es sich um ein ungewöhnliches Problem handelt,
 Kunde: Ja, das klingt gut. Vielen Dank für Ihre Hilfe.
 
 Mitarbeiter: Gern geschehen, Claudia. Wenn Sie weitere Fragen oder Bedenken haben, können Sie sich jederzeit an uns wenden. Schönen Tag noch!"
-10/29/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-29,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen so gut wie möglich zu helfen, teilen Sie bitte Ihren Vornamen, Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -824,7 +824,7 @@ Kunde: Ja, das ist die Bestellung.
 Mitarbeiter: Ich verstehe. Es tut uns wirklich sehr leid, dass es bei diesen Jacken zu Problemen gekommen ist. Um diese Angelegenheit sofort zu lösen, würden wir gerne einen neuen Satz von Jacken kostenlos an Sie versenden und die defekten Artikel von Ihnen zurückschicken. Ich werde den Prozess starten und Sie können in 5 bis 7 Werktagen mit einer neuen Lieferung rechnen. Ist das in Ordnung für Sie?
 
 Kunde: Ja, das klingt gut. Vielen Dank für Ihre Hilfe und schnelle Reaktion."
-10/28/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-28,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Ihnen geht es gut. Um Ihnen am besten helfen zu können, könnten Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens angeben, von dem aus Sie anrufen?
 
@@ -847,7 +847,7 @@ Mitarbeiter: Keine Sorge, es entstehen Ihnen dabei keine zusätzlichen Kosten. W
 Kunde: Vielen Dank für Ihre Hilfe und Unterstützung, das schätze ich sehr.
 
 Mitarbeiter: Gern geschehen, Fabian. Wenn Sie noch weitere Fragen oder Bedenken haben, zögern Sie bitte nicht, uns erneut zu kontaktieren. Wir wünschen Ihnen noch einen schönen Tag."
-10/29/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-29,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vornamen, Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -864,7 +864,7 @@ Kunde: Ja, das ist meine Bestellung.
 Mitarbeiter: Ich sehe. Es scheint, dass dies das erste Mal ist, dass wir von diesem speziellen Modell hören, das eine so schlechte Qualität hat, und wir entschuldigen uns aufrichtig dafür. Wir möchten die Dinge richtig machen. Ich werde den Prozess beginnen, um einen neuen Satz Jacken zu versenden und die Abholung der beschädigten Artikel mit einem unserer Lastwagen innerhalb von 10 Tagen zu organisieren. Passt das für Sie, die Jacken bis dahin bei sich zu behalten?
 
 Kunde: Ich denke schon, wenn das die einzige Lösung ist. Gibt es für mich dabei irgendwelche Kosten?"
-10/26/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-26,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -887,7 +887,7 @@ Agent: Ja, natürlich. Wir werden die Kosten für den Versand der neuen Jacken u
 Kunde: Vielen Dank für Ihre Hilfe. Das ist sehr nett von Ihnen.
 
 Agent: Gern geschehen. Wenn Sie weitere Fragen haben oder Hilfe benötigen, zögern Sie bitte nicht, uns erneut zu kontaktieren. Wir wünschen Ihnen einen schönen Tag!"
-10/31/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-31,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen tollen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen der Firma, von der Sie anrufen.
 
@@ -904,7 +904,7 @@ Kunde: Ja, das stimmt.
 Agent: Ich sehe. Es scheint das erste Mal zu sein, dass wir von solch schlechter Qualität bei diesem spezifischen Modell hören, und dafür möchten wir uns entschuldigen. Wir würden das gerne wieder gutmachen. Ich werde den Prozess beginnen, Ihnen eine neue Lieferung von Jacken zu schicken und die beschädigten Artikel mit einem unserer Lastwagen innerhalb von zwei Wochen abzuholen. Würde es Ihnen recht sein, diese Artikel in der Zwischenzeit in Ihrem Besitz zu behalten?
 
 Kunde: Nun, wenn das die einzige Lösung ist, dann müsste es gehen. Gibt es für mich irgendwelche Kosten dabei?"
-10/29/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-29,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen sehr guten Tag. Um Ihnen bestmöglich zu helfen, teilen Sie mir bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -927,7 +927,7 @@ Agent: Wir werden die Ersatzjacken versandfertig machen und sie sollten innerhal
 Kunde: Ja, das sollte passen. Vielen Dank für Ihre Hilfe.
 
 Agent: Gerne geschehen! Wenn Sie weitere Fragen oder Probleme haben, zögern Sie bitte nicht, uns zu kontaktieren. Wir wünschen Ihnen noch einen schönen Tag!"
-10/26/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-26,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Ihnen geht es gut. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -956,7 +956,7 @@ Kunde: Ja, das klingt gut. Vielen Dank für Ihre Hilfe!
 Mitarbeiter: Gern geschehen, und nochmals Entschuldigung für die Unannehmlichkeiten. Wenn Sie weitere Fragen oder Bedenken haben, zögern Sie bitte nicht, uns zu kontaktieren. Schönen Tag noch!
 
 Kunde: Danke, Ihnen auch einen schönen Tag!"
-10/30/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-30,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen großartigen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vornamen, Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -975,7 +975,7 @@ Agent: Ok, da die Reißverschlüsse aller Jacken defekt sind, ist es am besten, 
 Kunde: Das klingt großartig. Vielen Dank für Ihre Hilfe. Was ist mit den beschädigten Jacken? Sollen wir sie zurückschicken?
 
 Agent: Ja, bitte schicken Sie die beschädigten Jacken zurück. Fügen Sie ihnen einfach die ausgefüllten Rücksendeunterlagen bei, die der Ersatzlieferung beiliegt. Die Rücksendung ist für Sie kostenlos."
-10/31/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-31,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, Ich hoffe, Sie haben einen schönen Tag. Um Ihnen den besten Service zu bieten, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -992,7 +992,7 @@ Kunde: Ja, das ist die Bestellung.
 Mitarbeiter: In Ordnung, ich sehe, dass dies das erste Mal ist, dass wir von diesem speziellen Modell hören, das solche Qualitätsprobleme hat, und wir entschuldigen uns aufrichtig dafür. Wir möchten dies richtigstellen: Ich werde den Versand eines neuen Satzes von Jacken mit funktionierenden Reißverschlüssen organisieren. Diese sollten innerhalb der nächsten Woche bei Ihnen eintreffen, und wir werden auch den Rückversand der mangelhaften Jacken koordinieren.
 
 Kunde: Das klingt gut, vielen Dank für Ihre Hilfe."
-10/31/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-31,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, hoffentlich haben Sie einen schönen Tag. Um Ihnen am besten zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen der Firma, von der aus Sie anrufen.
 
@@ -1009,7 +1009,7 @@ Kunde: Ja, das ist meine Bestellung.
 Agent: Alles klar. Das ist das erste Mal, dass wir von diesem speziellen Produkt gehört haben, das solche Qualitätsprobleme hat, und es tut uns wirklich leid. Wir möchten die Sache richtigstellen. Ich werde den Prozess starten, um einen neuen Satz von Jacken zu versenden, und die Abholung der beschädigten Artikel mit einem unserer Lieferwagen in 7-10 Tagen arrangieren. Ist es Ihnen recht, diese in der Zwischenzeit in Ihrem Besitz zu behalten?
 
 Kunde: Ich denke, das ist in Ordnung, wenn es die einzige Lösung ist. Werden dafür zusätzliche Kosten anfallen?"
-10/29/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-29,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, dass Sie einen schönen Tag haben. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen sowie den Namen des Unternehmens mit, in dem Sie anrufen.
 
@@ -1026,7 +1026,7 @@ Kunde: Ja, das ist meine Bestellung.
 Agent: Es tut uns sehr leid, von dem Problem mit den Reißverschlüssen zu hören. Wir möchten das Problem so schnell wie möglich beheben. Ich werde den Vorgang starten, um Ihnen einen neuen Satz Jacken zu schicken und eine Abholung der beschädigten Artikel innerhalb der nächsten Woche zu organisieren. Wäre das für Sie in Ordnung?
 
 Kunde: Ja, das wäre in Ordnung. Vielen Dank für Ihre schnelle Hilfe."
-10/31/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-31,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Mitarbeiter: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen so gut wie möglich zu helfen, teilen Sie mir bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen, mit.
 
@@ -1049,7 +1049,7 @@ Mitarbeiter: Nein, es werden keine zusätzlichen Kosten für Sie entstehen. Die 
 Kunde: Vielen Dank für Ihre Hilfe und schnelle Reaktion.
 
 Mitarbeiter: Gern geschehen! Wenn Sie noch weitere Fragen oder Anliegen haben, zögern Sie bitte nicht, sich an uns zu wenden. Wir sind hier, um Ihnen zu helfen. Schönen Tag noch!"
-10/27/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-27,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Firmennamen, von dem aus Sie anrufen.
 
@@ -1066,7 +1066,7 @@ Kunde: Ja, das ist meine Bestellung.
 Mitarbeiter: In Ordnung, ich sehe mir Ihre Bestellung an und entschuldige mich vielmals für die Unannehmlichkeiten. Um das Problem zu beheben, werden wir Ihnen umgehend eine neue Lieferung mit funktionierenden Reißverschlüssen zusenden. Die Lieferung sollte innerhalb von 4 Werktagen bei Ihnen eintreffen. Wäre das in Ordnung für Sie?
 
 Kunde: Ja, das klingt angemessen. Vielen Dank für Ihre Hilfe."
-10/27/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-27,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen großartigen Tag. Um Ihnen bestmöglich behilflich zu sein, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -1083,7 +1083,7 @@ Kunde: Ja, das ist meine Bestellung.
 Agent: Alles klar, Hans. Es tut uns leid, dass Sie diese Probleme mit unseren Jacken haben. Wir werden die fehlerhaften Jacken kostenlos ersetzen. Ich leite den Ersatzauftrag sofort weiter, und Sie sollten die Ersatzjacken innerhalb von sieben Arbeitstagen erhalten. Gibt es noch etwas, worüber Sie sprechen möchten?
 
 Kunde: Nein, das sollte alles sein. Vielen Dank für Ihre Hilfe!"
-10/26/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-26,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vornamen, Nachnamen und den Namen des Unternehmens, mit dem Sie anrufen.
 
@@ -1100,7 +1100,7 @@ Kunde: Ja, das ist meine Bestellung.
 Agent: Ich sehe. Es scheint, dass dies das erste Mal ist, dass wir von diesem speziellen Modell mit so schlechter Qualität hören, und das tut uns wirklich leid. Wir möchten die Dinge richtig stellen. Ich werde den Prozess beginnen, einen neuen Satz von Jacken zu versenden und die beschädigten Artikel mit einem unserer Lastwagen innerhalb von 10 Tagen abzuholen. Ist es für Sie in Ordnung, sie so lange in Ihrem Besitz zu behalten?
 
 Kunde: Ich denke, das ist in Ordnung, wenn das die einzige Lösung ist. Werden Kosten für mich entstehen?"
-10/27/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-27,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1119,7 +1119,7 @@ Agent: Ich sehe das Problem, und es tut uns wirklich leid. Ich werde sofort den 
 Kunde: Ja, das ist in Ordnung. Vielen Dank für Ihre Hilfe.
 
 Agent: Gern geschehen, Hans. Es tut uns leid für die Unannehmlichkeiten und wir sind sicher, dass die neuen Jacken keine Probleme mehr haben werden. Wenn Sie noch weitere Fragen oder Bedenken haben, zögern Sie bitte nicht, uns erneut zu kontaktieren."
-10/29/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-29,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Guten Tag, ich hoffe, Sie haben einen tollen Tag. Damit ich Ihnen am besten helfen kann, könnten Sie bitte Ihren Vor- und Nachnamen und den Namen der Firma angeben, von der aus Sie anrufen?
 
@@ -1138,7 +1138,7 @@ Agent: Entschuldigung für die Unannehmlichkeiten. Es scheint, dass dies das ers
 Kunde: Ich verstehe, wenn das die einzige Lösung ist. Wird es für uns irgendwelche Kosten geben?
 
 Agent: Für Sie werden keine zusätzlichen Kosten anfallen. Wir entschuldigen uns nochmals für die Unannehmlichkeiten und werden sicherstellen, dass alles so schnell wie möglich in Ordnung gebracht wird."
-10/26/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-26,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen tollen Tag. Um Ihnen bestmöglich zu helfen, können Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens angeben, von dem aus Sie anrufen?
 
@@ -1156,7 +1156,7 @@ Agent: Ich sehe. Es tut uns leid, von der schlechten Qualität dieser speziellen
 
 Kunde: Ja, das wäre großartig. Vielen Dank für Ihre Hilfe.
 "
-10/26/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-26,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Mitarbeiter: Hallo, ich hoffe, Sie haben einen tollen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie uns bitte Ihren Vor- und Nachnamen sowie den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1173,7 +1173,7 @@ Kunde: Ja, das ist meine Bestellung.
 Mitarbeiter: Ich sehe. Es tut uns leid, von den Problemen mit den Reißverschlüssen zu hören. Wir möchten das unbedingt korrigieren. Ich kann Ihnen eine neue Lieferung zusenden, bei der die Reißverschlüsse in Ordnung sind. Die neue Lieferung sollte innerhalb von fünf Werktagen bei Ihnen eintreffen. Wäre das für Sie in Ordnung?
 
 Kunde: Das wäre großartig. Vielen Dank für Ihre Hilfe."
-10/24/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-24,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich weiterzuhelfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1192,7 +1192,7 @@ Mitarbeiter: Ich sehe. In diesem Fall tut es uns sehr leid, dass wir Ihnen Jacke
 Kunde: Ich denke schon, wenn das die einzige Lösung ist. Fallen für mich dabei zusätzliche Kosten an?
 
 Mitarbeiter: Nein, es werden keine zusätzlichen Kosten für Sie anfallen. Wir werden den Ersatz und die Abholung der beschädigten Jacken kostenlos durchführen, da es sich um einen Fehler unsererseits handelt."
-10/29/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-29,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, könnten Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens angeben, von dem aus Sie anrufen?
 
@@ -1217,7 +1217,7 @@ Kunde: Das ist großartig, vielen Dank für Ihre Hilfe bei diesem Problem.
 Agent: Gern geschehen, Rolf. Wenn Sie in der Zukunft weitere Fragen oder Anliegen haben, zögern Sie bitte nicht, uns zu kontaktieren. Schönen Tag noch!
 
 Kunde: Danke, Ihnen auch einen schönen Tag!"
-10/26/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-26,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen großartigen Tag. Um Ihnen bestmöglich zu helfen, könnten Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens angeben, von dem aus Sie anrufen?
 
@@ -1234,7 +1234,7 @@ Kunde: Ja, das ist meine Bestellung.
 Mitarbeiter: Ich sehe. Es scheint, dass dies das erste Mal ist, dass wir von diesem speziellen Modell mit einer solch schlechten Qualität hören, und dafür möchten wir uns aufrichtig entschuldigen. Wir möchten es richtig machen. Ich werde den Prozess beginnen, um einen neuen Satz Jacken zu versenden und die beschädigten Artikel mit einem unserer Lastwagen innerhalb von fünf Tagen abzuholen. Wäre es in Ordnung, diese während dieser Zeit in Ihrem Besitz zu behalten?
 
 Kunde: Ja, das sollte in Ordnung sein, wenn das die einzige Lösung ist. Gibt es dafür für mich zusätzliche Kosten?"
-10/25/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-25,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Mitarbeiter: Hallo, ich hoffe, Sie haben einen schönen Tag. Damit ich Ihnen am besten helfen kann, teilen Sie mir bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1259,7 +1259,7 @@ Kunde: In Ordnung, danke für Ihre Hilfe.
 Mitarbeiter: Bitte, ich hoffe, dass wir das Problem schnell lösen können. Wenn Sie weitere Fragen oder Hilfe benötigen, zögern Sie bitte nicht, uns erneut zu kontaktieren. Vielen Dank, dass Sie sich für unser Unternehmen entschieden haben.
 
 Kunde: Vielen Dank. Auf Wiedersehen."
-10/25/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-25,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie mir bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, aus dem Sie anrufen.
 
@@ -1278,7 +1278,7 @@ Agent: In Ordnung, es tut mir leid, von diesem Problem zu hören. Ich werde den 
 Kunde: Ja, das wäre wirklich hilfreich. Vielen Dank für Ihre Hilfe.
 
 Agent: Kein Problem, Andreas. Es ist unser Ziel, unseren Kunden den bestmöglichen Service zu bieten. Sollten Sie noch weitere Fragen oder Anliegen haben, zögern Sie bitte nicht, uns erneut zu kontaktieren."
-10/24/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-24,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1295,7 +1295,7 @@ Kunde: Ja, das ist meine Bestellung
 Agent: Ich sehe das Problem und entschuldige mich für die Unannehmlichkeiten. Wir möchten den Fehler so schnell wie möglich beheben. Wir könnten Ihnen innerhalb der nächsten fünf Tage einen Ersatz für die fehlerhaften Jacken zusenden und die beschädigten Jacken zurückholen. Ich werde diesen Prozess sofort starten. Wäre das für Sie in Ordnung?
 
 Kunde: Ja, das wäre in Ordnung. Danke für die schnelle Hilfe."
-10/25/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-25,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen großartigen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1312,7 +1312,7 @@ Kunde: Ja, das ist meine Bestellung.
 Agent: Ich werde den Ersatz der Jacken mit einem beschleunigten Versand veranlassen, damit Sie sie so schnell wie möglich erhalten. Bitte bewahren Sie die beschädigten Jacken auf, bis Sie die Ersatzlieferung bekommen, und senden Sie sie dann in dem gleichen Paket zurück. Ist das in Ordnung für Sie?
 
 Kunde: Ja, das klingt gut. Vielen Dank für Ihre Hilfe."
-10/28/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-28,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1331,7 +1331,7 @@ Mitarbeiter: Es tut mir leid, das zu hören. Wir möchten, dass Sie mit Ihrem Ka
 Kunde: Das klingt großartig. Wie soll ich die fehlerhaften Jacken zurückgeben?
 
 Mitarbeiter: Ich werde für Sie eine Rücksendeanforderung für die beschädigten Jacken erstellen. Bitte packen Sie sie in die Originalverpackung und unser Versanddienst wird sie in den nächsten Tagen abholen. Es werden Ihnen keine zusätzlichen Kosten entstehen."
-10/31/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-31,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen so gut wie möglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen sowie den Firmennamen, von dem aus Sie anrufen?
 
@@ -1350,7 +1350,7 @@ Mitarbeiter: Vielen Dank für die Informationen. Ich habe Ihre Bestellung überp
 Kunde: Vielen Dank für Ihre Hilfe. Wir hoffen, dass die Ersatzjacken in Ordnung sind.
 
 Mitarbeiter: Wir hoffen auch, dass die Ersatzjacken in einwandfreiem Zustand sind. Bitte zögern Sie nicht, uns bei weiteren Problemen oder Fragen zu kontaktieren. Vielen Dank und einen schönen Tag noch!"
-10/27/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-27,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vornamen, Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -1373,7 +1373,7 @@ Mitarbeiter: Kein Problem, Lena, es ist unser Ziel, unsere Kunden zufrieden zu s
 Kunde: Vielen Dank, das ist wirklich hilfreich. Auf Wiedersehen.
 
 Mitarbeiter: Gern geschehen und auf Wiedersehen."
-10/26/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-26,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich weiterhelfen zu können, teilen Sie uns bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1393,7 +1393,7 @@ Kunde: Ja, das wäre akzeptabel. Gibt es irgendwelche zusätzlichen Kosten, die 
 
 Mitarbeiter: Nein, die Lieferung und Abholung sind für Sie kostenlos, da es sich um einen Fehler unsererseits handelt. Wir entschuldigen uns für die entstandenen Unannehmlichkeiten und bedanken uns für Ihr Verständnis.
 "
-10/27/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-27,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen großartigen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vornamen, Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -1410,7 +1410,7 @@ Kunde: Ja, das ist meine Bestellnummer.
 Mitarbeiter: In Ordnung. Es sieht so aus, als sei dies das erste Mal, dass wir von dieser speziellen Modellnummer hören, die solch eine schlechte Qualität aufweist, und dafür entschuldigen wir uns aufrichtig. Wir würden das gerne richtigstellen. Ich werde den Prozess starten, Ihnen einen neuen Satz Jacken zuzusenden und gleichzeitig die beschädigten Artikel von einem unserer LKW innerhalb von 10 Tagen abholen zu lassen. Wäre es für Sie in Ordnung, die Artikel bis dahin in Ihrem Besitz zu behalten?
 
 Kunde: Ich denke schon, wenn das die einzige Lösung ist. Fallen für mich weitere Gebühren an?"
-10/24/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-24,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Damit ich Ihnen am besten helfen kann, teilen Sie mir bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1431,7 +1431,7 @@ Kunde: Ja, das klingt in Ordnung. Was ist mit den Versandkosten für die neuen J
 Mitarbeiter: Da es sich um einen Fehler unsererseits handelt, werden wir alle Versandkosten für die neuen Jacken und die Rücksendung der beschädigten Jacken übernehmen. Ich bitte nochmals um Entschuldigung für die Umstände und bedanke mich für Ihr Verständnis.
 
 Kunde: Vielen Dank, das ist eine große Hilfe."
-10/31/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-31,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, Ich hoffe, Sie haben einen schönen Tag. Um Ihnen am besten zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -1448,7 +1448,7 @@ Kunde: Ja, das ist meine Bestellung.
 Agent: Ich sehe. Es tut uns sehr leid, dass Sie dieses Problem hatten. Um die Angelegenheit richtig zu betreuen, können wir neue Jacken mit funktionsfähigen Reißverschlüssen an Sie versenden und gleichzeitig die beschädigten Jacken abholen lassen. Ich werde den Versand von Ersatzjacken veranlassen, und wir werden innerhalb von drei Werktagen eine Abholung für die beschädigten Jacken arrangieren. Ist das für Sie in Ordnung?
 
 Kunde: Ja, das klingt wie eine gute Lösung. Vielen Dank für Ihre Hilfe."
-10/30/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-30,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen am besten zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1467,7 +1467,7 @@ Mitarbeiter: Es sieht so aus, als wäre dies das erste Mal, dass wir von diesem 
 Kunde: Es ist nicht meine bevorzugte Lösung, aber ich verstehe die Umstände. Werden mir für diesen Service Gebühren berechnet?
 
 Mitarbeiter: Nein, in diesem Fall werden keine zusätzlichen Gebühren anfallen. Wir entschuldigen uns für die Unannehmlichkeiten und möchten das Problem so schnell wie möglich beheben."
-10/25/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-25,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen großartigen Tag. Können Sie mir bitte Ihren Vor- und Nachnamen sowie den Namen der Firma nennen, von der aus Sie anrufen?
 
@@ -1486,7 +1486,7 @@ Agent: Alles klar. Da es für uns ungewöhnlich ist, bei diesem Produkt solche M
 Kunde: Ja, das wäre in Ordnung. Ich hoffe, es gibt keine Probleme mit den neuen Jacken.
 
 Agent: Wir werden unser Bestes tun, um sicherzustellen, dass Sie einwandfreie Produkte erhalten. Vielen Dank für Ihr Verständnis und Ihre Geduld. Ihr Ersatz sollte bald bei Ihnen eintreffen."
-10/28/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-28,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, Ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich weiterzuhelfen, können Sie mir bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens nennen, von dem aus Sie anrufen?
 
@@ -1503,7 +1503,7 @@ Kunde: Ja, genau die Bestellung meine ich.
 Agent: In Ordnung. Es tut uns sehr leid, dass Sie diese Probleme mit unseren Jacken haben. Wir möchten das natürlich wieder gutmachen. Ich werde den Prozess in Gang setzen, um Ihnen einen neuen Satz Jacken zuzusenden und die beschädigten Artikel bei Ihnen abzuholen. Reicht Ihnen ein Zeitrahmen von einer Woche dafür aus?
 
 Kunde: Ja, das sollte in Ordnung sein, solange es keine zusätzliche Kosten für uns gibt."
-10/30/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-30,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag! Um Ihnen bestmöglich behilflich zu sein, nennen Sie bitte Ihren Vor- und Nachnamen und den Firmennamen, von dem aus Sie anrufen.
 
@@ -1522,7 +1522,7 @@ Agent: Okay. Es ist ein ungewöhnliches Problem mit diesem speziellen Produkt, a
 Kunde: Ja, das klingt gut. Vielen Dank für Ihre Hilfe!
 
 Agent: Gern geschehen. Nochmals Entschuldigung für die Unannehmlichkeiten und ich hoffe, dass dies schnell gelöst werden kann. Haben Sie einen schönen Tag!"
-10/29/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-29,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag! Ich hoffe, Sie haben einen schönen Tag! Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, aus dem Sie anrufen.
 
@@ -1539,7 +1539,7 @@ Kunde: Ja, das ist meine Bestellung.
 Mitarbeiter: Vielen Dank für die Informationen. Wir entschuldigen uns vielmals für die Unannehmlichkeiten. Ich werde den Prozess zur kostenlosen Nachsendung von 20 Ersatzjacken für Sie einleiten. Sie sollten innerhalb der nächsten 5-7 Tage eintreffen. Können Sie die beschädigten Jacken bitte für den Fall aufbewahren, dass wir sie abholen lassen möchten?
 
 Kunde: Ja, das ist in Ordnung. Vielen Dank für Ihre Hilfe."
-10/27/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-27,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Firmennamen mit, von dem aus Sie anrufen.
 
@@ -1562,7 +1562,7 @@ Mitarbeiter: Wir werden Ihnen per E-Mail ein kostenloses Rücksendeetikett zusen
 Kunde: Großartig, danke für Ihre Hilfe!
 
 Mitarbeiter: Gern geschehen! Wenn Sie noch weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren. Wir wünschen Ihnen einen angenehmen Tag!"
-10/27/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-27,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Mitarbeiter: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vornamen, Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen?
 
@@ -1581,7 +1581,7 @@ Mitarbeiter: Vielen Dank für die Bestätigung. Es tut uns leid, dass die Reißv
 Kunde: Ja, das wäre großartig. Vielen Dank für Ihre Hilfe.
 
 Mitarbeiter: Bitte entschuldigen Sie nochmals die Unannehmlichkeiten, und sollte es wieder Probleme geben, zögern Sie nicht, uns zu kontaktieren. Wir sind immer da, um Ihnen zu helfen."
-10/29/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-29,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen am besten zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1600,7 +1600,7 @@ Agent:  In Ordnung, es sieht so aus, als sei dies das erste Mal, dass wir von so
 Kunde: Ja, das klingt gut. Wie lange wird es dauern, bis die neuen Jacken eintreffen?
 
 Agent: Die neuen Jacken sollten innerhalb von 5 Werktagen bei Ihnen eintreffen. Wir werden uns in der Zwischenzeit darum kümmern, den beschädigten Jacken Umtausch zu organisieren."
-10/29/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-29,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen am besten helfen zu können, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1619,7 +1619,7 @@ Agent: Ich sehe, es tut uns leid. Wir möchten das problem schnellstmöglich lö
 Kunde: Ja, das wäre großartig. Vielen Dank für Ihre Hilfe.
 
 Agent: Gern geschehen. Wir entschuldigen uns nochmals für die Unannehmlichkeiten und hoffen, dass alles schnell gelöst wird. Falls Sie in der Zwischenzeit noch Fragen oder Bedenken haben, zögern Sie bitte nicht, uns erneut zu kontaktieren."
-10/26/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-26,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen am besten zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1636,7 +1636,7 @@ Kunde: Ja genau, die Bestellung 90755 ist meine.
 Mitarbeiter: Ich sehe. Es scheint, dass dies das erste Mal ist, dass wir von solch schlechter Qualität bei diesem speziellen Modell hören, und es tut uns wirklich leid. Wir möchten das Problem angemessen lösen. Ich werde den Vorgang starten, um einen neuen Satz Jacken zu versenden und die Abholung der beschädigten Artikel innerhalb von einer Woche durch eines unserer Fahrzeuge zu arrangieren. Wäre es für Sie in Ordnung, sie solange in Ihrem Besitz zu behalten?
 
 Kunde: Ich denke, das ist in Ordnung, wenn das die einzige Lösung ist. Gibt es für mich dabei zusätzliche Kosten?"
-10/27/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-27,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen so gut wie möglich weiterzuhelfen,  bitte teilen Sie mir Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem Sie anrufen.
 
@@ -1653,7 +1653,7 @@ Kunde: Ja, das ist meine Bestellung.
 Agent: Ich sehe. Es sieht so aus, als wäre das der erste Fall von solchen Mängeln an diesem speziellen Modell, und dafür entschuldigen wir uns aufrichtig. Wir möchten das richtig machen. Ich werde den Prozess zum Versand eines neuen Satzes Jacken und zur Organisation der Abholung der beschädigten Artikel mit einem unserer LKW innerhalb der nächsten 15 Tage starten. Wäre es Ihnen recht, diese während dieser Zeit bei sich zu behalten?
 
 Kunde: Ich denke, das ist in Ordnung ist, wenn das die einzige Lösung ist. Gibt es irgendwelche Kosten, die ich tragen muss?"
-10/29/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-29,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen großartigen Tag. Um Ihnen am besten zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, aus dem Sie anrufen.
 
@@ -1676,7 +1676,7 @@ Agent: Die neuen Jacken sollten innerhalb von 5-7 Werktagen bei Ihnen eintreffen
 Kunde: In Ordnung, danke für Ihre Hilfe.
 
 Agent: Gern geschehen, Lukas. Wenn Sie weitere Fragen haben, zögern Sie nicht, uns erneut zu kontaktieren. Einen schönen Tag noch!"
-10/27/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-27,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen so gut wie möglich zu helfen, können Sie bitte Ihren Vor- und Nachnamen sowie den Namen des Unternehmens angeben, von dem aus Sie anrufen?
 
@@ -1693,7 +1693,7 @@ Kunde: Ja, das ist meine Bestellung.
 Agent: Ich sehe. Es scheint, dass dies das erste Mal ist, dass wir von diesem speziellen Modell mit solch schlechter Qualität gehört haben, und das tut uns wirklich leid. Wir möchten das richtig machen. Ich werde den Prozess beginnen, einen neuen Satz von Jacken zu versenden und die beschädigten Artikel mit einem unserer Transporter innerhalb von 10 Tagen abzuholen. Würden Sie es in Ordnung finden, sie während dieser Zeit in Ihrem Besitz zu behalten?
 
 Kunde: Ich denke ja, wenn es die einzige Lösung ist. Gibt es für mich irgendwelche zusätzlichen Kosten?"
-10/26/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-26,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie mir bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1712,7 +1712,7 @@ Agent: Entschuldigung für die Unannehmlichkeiten. Ich werde den Ersatzprozess f
 Kunde: Ja, das wäre großartig. Danke für Ihre Hilfe in dieser Angelegenheit.
 
 Agent: Kein Problem, Lukas. Ich hoffe, Sie haben bei der nächsten Lieferung eine bessere Erfahrung. Wenn Sie weitere Fragen haben, wenden Sie sich bitte an uns."
-10/27/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-27,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Ihnen geht es gut. Um Ihnen bestmöglich zu helfen, teilen Sie mir bitte Ihren Vor- und Nachnamen und den Namen der Firma mit, von der aus Sie anrufen.
 
@@ -1729,7 +1729,7 @@ Kunde: Ja, das stimmt.
 Mitarbeiter: In Ordnung, es tut uns wirklich leid, dass dieses spezielle Modell eine solche schlechte Qualität hat. Wir möchten die Dinge richtig stellen. Ich werde den Prozess starten, um einen neuen Satz von Jacken zu versenden, und wir werden innerhalb der nächsten 10 Tage einen Fahrer vorbeischicken, um die beschädigten Artikel abzuholen. Wäre das für Sie in Ordnung?
 
 Kunde: Ja, das klingt gut. Gibt es Kosten für mich, die ich decken muss?"
-10/26/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-26,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen am besten zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem Sie anrufen.
 
@@ -1746,7 +1746,7 @@ Kunde: Ja, das ist meine Bestellung.
 Agent: In Ordnung, ich sehe, dass dies das erste Mal ist, dass wir von solch einem Problem mit diesem speziellen Modell gehört haben, und es tut uns aufrichtig leid. Wir möchten das richtig machen. Ich werde den Prozess starten, Ihnen einen neuen Satz Jacken zuzusenden und die Abholung der beschädigten Artikel mit einem unserer Lastwagen in den nächsten 7 Tagen zu organisieren. Wäre das für Sie in Ordnung?
 
 Kunde: Ja, das klingt gut. Vielen Dank für Ihre Hilfe. Gibt es irgendwelche Kosten für mich bei dieser Lösung?"
-10/29/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-29,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1769,7 +1769,7 @@ Agent: Wir werden die neuen Jacken so schnell wie möglich versenden, und sie so
 Kunde: In Ordnung, das klingt gut. Vielen Dank für Ihre Hilfe.
 
 Agent: Bitte keine Ursache! Wenn Sie in der Zwischenzeit weitere Hilfe benötigen, zögern Sie bitte nicht, uns zu kontaktieren. Wir wünschen Ihnen einen schönen Tag!"
-10/26/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-26,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen optimal zu helfen, teilen Sie uns bitte Ihren Vor- und Nachnamen sowie den Namen des Unternehmens, von dem aus Sie anrufen, mit.
 
@@ -1786,7 +1786,7 @@ Kunde: Ja, das ist korrekt.
 Agent: Ich sehe hier die Details Ihrer Bestellung. Ich werde einen Umtausch für die defekten Jacken mit dem gebrochenen Reißverschluss arrangieren. Wir entschuldigen uns für die Unannehmlichkeiten. Bitte geben Sie uns ein paar Tage Zeit, um die Ersatzlieferung vorzubereiten. Sobald die neuen Jacken versendet wurden, senden wir Ihnen eine E-Mail mit der Sendungsverfolgung.
 
 Kunde: Okay, das klingt gut. Vielen Dank für Ihre Hilfe."
-10/24/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-24,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen tollen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1805,7 +1805,7 @@ Agent: Es tut uns leid, von den Problemen mit den DryProof670 Jacken zu hören. 
 Kunde: Ja, das ist in Ordnung, solange wir einen Ersatz erhalten und ich nicht für die Rücksendung bezahlen muss.
 
 Agent: Selbstverständlich, wir werden alle anfallenden Kosten für die Rücksendung und Ersatzlieferung übernehmen."
-10/27/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-27,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vornamen, Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -1825,7 +1825,7 @@ Kunde: Ja, das wäre großartig. Vielen Dank für Ihre Unterstützung. Wie soll 
 
 Mitarbeiter: Wir werden die Abholung der defekten Jacken durch einen unserer Spediteure arrangieren. Sie werden innerhalb der nächsten Tage einen Abholtermin per E-Mail erhalten. Noch einmal entschuldigen wir uns für die Unannehmlichkeiten und schätzen Ihr Verständnis.
 "
-10/26/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-26,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen sowie den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1842,7 +1842,7 @@ Kunde: Ja, genau, das ist meine Bestellung.
 Agent: Entschuldigung, dass Sie solche Unannehmlichkeiten haben. Ich werde einen neuen Satz Jacken für Sie arrangieren, um den beschädigten Bestand zu ersetzen, und wir organisieren auch gerne eine Abholung für die fehlerhaften Jacken. Sie sollten de Ersatz-Jacken innerhalb von einer Woche erhalten. Wäre das in Ordnung für Sie?
 
 Kunde: Ja, das klingt gut. Vielen Dank für Ihre Hilfe."
-10/25/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-25,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen so gut wie möglich helfen zu können, geben Sie bitte Ihren Vornamen, Nachnamen und den Namen des Unternehmens an, von dem aus Sie anrufen.
 
@@ -1861,7 +1861,7 @@ Agent: Ich sehe. Es scheint, das ist das erste Mal, dass wir von diesen qualitat
 Kunde: Ja, das ist in Ordnung. Gibt es irgendwelche Kosten für mich, die beschädigten Jacken zurückzugeben?
 
 Agent: Nein, die Rückgabe und der Versand der Ersatzjacken sind für Sie kostenlos. Wir entschuldigen uns für eventuelle Unannehmlichkeiten und danken Ihnen für Ihre Geduld."
-10/30/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-30,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie mir bitte Ihren Vor- und Nachnamen und den Namen Ihres Unternehmens mit.
 
@@ -1880,7 +1880,7 @@ Mitarbeiter: Dieses Defekt-Problem ist bei diesem Modell so, wie Sie beschrieben
 Kunde: Ja, das klingt gut. Werden dafür zusätzliche Kosten anfallen?
 
 Mitarbeiter: Nein, es entstehen keine zusätzlichen Kosten für Sie. Wir kümmern uns um den Austausch und die Abholung der beschädigten Artikel für Sie."
-10/31/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-31,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen die beste Hilfe anzubieten, können Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens angeben, von dem aus Sie anrufen?
 
@@ -1899,7 +1899,7 @@ Mitarbeiter: Es tut uns leid, dass Sie diese Unannehmlichkeiten hatten. Wir kön
 Kunde: Ja, das klingt gut. Vielen Dank für Ihre Hilfe.
 
 Mitarbeiter: Gerne geschehen, Thomas. Ich werde die nötigen Schritte in die Wege leiten. Sollten Sie weitere Fragen haben, zögern Sie bitte nicht, uns erneut zu kontaktieren."
-10/25/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-25,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie mir bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1922,7 +1922,7 @@ Agent: Gern geschehen, Tim. Wir werden den Ersatz so schnell wie möglich versen
 Kunde: Das klingt gut. Nochmals vielen Dank für Ihre schnelle Unterstützung.
 
 Agent: Kein Problem, Tim. Ich wünsche Ihnen noch einen schönen Tag."
-10/26/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-26,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich weiterzuhelfen, teilen Sie bitte Ihren Vornamen, Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1939,7 +1939,7 @@ Kunde: Ja, das ist meine Bestellung.
 Agent: Ich sehe. Es scheint, dass dies das erste Mal ist, dass wir von diesem speziellen Modell hören, das eine so schlechte Qualität hat, und wir bedauern dies wirklich. Wir würden gerne die Dinge richtigstellen. Ich werde den Prozess beginnen, um eine neue Charge von Jacken zu versenden und die beschädigten Artikel mit einem unserer Transporter innerhalb von 10 Tagen abzuholen. Würden Sie damit einverstanden sein, sie in der Zwischenzeit in Ihrem Besitz zu behalten?
 
 Kunde: Ich denke, das ist in Ordnung, wenn das die einzige Lösung ist. Gibt es für mich dabei irgendwelche Kosten?"
-10/29/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-29,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Mitarbeiter: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -1956,7 +1956,7 @@ Kunde: Ja, das ist meine Bestellung.
 Mitarbeiter: In Ordnung. Es scheint, dass wir noch nie von solch einem Qualitätsproblem bei diesem speziellen Modell gehört haben und wir entschuldigen uns aufrichtig für die Unannehmlichkeiten. Wir möchten dies richtigstellen. Ich werde den Vorgang einleiten, um Ihnen neue Jacken zu liefern und die beschädigten Artikel innerhalb der nächsten 7 Tage verschwinden zu lassen. Das sollte Ihnen hoffentlich helfem.
 
 Kunde: Das wäre großartig. Vielen Dank für Ihre Hilfe!"
-10/24/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-24,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen tollen Tag. Um Ihnen bestmöglich weiterzuhelfen, teilen Sie bitte Ihren Vornamen, Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -1979,7 +1979,7 @@ Mitarbeiter: Nein, Sie brauchen sich keine Sorgen zu machen. Unser Abholservice 
 Kunde: Vielen Dank für Ihre Hilfe. Schönen Tag noch!
 
 Mitarbeiter: Gern geschehen! Wenn Sie noch weitere Fragen haben, zögern Sie nicht, uns erneut zu kontaktieren. Einen schönen Tag noch!"
-10/24/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-24,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -1996,7 +1996,7 @@ Kunde: Ja, das ist meine Bestellung
 Agent: Ich sehe. Es scheint das erste Mal zu sein, dass wir von dieser speziellen Modellqualität hören, und wir entschuldigen uns dafür. Wir möchten dies richtigstellen. Ich werde den Prozess starten, um Ihnen einen neuen Satz Jacken zuzusenden und die Abholung der beschädigten Artikel mit einem unserer LKWs innerhalb von 10 Tagen zu organisieren. Wäre es für Sie in Ordnung, sie in der Zwischenzeit in Ihrem Besitz zu behalten?
 
 Kunde: Ich denke, das sollten wir tun, wenn es die einzige Lösung ist. Werden mir dafür Kosten entstehen?"
-10/25/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
+2023-10-25,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Hallo
 
 Mitarbeiter: Hallo, ich hoffe, Sie haben einen großartigen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, aus dem Sie anrufen.
 
@@ -2013,7 +2013,7 @@ Kunde: Ja, das ist meine Bestellung.
 Mitarbeiter: Ich sehe. Das tut uns leid zu hören, dass es bei diesem speziellen Modell diese Schwierigkeiten gibt. Wir möchten dies für Sie in Ordnung bringen. Wir können einen neuen Satz Jacken mit funktionsfähigen Reißverschlüssen versenden und die defekten Jacken abholen, in 5 Werktagen kümmern wir uns darum. Würde das für Sie passen?
 
 Kunde: Ja, das wäre großartig. Vielen Dank für Ihre Hilfe."
-10/30/2023,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
+2023-10-30,German,Germany,DryProof670,jacket,Broken zipper,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen großartigen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen sowie den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -2034,7 +2034,7 @@ Kunde: Ja, das sollte passen. Entstehen mir dadurch irgendwelche Kosten?
 Agent: Nein, das Unternehmen übernimmt die Verantwortung für diese Situation. Wir werden alle Kosten tragen, um die beschädigten Jacken abzuholen und die neuen Jacken zu versenden. Sie sollten die neuen Jacken in 3-4 Werktagen erhalten.
 
 Kunde: Vielen Dank, das ist großartig. Ich wertschätze Ihre Hilfe."
-10/25/2023,French,Belgium,DryProof670,jacket,Broken zipper,"Client : Bonjour
+2023-10-25,French,Belgium,DryProof670,jacket,Broken zipper,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2055,7 +2055,7 @@ Client : Oui, cela me convient parfaitement. Merci pour votre aide rapide.
 Agent : Je vous en prie, Martin. J'espère que vous apprécierez votre nouvelle veste DryProof670 et que vous passerez de bonnes vacances au ski. Si vous avez besoin d'aide supplémentaire, n'hésitez pas à nous contacter. Bonne journée !
 
 Client : Merci, vous avez été très utile. Bonne journée à vous aussi."
-10/25/2023,French,Belgium,DryProof670,jacket,Broken zipper,"Client : Bonjour
+2023-10-25,French,Belgium,DryProof670,jacket,Broken zipper,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2078,7 +2078,7 @@ Agent : Nous organiserons le retour sans frais pour vous. Un transporteur viendr
 Client : Très bien, merci. J'apprécie votre aide et votre réactivité.
 
 Agent : Je vous en prie, Nathalie. Si vous avez d'autres questions ou préoccupations, n'hésitez pas à nous appeler. Je vous souhaite une excellente journée !"
-10/28/2023,French,Belgium,DryProof670,jacket,Broken zipper,"Client : Bonjour
+2023-10-28,French,Belgium,DryProof670,jacket,Broken zipper,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2105,7 +2105,7 @@ Agent : Je vous en prie, Pierre. Si vous rencontrez d'autres problèmes ou avez 
 Client : Merci, vous aussi. Au revoir.
 
 Agent : Au revoir !"
-10/30/2023,French,Belgium,DryProof670,jacket,Broken zipper,"Client : Bonjour
+2023-10-30,French,Belgium,DryProof670,jacket,Broken zipper,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2134,7 +2134,7 @@ Client : Merci pour votre aide.
 Agent : Je vous en prie, Sandrine. N'hésitez pas à nous contacter si vous rencontrez d'autres problèmes. Passez une excellente journée !
 
 Client : Vous aussi, au revoir."
-10/27/2023,French,Belgium,DryProof670,jacket,Broken zipper,"Client : Bonjour
+2023-10-27,French,Belgium,DryProof670,jacket,Broken zipper,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2157,7 +2157,7 @@ Agent : Merci pour ces informations, Émilia. Nous vous enverrons 25 nouvelles v
 Client : Oui, cela fera l'affaire. Notre événement est dans une semaine, donc cela devrait arriver à temps. Merci beaucoup.
 
 Agent : Je vous en prie, Émilia. J'espère que les nouvelles vestes arriveront à temps pour votre événement. Si vous avez besoin de quoi que ce soit d'autre, n'hésitez pas à revenir vers nous. Bonne journée !"
-10/31/2023,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello there
+2023-10-31,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello there
 
 Agent: Hello, I hope you're having a great day. To provide you with the most help, can you please share your first and last name and the company you are calling from?
 
@@ -2176,7 +2176,7 @@ Agent: I see. It seems that this is the first time we've heard of this particula
 Customer: Yeah, I guess if that's the only solution. Will there be any charges to me for this?
 
 Agent: No, there will be no charges as it is under the warranty period. I apologize for the inconvenience and appreciate your patience."
-10/24/2023,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hi there
+2023-10-24,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hi there
 
 Agent: Hi, I hope you're having a great day. To best assist you, could you please share your first and last name and the company you are calling from?
 
@@ -2199,7 +2199,7 @@ Agent: You're welcome, Sarah. We apologize once again for the inconvenience, and
 Customer: Thanks, goodbye!
 
 Agent: Goodbye, and have a wonderful day!"
-10/24/2023,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello!
+2023-10-24,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello!
 Agent: Hello! I hope you're having a great day. To best assist you, can you please share your first and last name and the company you're calling from?
 Customer: Sure, I'm Michael Green from SnowSolutions.
 Agent: Thanks, Michael! What can I help you with today?
@@ -2213,7 +2213,7 @@ Customer: Sounds good! Thanks for your help.
 Agent: You're welcome, Michael! We apologize for the inconvenience, and thank you for your patience. Please don't hesitate to contact us if you have any further questions or concerns. Have a great day!
 Customer: Thank you! You too.
 "
-10/28/2023,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello
+2023-10-28,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To provide you with the most help, can you please share your first and last name and the company you are calling from?
 
@@ -2236,7 +2236,7 @@ Agent: No, there won't be any additional cost for you. We'll cover all shipping 
 Customer: Thank you for your help. I appreciate it.
 
 Agent: You're welcome, Jennifer. Have a great day."
-10/29/2023,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello
+2023-10-29,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To best assist you, can you please share your first and last name and the company you are calling from?
 
@@ -2255,7 +2255,7 @@ Agent: I see. It looks like this is the first time we've heard of this specific 
 Customer: That would be great. I appreciate your help with this issue. 
 
 Agent: You're welcome, Jake. We'll make sure to get this taken care of as soon as possible. Once again, we apologize for the inconvenience, and hope that you continue to choose our products in the future. Have a great day."
-10/25/2023,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello
+2023-10-25,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello
 
 Agent: Hello! I hope you're having a great day. To provide you with the most help, could you please share your first and last name and the company you are calling from?
 
@@ -2278,7 +2278,7 @@ Agent: No, we will cover all the shipping and replacement costs. You'll have the
 Customer: Great, thank you for your help.
 
 Agent: You're welcome, Sandra. Let us know if there's anything else we can do for you. Have a great day!"
-10/31/2023,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello
+2023-10-31,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To provide you with the most help, can you please share your first and last name and the company you are calling from?
 
@@ -2295,7 +2295,7 @@ Customer: Yes, that's the one.
 Agent: I see. It seems this is the first time we are hearing about this specific model having such poor quality, and we really apologize for that. We would like to make things right. I will initiate the process to ship out a new set of jackets and arrange for the pickup of the damaged items with one of our trucks within the next week. Would that be alright with you to keep them in your possession during this time?
 
 Customer: I guess so, if that is the only option. Will there be any cost to me for this?"
-10/26/2023,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello
+2023-10-26,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello
 
 Agent: Hi there, I hope you're having a great day. In order to provide you with the best assistance, could you please share your first and last name and the company you are calling from?
 
@@ -2318,7 +2318,7 @@ Agent: No, there will be no additional costs for you. We'll handle the shipping 
 Customer: Alright, thank you for your help.
 
 Agent: You're welcome, Emma! If you have any further questions or issues, please don't hesitate to reach out to us. Have a great day!"
-10/27/2023,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello
+2023-10-27,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To provide you with the best assistance, please share your first and last name and the name of the company you're calling from.
 
@@ -2345,7 +2345,7 @@ Agent: You're welcome, Emma. We apologize for the inconvenience and will work to
 Customer: You too, goodbye.
 
 Agent: Goodbye, and have a great day!"
-10/27/2023,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello there
+2023-10-27,English,United Kingdom,DryProof670,jacket,Broken zipper,"Customer: Hello there
 
 Agent: Hello, I hope you're having a great day! To provide the best assistance, could you please share your first and last name and the company you are calling from?
 
@@ -2364,7 +2364,7 @@ Agent: It appears that this is the first time we are hearing about this specific
 Customer: Yes, I suppose that's fine, as long as we get the replacements as soon as possible. Will there be any additional costs to us for this?
 
 Agent: No, there will be no additional costs for you. We will cover the shipping and handling charges for both the replacement jackets and the return of the damaged ones. We appreciate your understanding and patience with this issue."
-10/24/2023,German,Germany,DryProof670,jacket,washed out color,"Kunde: Guten Tag
+2023-10-24,German,Germany,DryProof670,jacket,washed out color,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich helfen zu können, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -2383,7 +2383,7 @@ Agent: Ich entschuldige mich für die Unannehmlichkeiten, die Ihnen dadurch ents
 Kunde: Ja, das klingt nach einer guten Lösung. Wann kann ich mit den Ersatzjacken rechnen?
 
 Agent: Die Ersatzjacken sollten innerhalb der nächsten 3-5 Werktage bei Ihnen eintreffen. Nochmals Entschuldigung für die Unannehmlichkeiten und danke für Ihr Verständnis."
-10/28/2023,German,Germany,DryProof670,jacket,washed out color,"Kunde: Guten Tag
+2023-10-28,German,Germany,DryProof670,jacket,washed out color,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -2406,7 +2406,7 @@ Mitarbeiter: In der Regel dauert der Umtauschprozess etwa 10-14 Tage. Sie erhalt
 Kunde: Alles klar, vielen Dank für Ihre Hilfe.
 
 Mitarbeiter: Sie sind herzlich willkommen. Wenn Sie in der Zwischenzeit noch Fragen oder Bedenken haben, zögern Sie bitte nicht, uns zu kontaktieren."
-10/31/2023,German,Germany,DryProof670,jacket,washed out color,"Kunde: Hallo
+2023-10-31,German,Germany,DryProof670,jacket,washed out color,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen am besten zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -2425,7 +2425,7 @@ Agent: Es tut uns leid, dass dies passiert ist. Wir würden es gerne richtig ste
 Kunde: Ja, das wäre akzeptabel. Bitte stellen Sie sicher, dass diese Jacken keine solchen Probleme haben. Wir können uns keine weiteren Schwierigkeiten leisten. 
 
 Agent: Wir werden unser Bestes tun, um sicherzustellen, dass diese Jacken die gewünschte Qualität haben. Vielen Dank für Ihre Geduld und Ihr Verständnis. Wenn es weitere Fragen oder Bedenken gibt, zögern Sie bitte nicht, uns erneut zu kontaktieren."
-10/31/2023,German,Germany,DryProof670,jacket,washed out color,"""Kunde: Guten Tag
+2023-10-31,German,Germany,DryProof670,jacket,washed out color,"""Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen am besten zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -2446,7 +2446,7 @@ Kunde: Ja, wir haben die Waschanweisungen befolgt, ein handelsübliches Waschmit
 Agent: Vielen Dank für die Informationen. Es tut uns leid für die Unannehmlichkeiten, die Ihnen dadurch entstanden sind. Wir bieten Ihnen an, die verblassten Jacken gegen neue auszutauschen. Ich werde den Prozess beginnen, um einen neuen Satz von Jacken zu versenden und die Abholung der beschädigten Artikel in den nächsten 5-7 Werktagen zu arrangieren. Ist das für Sie in Ordnung?
 
 Kunde: Ja, das klingt gut. Vielen Dank für Ihre Hilfe."""
-10/29/2023,German,Germany,DryProof670,jacket,washed out color,"Kunde: Guten Tag
+2023-10-29,German,Germany,DryProof670,jacket,washed out color,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen sowie den Namen des Unternehmens, von dem aus Sie anrufen
 
@@ -2463,7 +2463,7 @@ Kunde: Ja, das ist meine Bestellung.
 Agent: Ich sehe, das tut uns sehr leid, dass Sie diesen Vorfall erleben mussten. Wir möchten das gerne für Sie in Ordnung bringen. Anstatt die Jacken zurückzusenden, empfehlen wir Ihnen, das beigefügte Pflegeetikett genau zu befolgen, insbesondere in Bezug auf Waschtemperatur und Trocknen. Wenn das Problem weiterhin besteht, werden wir gerne die betroffenen Jacken ersetzen. Bitte lassen Sie uns wissen, ob dies für Sie akzeptabel ist.
 
 Kunde: Ja, wir werden das versuchen und Ihnen mitteilen, ob das Problem behoben wurde. Vielen Dank für Ihre Hilfe."
-10/26/2023,French,Belgium,DryProof670,jacket,washed out color,"Client : Bonjour
+2023-10-26,French,Belgium,DryProof670,jacket,washed out color,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez?
 
@@ -2486,7 +2486,7 @@ Agent : Très bien, je vais organiser l'expédition d'un nouveau lot de vestes D
 Client : D'accord, merci pour le service rapide.
 
 Agent : De rien, Camille. N'hésitez pas à nous contacter pour toute question. Passez une excellente journée!"
-10/26/2023,French,Belgium,DryProof670,jacket,washed out color,"Client : Bonjour
+2023-10-26,French,Belgium,DryProof670,jacket,washed out color,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2511,7 +2511,7 @@ Client : Très bien, j'attends les vestes de remplacement et je vous remercie po
 Agent : Vous êtes les bienvenus, Helene. Si vous avez besoin d'aide, n'hésitez pas à nous contacter. Nous vous souhaitons une bonne journée !
 
 Client : Merci, bonne journée à vous aussi."
-10/28/2023,French,Belgium,DryProof670,jacket,washed out color,"Client : Bonjour
+2023-10-28,French,Belgium,DryProof670,jacket,washed out color,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2534,7 +2534,7 @@ Agent : Très bien, je vais m'occuper de l'expédition des nouvelles vestes. Vou
 Client : Merci beaucoup pour votre aide.
 
 Agent : Je vous en prie, Pierre. Si vous avez d'autres questions ou préoccupations, n'hésitez pas à nous contacter. Passez une excellente journée !"
-10/28/2023,French,Belgium,DryProof670,jacket,washed out color,"Client : Bonjour
+2023-10-28,French,Belgium,DryProof670,jacket,washed out color,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2555,7 +2555,7 @@ Client : Oui, cela semble être une solution raisonnable. Je vais donc attendre 
 Agent : Parfait. Je m'occupe de mettre en place l'échange et vous recevrez le matériel nécessaire sous peu. Si vous avez d'autres questions ou préoccupations, n'hésitez pas à nous contacter.
 
 Client : Merci de votre aide et de votre soutien."
-10/30/2023,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Salut
+2023-10-30,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Salut
 
 Agent : Bonjour, j'espère que vous passez une bonne journée. Pourrait-vous s'il vous plaît partager votre prénom et nom de famille et le nom de l'entreprise à partir de laquelle vous appelez pour que je puisse vous aider au mieux ?
 
@@ -2578,7 +2578,7 @@ Agent : D'accord, je vais initier le processus de remplacement. Vous recevrez un
 Client : Non, c'est tout. Merci de votre aide.
 
 Agent : Vous êtes le bienvenu. Si vous avez d'autres questions, n'hésitez pas à nous contacter. Passez une agréable journée !"
-10/24/2023,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
+2023-10-24,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2599,7 +2599,7 @@ Client : Il y a environ 15 vestes présentant ce problème.
 Agent : Merci pour cette information. Je vais organiser l'envoi de 15 nouvelles vestes et planifier la collecte des vestes délavées. Le tout devrait être résolu sous 7 jours. Est-ce que cela vous convient ?
 
 Client : Oui, cela me convient. Merci beaucoup pour votre aide."
-10/27/2023,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
+2023-10-27,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2626,7 +2626,7 @@ Agent : Je vous assure que nous ferons de notre mieux pour trouver une solution 
 Client : D'accord, merci de votre aide. Bonne journée.
 
 Agent : Merci, Antoine. Passez également une bonne journée."
-10/30/2023,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Salut
+2023-10-30,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Salut
 
 Agent : Salut, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2647,7 +2647,7 @@ Client : Merci beaucoup pour votre aide. J'espère que les nouvelles vestes auro
 Agent : Je m'assurerai qu'elles le soient. Vous devriez recevoir les nouvelles vestes d'ici une semaine et nous organiserons également le retour des vestes endommagées. Merci d'avoir choisi Ski Enchanté, et j'espère que vous serez satisfait de nos produits à l'avenir.
 
 Client : Je vous remercie."
-10/26/2023,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
+2023-10-26,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2668,7 +2668,7 @@ Client : Il y a 25 vestes concernées par ce problème.
 Agent : Merci, Emilie. Je prépare le bon de retour pour vous, et nos agents logistiques vous enverront la procédure de retour par courriel. Si vous avez besoin d'aide pour le retour, n'hésitez pas à nous recontacter.
 
 Client : D'accord, merci pour votre assistance, j'apprécie vraiment votre aide."
-10/29/2023,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
+2023-10-29,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2691,7 +2691,7 @@ Agent : Très bien. Nous vous enverrons donc 30 vestes de remplacement. Veuillez
 Client : Oui, c'est acceptable. Merci pour votre aide et pour la rapidité de prise en charge.
 
 Agent : Pas de problème, Claire. Nous sommes là pour vous aider. Si vous avez besoin d'assistance supplémentaire, n'hésitez pas à nous contacter."
-10/28/2023,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
+2023-10-28,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2714,7 +2714,7 @@ Agent : Nous ferons de notre mieux pour nous assurer que cela ne se reproduise p
 Client : Merci pour votre aide.
 
 Agent : Vous êtes les bienvenus, Elise. Si vous avez besoin d'aide supplémentaire, n'hésitez pas à nous contacter. Passez une excellente journée !"
-10/24/2023,French,Luxemburg,DryProof670,jacket,washed out color,"Client: Bonjour
+2023-10-24,French,Luxemburg,DryProof670,jacket,washed out color,"Client: Bonjour
 
 Agent: Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez?
 
@@ -2737,7 +2737,7 @@ Agent : Une fois que nous aurons reçu les photos et confirmé le problème, nou
 Client: Très bien, merci pour votre aide. Je vous enverrai les photos dès que possible.
 
 Agent: De rien, Agathe. Si vous avez d'autres questions ou des préoccupations, n'hésitez pas à nous contacter. Nous sommes là pour vous aider. Passez une bonne journée!"
-10/28/2023,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
+2023-10-28,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez?
 
@@ -2760,7 +2760,7 @@ Agent : Très bien. Je vais organiser l'expédition pour remplacer ces 15 vestes
 Client : Oui, merci beaucoup. Espérons que cela résoudra le problème.
 
 Agent : Je m'assurerai personnellement que les vestes de remplacement soient inspectées avant l'expédition pour éviter tout futur problème. Merci d'avoir signalé cette situation et de nous donner l'occasion de résoudre ce problème."
-10/28/2023,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
+2023-10-28,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2783,7 +2783,7 @@ Agent : C'est exact. Nous enverrons les vestes de remplacement dès que possible
 Client : D'accord, merci beaucoup pour votre aide.
 
 Agent : Pas de problème, Michelle. Si vous avez d'autres questions ou préoccupations, n'hésitez pas à nous contacter. Passez une bonne journée !"
-10/24/2023,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
+2023-10-24,French,Luxemburg,DryProof670,jacket,washed out color,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -2804,7 +2804,7 @@ Client : Merci, cela a l'air d'une bonne solution pour nous. Combien de temps ce
 Agent : Les nouvelles vestes devraient vous être livrées dans les 5 à 7 jours ouvrables. Je vous enverrai également un e-mail de confirmation et des informations sur la collecte des vestes décolorées.
 
 Client : Parfait, merci beaucoup pour votre aide."
-10/26/2023,English,United Kingdom,DryProof670,jacket,washed out color,"Customer: Hello
+2023-10-26,English,United Kingdom,DryProof670,jacket,washed out color,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To provide you with the most help, can you please share your first and last name and the company you are calling from?
 
@@ -2827,7 +2827,7 @@ Agent: Great, please send the report to our customer support email, and we will 
 Customer: No, that should be all for now. Thank you for your help.
 
 Agent: You're welcome, Rachel. If you have any other concerns, don't hesitate to contact us. Have a great day!"
-10/26/2023,English,United Kingdom,DryProof670,jacket,washed out color,"Customer: Hi there
+2023-10-26,English,United Kingdom,DryProof670,jacket,washed out color,"Customer: Hi there
 
 Agent: Hi there, hope you are having a great day. To provide you with the most help, can you please share your first and last name and the company you are calling from?
 
@@ -2854,7 +2854,7 @@ Agent: Absolutely, we'll keep you informed throughout the process. Once again, w
 Customer: Thank you for your help. Have a great day.
 
 Agent: You're welcome, Susan! Have a great day too!"
-10/27/2023,English,United Kingdom,DryProof670,jacket,washed out color,"Customer: Hello there
+2023-10-27,English,United Kingdom,DryProof670,jacket,washed out color,"Customer: Hello there
 
 Agent: Hi, I hope you're having a great day. To provide you with the best help, can you please share your first and last name and the company you're calling from?
 
@@ -2877,7 +2877,7 @@ Agent: We will expedite the shipping to ensure you receive the replacement jacke
 Customer: Thank you, I appreciate your help.
 
 Agent: You're welcome, Lucy. If you have any other concerns or need further assistance, feel free to reach out. Have a great day!"
-10/24/2023,English,United Kingdom,DryProof670,jacket,washed out color,"Customer: Hello
+2023-10-24,English,United Kingdom,DryProof670,jacket,washed out color,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To best assist you, could you please share your first and last name and the name of the company you are calling from?
 
@@ -2900,7 +2900,7 @@ Agent: No, there will be no cost associated with the replacement and pickup. We 
 Customer: Thank you, I appreciate your help with this matter.
 
 Agent: You're welcome, Sarah. If you have any other concerns or issues, feel free to reach out to us. Have a great day!"
-10/26/2023,English,United Kingdom,DryProof670,jacket,washed out color,"Customer: Hello there
+2023-10-26,English,United Kingdom,DryProof670,jacket,washed out color,"Customer: Hello there
 
 Agent: Hello, I hope you're having a great day! To better assist you, can you please provide your first and last name and the company you're calling from?
 
@@ -2925,7 +2925,7 @@ Customer: Great, thank you for your prompt assistance. I hope the new jackets ar
 Agent: You're welcome, Jane. We will take extra care to ensure that the new jackets will reach you without any issues. Thank you for your understanding, and have a great day!
 
 "
-10/30/2023,German,Austria,ShelledMitts45,gloves,missing price tags,"Kunde: Guten Tag
+2023-10-30,German,Austria,ShelledMitts45,gloves,missing price tags,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -2946,7 +2946,7 @@ Kunde: Es wäre besser, wenn Sie uns die Preisschilder senden könnten, die wir 
 Mitarbeiter: Kein Problem. Wir werden die Preisschilder so schnell wie möglich versenden. Sie sollten sie innerhalb der nächsten 2-3 Werktage erhalten. Entschuldigung nochmals für die Unannehmlichkeiten, und danke für Ihre Geduld.
 
 Kunde: Vielen Dank für Ihre Hilfe."
-10/27/2023,German,Austria,ShelledMitts45,gloves,missing price tags,"Kunde: Hallo
+2023-10-27,German,Austria,ShelledMitts45,gloves,missing price tags,"Kunde: Hallo
 
 Agent: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens mit, von dem aus Sie anrufen.
 
@@ -2965,7 +2965,7 @@ Agent: In Ordnung, es tut mir leid für das Missverständnis. Ich kann Ihnen neu
 Kunde: Ja, das wäre großartig. Vielen Dank für Ihre Hilfe.
 
 Agent: Gern geschehen! Wenn Sie noch weitere Fragen oder Anliegen haben, lassen Sie es mich bitte wissen. Ansonsten wünsche ich Ihnen und Ihrem Unternehmen weiterhin viel Erfolg."
-10/25/2023,German,Austria,ShelledMitts45,gloves,missing price tags,"Kunde: Hallo
+2023-10-25,German,Austria,ShelledMitts45,gloves,missing price tags,"Kunde: Hallo
 
 Mitarbeiter: Hallo, ich hoffe, Sie haben einen schönen Tag. Um Ihnen am besten weiterhelfen zu können, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -2988,7 +2988,7 @@ Mitarbeiter: Natürlich, ich stelle sicher, dass die Preisschilder so schnell wi
 Kunde: Vielen Dank für Ihre Hilfe. Auf Wiedersehen!
 
 Mitarbeiter: Gern geschehen und einen schönen Tag noch! Auf Wiedersehen!"
-10/31/2023,German,Austria,ShelledMitts45,gloves,missing price tags,"Kunde: Guten Tag
+2023-10-31,German,Austria,ShelledMitts45,gloves,missing price tags,"Kunde: Guten Tag
 
 Agent: Guten Tag, ich hoffe, Sie haben einen wunderbaren Tag. Um Ihnen am besten zu helfen, teilen Sie bitte Ihren Vornamen, Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -3005,7 +3005,7 @@ Kunde: Ja, das ist meine Bestellung.
 Agent: Es tut mir leid, dass Sie dieses Problem haben. Ich werde sicherstellen, dass die neuen Preisschilder für die Handschuhe so schnell wie möglich an Sie versendet werden, und Sie sollten sie in etwa 5 Werktagen erhalten. Ist das in Ordnung für Sie?
 
 Kunde: Ja, das sollte in Ordnung sein. Vielen Dank für Ihre Hilfe."
-10/29/2023,German,Austria,ShelledMitts45,gloves,missing price tags,"Kunde: Guten Tag
+2023-10-29,German,Austria,ShelledMitts45,gloves,missing price tags,"Kunde: Guten Tag
 
 Mitarbeiter: Guten Tag, ich hoffe, Sie haben einen schönen Tag. Um Ihnen bestmöglich zu helfen, teilen Sie bitte Ihren Vor- und Nachnamen und den Namen des Unternehmens, von dem aus Sie anrufen.
 
@@ -3030,7 +3030,7 @@ Kunde: Ja, das ist in Ordnung. Vielen Dank für Ihre Hilfe.
 Mitarbeiter: Gerne geschehen. Sollten Sie weitere Fragen haben, zögern Sie bitte nicht, uns erneut zu kontaktieren. Tschüss und einen schönen Tag noch!
 
 Kunde: Danke, ebenfalls einen schönen Tag! Tschüss!"
-10/27/2023,French,Luxemburg,ShelledMitts45,gloves,missing price tags,"Client : Salut
+2023-10-27,French,Luxemburg,ShelledMitts45,gloves,missing price tags,"Client : Salut
 
 Agent : Salut, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3049,7 +3049,7 @@ Agent : Je vois, il semble que nos services d'emballage ont fait une erreur. Pou
 Client : Oui, cela serait parfait. Merci pour votre aide rapide et efficace.
 
 Agent : Je vous en prie, Marie. Les étiquettes de prix seront expédiées aujourd'hui. N'hésitez pas à nous recontacter si vous avez besoin d'aide supplémentaire. Passez une excellente journée!"
-10/29/2023,French,Luxemburg,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-29,French,Luxemburg,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3071,7 +3071,7 @@ Agent : Je vais les mettre au courrier dès aujourd'hui, vous devriez les recevo
 
 Client : Oui, merci. J'apprécie votre aide.
 "
-10/27/2023,French,Luxemburg,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-27,French,Luxemburg,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour ! J'espère que vous passez une excellente journée. Pour mieux vous aider, pourriez-vous s'il vous plaît me donner votre prénom, nom de famille et le nom de l'entreprise depuis laquelle vous appelez ?
 
@@ -3094,7 +3094,7 @@ Agent : Non, il n'y aura pas de frais supplémentaires pour l'envoi des étiquet
 Client : Merci pour votre aide. J'apprécie votre réactivité et j'espère que cela ne se reproduira pas à l'avenir.
 
 Agent : Merci de votre compréhension et de votre coopération. Nous ferons de notre mieux pour que cela ne se reproduise pas à l'avenir. Passez une excellente journée et si vous avez besoin de quoi que ce soit, n'hésitez pas à nous contacter."
-10/29/2023,French,Luxemburg,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-29,French,Luxemburg,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3118,7 +3118,7 @@ Client : Oui, cela devrait aller. Merci de votre aide.
 
 Agent : De rien, Jean. Nous nous excusons pour le désagrément et nous nous occuperons de tout de notre côté. N'hésitez pas à nous contacter si vous avez d'autres questions ou préoccupations. Bonne journée!
 "
-10/27/2023,French,Luxemburg,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-27,French,Luxemburg,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3137,7 +3137,7 @@ Agent : Merci pour cette confirmation. Je m'excuse pour cet oubli de notre part.
 Client : Je pense que recevoir les étiquettes de prix par courrier express serait une meilleure option pour moi, merci.
 
 Agent : Parfait, je vais procéder à l'envoi des étiquettes. Veuillez nous excuser pour ce désagrément. Vous devriez recevoir les étiquettes dans 5 jours ouvrables. Si vous avez besoin de quoi que ce soit d'autre, n'hésitez pas à me le faire savoir."
-10/28/2023,French,Luxemburg,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-28,French,Luxemburg,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3156,7 +3156,7 @@ Agent : Pour résoudre ce problème rapidement, nous pourrions vous envoyer les 
 Client : Oui, cela devrait fonctionner pour nous, merci. Assurez-vous simplement que les étiquettes arrivent rapidement.
 
 Agent : Je vais m'assurer que les étiquettes soient expédiées dès que possible. Encore une fois, nous nous excusons pour ce désagrément et nous vous remercions pour votre compréhension."
-10/29/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-29,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3180,7 +3180,7 @@ Client : D'accord, merci de votre aide.
 
 Agent : De rien, Anais. Si vous avez besoin d'autre chose, n'hésitez pas à nous contacter. Bonne journée!
 "
-10/29/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-29,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3199,7 +3199,7 @@ Agent : Audrey, j'ai vérifié avec l'équipe d'expédition et il y a eu une err
 Client : Oui, cela fonctionnera. Merci beaucoup pour votre aide rapide.
 
 Agent : De rien, Audrey, et encore désolé pour le problème rencontré. Si vous avez d'autres questions ou préoccupations, n'hésitez pas à nous contacter. Passez une excellente journée !"
-10/27/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Salut
+2023-10-27,French,France,ShelledMitts45,gloves,missing price tags,"Client : Salut
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3220,7 +3220,7 @@ Client : Je suppose que c'est acceptable étant donné les circonstances. Combie
 Agent : Selon notre système, les étiquettes devraient arriver sous 4 jours ouvrés. En vous présentant nos excuses pour ce désagrément, nous allons également vous donner un bon de réduction de 10% sur votre prochaine commande.
 
 Client : Merci, j'apprécie votre aide."
-10/29/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-29,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour et bienvenue, j'espère que vous passez une excellente journée. Afin de vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3242,7 +3242,7 @@ Agent : Je suis heureux de vous aider, Elodie. Les étiquettes seront expédiée
 
 Client : Merci pour votre aide et votre efficacité. Bonne journée !
 "
-10/29/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-29,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3261,7 +3261,7 @@ Agent : Merci pour la confirmation. Puis-je vous envoyer les étiquettes de prix
 Client : Oui, cela suffira. Merci de votre aide.
 
 Agent : De rien, Sophie. Je vais m'assurer que les étiquettes de prix vous soient envoyées dès que possible. Si vous avez besoin d'autre chose, n'hésitez pas à nous contacter. Passez une bonne journée !"
-10/30/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-30,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3282,7 +3282,7 @@ Client : Je préfèrerais recevoir les étiquettes de prix le plus rapidement po
 Agent : Nous pouvons vous les envoyer par livraison express, elles devraient vous parvenir sous 2-3 jours. Puis-je les envoyer à votre adresse enregistrée ?
 
 Client : Oui, envoyez-les à mon adresse enregistrée s'il vous plaît."
-10/26/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-26,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3301,7 +3301,7 @@ Agent : Je comprends l'importance de cette situation pour votre entreprise. Ce q
 Client : Oui, cela semble bien pour nous. Envoyez-nous les étiquettes de prix dès que possible, s'il vous plaît.
 
 Agent : Parfait, je vais procéder à l'envoi des étiquettes de prix par courrier express. Je vous envoie également un e-mail de confirmation avec les détails de l'expédition. Merci de votre compréhension et de votre coopération."
-10/25/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-25,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3320,7 +3320,7 @@ Agent : Merci de vérifier. J'ai une solution à vous proposer. Nous pouvons vou
 Client : Oui, cela devrait être une solution adéquate. Merci de votre aide.
 
 Agent : Je vous en prie, Chloé. Nous sommes là pour vous aider. Je vais vous envoyer le fichier PDF par courrier électronique dans les prochaines minutes. Si vous avez d'autres questions ou rencontrez d'autres problèmes, n'hésitez pas à nous contacter. Passez une bonne journée !"
-10/26/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Salut
+2023-10-26,French,France,ShelledMitts45,gloves,missing price tags,"Client : Salut
 
 Agent : Salut, j'espère que vous passez une bonne journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3341,7 +3341,7 @@ Client : Oui, merci. Cela résoudra notre problème. J'apprécie votre aide rapi
 Agent : Vous êtes les bienvenus, Laura. Les étiquettes de prix devraient vous parvenir dans les 2 jours. Si vous avez besoin d'une assistance supplémentaire, n'hésitez pas à nous recontacter. Passez une bonne journée !
 
 Client : Merci, à bientôt."
-10/27/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-27,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3364,7 +3364,7 @@ Agent : Les étiquettes de prix devraient arriver dans un délai de 3 à 5 jours
 Client : D'accord, merci beaucoup.
 
 Agent : Je vous en prie, Lucie. Si vous avez besoin d'aide à l'avenir, n'hésitez pas à nous appeler. Bonne journée !"
-10/31/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Salut là-bas
+2023-10-31,French,France,ShelledMitts45,gloves,missing price tags,"Client : Salut là-bas
 
 Agent : Salut là-bas, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez?
 
@@ -3387,7 +3387,7 @@ Agent : Notre système indique que vous recevrez les étiquettes de prix pour le
 Client : Oui, ça ira. Merci pour votre aide.
 
 Agent : Je vous en prie, Sophie. Si vous rencontrez d'autres problèmes, n'hésitez pas à nous contacter. Passez une bonne journée!"
-10/28/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-28,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée! Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3410,7 +3410,7 @@ Agent : Je vais faire en sorte qu'ils soient expédiés dès aujourd'hui, et vou
 Client : Parfait, cela fonctionnerait pour nous. Merci beaucoup pour votre aide!
 
 Agent : De rien ! Je suis heureux de vous aider. Si vous avez besoin d'autre chose, n'hésitez pas à nous contacter. Passez une excellente journée!"
-10/25/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-25,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez?
 
@@ -3429,7 +3429,7 @@ Agent : Merci pour la confirmation. Voici ce que nous pouvons faire : je vais vo
 Client : Oui, cela devrait régler le problème. Merci de votre aide.
 
 Agent : Vous êtes les bienvenus, Adrien. Si vous avez d'autres questions ou besoins, n'hésitez pas à nous contacter. Passez une excellente journée!"
-10/27/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-27,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Afin de vous aider, pourriez-vous s'il vous plaît nous donner votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3450,7 +3450,7 @@ Client : Oui, ça ira, merci. J'espère que nous les recevrons rapidement pour n
 Agent : Nous nous assurerons qu'ils vous parviennent le plus rapidement possible. Encore désolé pour la gêne occasionnée et merci pour votre compréhension, Noëlle. Si vous avez d'autres questions ou préoccupations, n'hésitez pas à nous contacter.
 
 Client : D'accord, merci pour votre aide."
-10/29/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-29,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3469,7 +3469,7 @@ Agent : D'accord, j'ai trouvé votre commande. Pour régler ce problème, je peu
 Client : Oui, cela semble être une bonne solution pour nous. Merci beaucoup pour votre aide.
 
 Agent : Je vous en prie, Sylvie. Je suis ravi de pouvoir vous aider. Je vais procéder à l'envoi des étiquettes vierges et de la liste de prix dès maintenant. Si vous avez besoin d'aide supplémentaire, n'hésitez pas à nous contacter."
-10/25/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Salut
+2023-10-25,French,France,ShelledMitts45,gloves,missing price tags,"Client : Salut
 
 Agent : Salut, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez?
 
@@ -3494,7 +3494,7 @@ Client : Oui, cela fonctionnera bien. Merci beaucoup pour votre aide.
 Agent : De rien, Camille. Si vous avez d'autres questions ou besoin d'aide, n'hésitez pas à nous recontacter. Passez une excellente journée!
 
 Client : Merci, vous aussi!"
-10/25/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-25,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3517,7 +3517,7 @@ Agent : Très bien, Sandrine, je vous envoie ces informations tout de suite. Si 
 Client : Merci, vous aussi. Au revoir.
 
 Agent : Au revoir !"
-10/24/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-24,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3536,7 +3536,7 @@ Agent : Je m'excuse pour l'inconvénient. Je vais vous expliquer comment résoud
 Client : Oui, ce sera parfait. Merci beaucoup pour votre aide.
 
 Agent : Je vous en prie, Carine. Je suis ravi de pouvoir vous aider. N'hésitez pas à nous contacter si vous avez besoin d'aide supplémentaire. Bonne journée !"
-10/31/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Salut
+2023-10-31,French,France,ShelledMitts45,gloves,missing price tags,"Client : Salut
 
 Agent : Salut, j'espère que vous passez une bonne journée. Pour vous offrir la meilleure assistance possible, pourriez-vous s'il vous plaît partager vos nom, prénom et le nom de votre entreprise ?
 
@@ -3563,7 +3563,7 @@ Agent : Nous ferons de notre mieux pour nous assurer que cela ne se reproduise p
 Client : Merci, au revoir.
 
 Agent : Au revoir !"
-10/30/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-30,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3587,7 +3587,7 @@ Client : Je vous remercie. Bonne journée.
 
 Agent : Merci, vous aussi. Au revoir !
 "
-10/31/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-31,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3614,7 +3614,7 @@ Agent : Je vous assure que nous ferons de notre mieux pour les faire parvenir le
 Client : Merci, au revoir.
 
 Agent : Au revoir et passez une excellente journée!"
-10/30/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Salut
+2023-10-30,French,France,ShelledMitts45,gloves,missing price tags,"Client : Salut
 
 Agent : Salut, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3631,7 +3631,7 @@ Client : Oui, c'est bien ma commande.
 Agent : Très bien. Nous avons plusieurs options pour résoudre ce problème. Nous pouvons faire parvenir par courrier les étiquettes de prix manquantes sous deux jours, ou si vous préférez, nous pouvons vous fournir les informations sur les prix et vous pouvez imprimer vos propres étiquettes. Quelle option préférez-vous ?
 
 Client : Nous préférerions que vous envoyiez les étiquettes de prix manquantes aussi vite que possible."
-10/25/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-25,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom de famille et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3652,7 +3652,7 @@ Client : Ça marche pour moi. Par contre j'espère recevoir les étiquettes le p
 Agent : Compris. Je vais m'assurer que les étiquettes vous soient expédiées en priorité et qu'elles vous parviennent dans un délai de 3 jours ouvrables. Encore une fois, toutes nos excuses pour l'inconvénient causé.
 
 Client : Je vous remercie pour votre assistance rapide."
-10/25/2023,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
+2023-10-25,French,France,ShelledMitts45,gloves,missing price tags,"Client : Bonjour
 
 Agent : Bonjour, j'espère que vous passez une excellente journée. Pour vous aider au mieux, pourriez-vous s'il vous plaît partager votre prénom, nom et le nom de l'entreprise à partir de laquelle vous appelez ?
 
@@ -3673,7 +3673,7 @@ Client : Cela fonctionne pour moi, mais je veux être sûre que nous ne serons p
 Agent : Ne vous inquiétez pas, nous prendrons en charge les frais d'envoi pour les étiquettes de prix. Je vais m'occuper de cela immédiatement.
 
 Client : Merci beaucoup pour votre aide."
-10/26/2023,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hi there!
+2023-10-26,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hi there!
 
 Agent: Hello and welcome! I hope you're having a fantastic day. To better assist you, could you please provide me with your first and last name and the name of the company you're calling from?
 
@@ -3696,7 +3696,7 @@ Agent: You should receive the email within the next 30 minutes.
 Customer: Great, thank you for your help. I appreciate it.
 
 Agent: You're welcome, Sarah. If you have any further questions or need assistance in the future, please don't hesitate to reach out. Have a great day!"
-10/28/2023,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-28,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To provide you with the most help kindly share your first and last name and the company you are calling from.
 
@@ -3719,7 +3719,7 @@ Agent: Of course, I can email you the digital copy of the price tags right away.
 Customer: Perfect, thank you so much for your help!
 
 Agent: You're welcome, Emily! If you need any further assistance, please don't hesitate to reach out. Have a great day!"
-10/28/2023,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-28,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To provide you with the most assistance, can you please share your first and last name and the company you are calling from?
 
@@ -3746,7 +3746,7 @@ Agent: The standard retail price for the ShelledMitts45 gloves is $49.95. Please
 Customer: Thank you for your assistance. Have a great day.
 
 Agent: You're welcome, Samantha. Have a great day as well! If you have any further questions or concerns, don't hesitate to reach out."
-10/25/2023,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-25,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hi there! I hope you're having a fantastic day. In order to best assist you, could you please share your first and last name and the company you're calling from?
 
@@ -3769,7 +3769,7 @@ Agent: Absolutely! I'll email you the price tags within the next 15 minutes. Ple
 Customer: Thank you, I appreciate your help. That's all I needed for now.
 
 Agent: You're welcome, Sam! If you have any other concerns or questions, please don't hesitate to contact us. Have a great day!"
-10/30/2023,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello there
+2023-10-30,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello there
 
 Agent: Hello, I hope you're having a great day! To assist you better, could you please provide me with your first and last name, and the company you're calling from?
 
@@ -3792,7 +3792,7 @@ Agent: This is all taken care of now, Debbie. I'll make sure that the price tags
 Customer: Thank you for your assistance. Have a great day!
 
 Agent: You're welcome, Debbie, and have a wonderful day!"
-10/25/2023,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-25,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hi there! I hope you're having a great day. Before we get started, could you please share your first and last name and the company you are calling from?
 
@@ -3817,7 +3817,7 @@ Customer: Thank you for your assistance, I appreciate it.
 Agent: You're welcome, Susan. If you need any further assistance, please don't hesitate to contact us. Have a great day!
 
 Customer: You too, bye!"
-10/29/2023,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-29,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello! I hope you're having a great day. To best assist you, could you please share your first and last name, and the company you are calling from?
 
@@ -3840,7 +3840,7 @@ Agent: I can arrange for priority shipping, and you should receive the price tag
 Customer: Yes, that will work. Thank you for your help.
 
 Agent: You're welcome, Samantha. Thank you for notifying us about the issue. We appreciate your understanding and patience. Have a great day!"
-10/27/2023,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-27,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To assist you best, please share your first and last name as well as the company you're calling from.
 
@@ -3859,7 +3859,7 @@ Agent: I apologize for this inconvenience, Susan. I will start the process to se
 Customer: Yes, that should work. Thank you for resolving this issue quickly.
 
 Agent: You're welcome, Susan. We apologize again for any inconvenience this has caused. If you encounter any further issues or have any questions, don't hesitate to reach out. Have a great day!"
-10/27/2023,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-27,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To provide you the most assistance, can you please share your first and last name and the company you are calling from?
 
@@ -3882,7 +3882,7 @@ Agent: I understand, and I'll ensure that the price tags are sent to you as quic
 Customer: No, that should do it. Thank you for your help.
 
 Agent: You're welcome, Catherine. Have a great day!"
-10/25/2023,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-25,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello! I hope you're having a great day. To provide you with the best assistance, could you please share your first and last name and the company you are calling from?
 
@@ -3901,7 +3901,7 @@ Agent: Alright, I can see that your order contained 50 pairs of ShelledMitts45 g
 Customer: Yes, that sounds great. Thank you for your help.
 
 Agent: You're welcome, Jennifer. If you have any further questions or need assistance, please don't hesitate to contact us. Have a great day!"
-10/31/2023,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-31,English,United Kingdom,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To best assist you, could you please share your first and last name and the company you are calling from?
 
@@ -3922,7 +3922,7 @@ Customer: Sending the tags within 48 hours should work fine. I appreciate your a
 Agent: Great, I'll process that for you right away and you will receive a confirmation email shortly. If you have any other questions or concerns, feel free to reach out. Have a fantastic day, Sarah!
 
 Customer: Thanks, you too!"
-10/28/2023,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-28,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello! I hope you're having a great day. To better assist you, can you please share your first and last name and the company you are calling from?
 
@@ -3943,7 +3943,7 @@ Customer: The email option sounds great. That way, we can get it sorted out righ
 Agent: Perfect! I will send the price tags in an email to the address we have on file for your account, and you should receive them shortly. If you encounter any further issues, please don't hesitate to reach out.
 
 Customer: Thank you for your help!"
-10/29/2023,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-29,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. In order to assist you best, could you please share your first and last name and the name of the company you're calling from?
 
@@ -3966,7 +3966,7 @@ Agent: Great! I will arrange for the shipment of price tags. You will receive th
 Customer: No, that should be all. Thank you for your assistance.
 
 Agent: You're welcome, Emma. Have a great day!"
-10/26/2023,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hi, I need help with the order I received today.
+2023-10-26,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hi, I need help with the order I received today.
 
 Agent: Hello! I'm happy to help you with your issue. To get started, can you please provide me with your first and last name, and the name of the company where you're calling from?
 
@@ -3989,7 +3989,7 @@ Agent: Great. I will process the shipment of price tags for you right away. Than
 Customer: No problem, thank you for resolving the issue so quickly. Have a great day!
 
 Agent: You too, and best of luck with your sales promotion! If you have any further questions or issues, feel free to contact us. Have a great day!"
-10/28/2023,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-28,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. For me to assist you better can you please share your first and last name and the company you are calling from?
 
@@ -4013,7 +4013,7 @@ Customer: No problem, thank you for your help!
 
 Agent: You're welcome. If you have any further questions, feel free to contact us again. Have a great day, Jessica!
 "
-10/27/2023,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hi there!
+2023-10-27,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hi there!
 
 Agent: Hello! I hope you're having a great day. In order to assist you better, please provide your first and last name, and the name of the company you're calling from.
 
@@ -4036,7 +4036,7 @@ Agent: Great, I will email the file to the address we have on file for your comp
 Customer: No, that should do it. Thank you for your help!
 
 Agent: You're welcome, Emma! Have a great day, and please feel free to contact us if you need any further assistance."
-10/28/2023,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello there
+2023-10-28,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello there
 
 Agent: Hello! I hope you're having a great day. To best assist you, can you please share your first and last name and the company you're calling from?
 
@@ -4055,7 +4055,7 @@ Agent: I apologize for the inconvenience caused, Sarah. We will send you the mis
 Customer: Yes, that would be great. Thank you for your help.
 
 Agent: You're welcome, Sarah. We apologize once again for the inconvenience, and we'll make sure you receive the price tags as soon as possible. If you have any further questions or concerns, please don't hesitate to contact us. Have a great day!"
-10/28/2023,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hi, I need help with my ShelledMitts45 gloves order.
+2023-10-28,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hi, I need help with my ShelledMitts45 gloves order.
 
 Agent: Hello there! I'm happy to help. Could you please provide your first and last name and the company you are calling from?
 
@@ -4078,7 +4078,7 @@ Agent: You're welcome, Sarah! I'll arrange for the replacement price tags to be 
 Customer: Thank you so much for your assistance. Have a great day!
 
 Agent: You're welcome, Sarah! Have a fantastic day as well, and feel free to contact our customer support if you need any more help."
-10/28/2023,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-28,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day! In order to best assist you, could you please provide your first and last name, as well as the company you're calling from?
 
@@ -4099,7 +4099,7 @@ Customer: Yes, that should be fine. Please make sure you send enough tags to cov
 Agent: Absolutely, Jessica. I'll make sure to send enough tags to cover those gloves. If you have any further issues or concerns, don't hesitate to reach out. Have a great day!
 
 Customer: You too, thank you!"
-10/26/2023,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello there
+2023-10-26,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello there
 
 Agent: Hi there, hope you are having a wonderful day. Can you please share your first and last name and the name of the company you are calling from to assist you better?
 
@@ -4122,7 +4122,7 @@ Agent: Great, I will process the shipment of the price tags for the order. You s
 Customer: Thank you for your help.
 
 Agent: You're welcome, Kevin. Have a great day!"
-10/30/2023,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-30,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To provide you with the best assistance, can you please share your first and last name and the name of the company you are calling from?
 
@@ -4141,7 +4141,7 @@ Agent: Thank you for confirming. We apologize for the oversight. Unfortunately, 
 Customer: I suppose that's alright. We'll create our own price tags. Just wanted to double-check if there was another solution. Thanks for your help.
 
 Agent: You're welcome, Samantha. We appreciate your understanding and cooperation. Have a great day!"
-10/27/2023,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-27,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To better assist you, could you please provide your first and last name and the company you are calling from?
 
@@ -4164,7 +4164,7 @@ Agent: You should receive the email within the next hour. Please keep an eye on 
 Customer: That works for me. Thank you for your prompt assistance.
 
 Agent: You're welcome, Taylor. If you have any further questions or concerns, feel free to reach out to us. Have a great day!"
-10/31/2023,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
+2023-10-31,English,Ireland,ShelledMitts45,gloves,missing price tags,"Customer: Hello
 
 Agent: Hello, I hope you're having a great day. To provide you with the most help, can you please share your first and last name and the company you are calling from?
 
