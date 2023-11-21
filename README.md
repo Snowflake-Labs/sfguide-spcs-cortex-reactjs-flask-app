@@ -75,7 +75,5 @@ NOTE: Please leave **LLAMA2_MODEL** set to `llama2-70b-chat`
 
 `docker run --env-file env.list -p 5000:5000 snowday`
 
-
-
-
+If all goes well, you should be able to see the app running in a browser window.
 
