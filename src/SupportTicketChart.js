@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   ComposedChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, Legend,
-  LabelList, Line
+  Line
 } from 'recharts';
 import { Typography } from '@mui/material';
 

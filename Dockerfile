@@ -47,7 +47,6 @@ COPY support-openssl-3.0.10.patch /tmp/
 RUN patch -d /opt/conda/envs/myenv/lib/python3.9/site-packages/ -p1 < /tmp/support-openssl-3.0.10.patch
 
 # Copy everything else
-# COPY backend/connection.json /app/
 COPY . /app/
 
 # Start from a fresh image for the final build

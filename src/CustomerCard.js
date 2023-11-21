@@ -12,7 +12,6 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import Box from '@mui/material/Box';
 import customer from './customer.jpg'
 import PlaceIcon from '@mui/icons-material/Place';
 import CameraFrontIcon from '@mui/icons-material/CameraFront';
@@ -28,15 +27,6 @@ const ExpandMore = styled((props) => {
     duration: theme.transitions.duration.shortest,
   }),
 }));
-
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
 
 function CustomerCard() {
   const [expanded, setExpanded] = React.useState(true);
