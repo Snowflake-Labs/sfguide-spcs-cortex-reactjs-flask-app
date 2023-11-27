@@ -2,6 +2,29 @@
 
 This repo contains instructions for replicating ReactJS application running in Snowpark Container Sevices (SPCS) that was presented at Snowday 2023. It also demonstrates the use of Snowflake Cortex from within the application.
 
+Here is the outline of what's covered:
+
+* [Prerequisites](#prerequisites)
+* [Create Tables and Load Data](#create-tables-and-load-data)
+* [Setup Environment And Build Application](#setup-environment-and-build-application)
+  * [Clone Repository](#step-1-clone-repository)
+  * [Create Conda Environment](#step-2-create-conda-environment)
+  * [Install Flask](#step-3-install-flask)
+  * [Install React And Its Components](#step-4-install-react-and-its-components)
+  * [Build Application](#step-5-build-application)
+  * [Run Application Locally](#step-6-run-application-locally)
+* [Docker Setup](#docker-setup)
+  * [Build Docker Image](#step-1-build-docker-image)
+  * [Run Application in Docker](#step-2-run-application-in-docker)
+  * [Push Docker Image to Snowflake Registry](#step-3-push-docker-image-to-snowflake-registry)
+* [Deploy and Run Application in Snowpark Container Sevices (SPCS)](#deploy-and-run-application-in-snowpark-container-sevices-spcs)
+  * [Update SPCS Specification File](#step-1-update-spcs-specification-file)
+  * [Create Compute Pool](#step-2-create-compute-pool)
+  * [Create Service](#step-3-create-service)
+  * [Check Service Status](#step-4-check-service-status)
+  * [Get Public (App) Endpoint](#step-4-get-public-app-endpoint)
+  * [Run Application in SPCS](#step-5-run-application-in-spcs)
+
 ## Prerequisites
 
 * Snowflake Account that has SPCS and Snowflake Cortex enabled
@@ -9,17 +32,17 @@ This repo contains instructions for replicating ReactJS application running in S
 * npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)  
 * Node.js (https://nodejs.org/en/download)
 
-## Create Tables and Load Data
+## Create Tables And Load Data
 
 Follow instructions in [create_tables_load_data.sql](deploy_package/create_tables_load_data.sql) to create tables and load data using Snowsight.
 
-## Local Setup
+## Setup Environment And Build Application
 
 ### Step 1: Clone Repository
 
 Clone this repo and browse to the cloned repo
 
-### Step 2: Create Environment
+### Step 2: Create Conda Environment
 
 In a terminal window, browse to the cloned repo folder and run the following commands:
 
@@ -48,7 +71,7 @@ At this point, you can test the UI and make sure everything looks good, but in o
 
 ## Docker Setup
 
-Assuming you were able to run the application locally just fine, follow the steps below to run it end-to-end in Docker. At that point you should also be able to deploy it in SPCS.
+Assuming you were able to [build](#step-5-build-application) and [run](#step-6-run-application-locally) the application locally just fine, follow the steps below to run it end-to-end in Docker. At that point you should also be able to deploy it in SPCS.
 
 ### Step 1: Build Docker Image
 
@@ -58,7 +81,7 @@ Make sure Docker is running and then in a terminal window, browse to the cloned 
 
 **NOTE**: The first time you build the image it can take about ~45-60mins.
 
-### Step 2: Run End-to-End Application in Docker
+### Step 2: Run Application in Docker
 
 Once the Docker image is built follow these steps to run the end-to-end application in Docker.
 
@@ -199,7 +222,7 @@ show endpoints in service snowday;
 
 If everything has gone well, you should see `ingress_url` of the application in the **Results** pane--something similar to `bmksamn-sfengineering-llmpfs.awsuswest2qa6.test-snowflakecomputing.app`
 
-### Step 5: Run Application
+### Step 5: Run Application In SPCS
 
 In a new browser window, copy-paste URL from **Step 4** above and you should see the login screen. To launch the application, enter your Snowflake credentials and you should see the application up and running!
 
