@@ -25,6 +25,8 @@ Here is the outline of what's covered:
   * [Get Public (App) Endpoint](#step-4-get-public-app-endpoint)
   * [Run Application in SPCS](#step-5-run-application-in-spcs)
 
+For questions, comments, feedback, please reach out to [Dash](dash.desai@snowflake.com).
+
 ## Prerequisites
 
 * Snowflake Account that has SPCS and Snowflake Cortex enabled
@@ -232,4 +234,4 @@ CONGRATULATIONS!!! :)
 
 ## Questions, Comments, Feedback
 
-Please reach out to [Dash](dash.desai@snowflake.com).
+For questions, comments, feedback, please reach out to [Dash](dash.desai@snowflake.com).
