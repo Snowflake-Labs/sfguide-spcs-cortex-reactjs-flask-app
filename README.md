@@ -103,11 +103,13 @@ LLAMA2_MODEL=llama2-70b-chat
 
 NOTE: Please leave **LLAMA2_MODEL** set to `llama2-70b-chat`
 
-* After you update the env.list file as described above, execute the following command in the terminal window to run the application in Docker.
+* After you update the **env.list** file as described above, execute the following command in the terminal window to run the application in Docker.
 
 `docker run --env-file env.list -p 5000:5000 snowday`
 
 If all goes well, you should be able to see the app running in a browser window at http://127.0.0.1:5000
+
+In the application, clicking on **Generate Call Summary** button will call `/llmpfs` endpoint served by the Flask backend--which will call Snowflake Cortex function `snowflake.ml.complete` using Snowpark Python API to generate call summary for the given transcript. Then, the application will call `llmpfs_save` endpoint which will update the support ticket record with the generated call summary based on the ticket ID.
 
 ### Step 3: Push Docker Image to Snowflake Registry
 
