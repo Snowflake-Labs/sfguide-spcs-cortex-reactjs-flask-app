@@ -11,7 +11,7 @@ This repo contains instructions for replicating ReactJS application running in S
 
 ## Create Tables and Load Data
 
-Follow instructions in [create_tables_load_data.sql](create_tables_load_data.sql) to create tables and load data using Snowsight.
+Follow instructions in [create_tables_load_data.sql](deploy_package/create_tables_load_data.sql) to create tables and load data using Snowsight.
 
 ## Local Setup
 
@@ -112,9 +112,9 @@ For example, `docker push qa6-llmpfs.registry-dev.snowflakecomputing.com/dash_db
 
 Assuming you were able to run the application locally and in Docker just fine, follow the steps below to deploy it in SPCS.
 
-### Step 1: Update snowday.yaml
+### Step 1: Update SPCS Specification File
 
-* Update the following attributes in [snowday.yaml](snowday.yaml)
+* Update the following attributes in [snowday.yaml](deploy_package/snowday.yaml)
 
   * Set `image` to your image URL. For example, `/dash_db/dash_schema/dash_repo/snowday:latest`
   * Set `SNOWFLAKE_WAREHOUSE` to the name of your warehouse that you'd like to use for this application
@@ -122,7 +122,7 @@ Assuming you were able to run the application locally and in Docker just fine, f
 
 * Create a Snowflake internal stage in Snowsight under your database and schema
 
-For example, `create stage dash_db.dash_schema.dash_stage;`and upload **updated** [snowday.yaml](snowday.yaml) as described above.
+For example, `create stage dash_db.dash_schema.dash_stage;`and upload **updated** [snowday.yaml](deploy_package/snowday.yaml) as described above.
 
 ### Step 2: Create Compute Pool
 
