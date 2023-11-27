@@ -2,9 +2,10 @@
 
 ## Prerequisites
 
-* Access to a Snowflake Account that has SPCS and Snowflake Cortex enabled
-* Docker Desktop (https://docs.docker.com/desktop) installed
-* npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed 
+* Snowflake Account that has SPCS and Snowflake Cortex enabled
+* Docker Desktop (https://docs.docker.com/desktop) 
+* npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)  
+* Node.js (https://nodejs.org/en/download)
 
 ## Local Setup
 
@@ -75,5 +76,7 @@ NOTE: Please leave **LLAMA2_MODEL** set to `llama2-70b-chat`
 
 `docker run --env-file env.list -p 5000:5000 snowday`
 
-If all goes well, you should be able to see the app running in a browser window.
+If all goes well, you should be able to see the app running in a browser window at http://127.0.0.1:5000
+
+
 

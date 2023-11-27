@@ -21,17 +21,10 @@ RUN apt-get update && apt-get install -y wget curl build-essential && \
 # Set up the PATH for the new environment
 ENV PATH=/opt/conda/envs/myenv/bin:$PATH
 
-# Copy and install React app dependencies
-COPY package*.json ./
-RUN npm install
-
 # Copy React source and public folders
 COPY src ./src
 COPY public ./public
-
-# Build the React app
-RUN npm run build
-RUN ls -l build
+COPY build ./build
 RUN chmod -R a+r /app/build
 
 # Set working directory to Flask backend

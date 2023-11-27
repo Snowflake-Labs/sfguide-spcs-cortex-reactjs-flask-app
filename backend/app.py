@@ -23,15 +23,14 @@ SNOWFLAKE_ACCOUNT = os.getenv("SNOWFLAKE_ACCOUNT")
 SNOWFLAKE_HOST = os.getenv("SNOWFLAKE_HOST")
 SNOWFLAKE_DATABASE = os.getenv("SNOWFLAKE_DATABASE")
 SNOWFLAKE_SCHEMA = os.getenv("SNOWFLAKE_SCHEMA")
-HT_DATABASE = os.getenv("HT_DATABASE")
-HT_SCHEMA = os.getenv("HT_SCHEMA")
 
 # Custom environment variables for LOCAL Testing only
 SNOWFLAKE_USER = os.getenv("SNOWFLAKE_USER")
 SNOWFLAKE_PASSWORD = os.getenv("SNOWFLAKE_PASSWORD")
 SNOWFLAKE_ROLE = os.getenv("SNOWFLAKE_ROLE")
 SNOWFLAKE_WAREHOUSE = os.getenv("SNOWFLAKE_WAREHOUSE")
-
+DATA_DB = os.getenv("DATA_DB")
+DATA_SCHEMA = os.getenv("DATA_SCHEMA")
 LLAMA2_MODEL = os.getenv("LLAMA2_MODEL")
 
 # logger = logging.getLogger("snowflake.connector")
@@ -48,8 +47,6 @@ print('User                        : {}'.format(SNOWFLAKE_USER))
 print('Host                        : {}'.format(SNOWFLAKE_HOST))
 print('Database                    : {}'.format(SNOWFLAKE_DATABASE))
 print('Schema                      : {}'.format(SNOWFLAKE_SCHEMA))
-print('HT Database                 : {}'.format(HT_DATABASE))
-print('HT Schema                   : {}'.format(HT_SCHEMA))
 print('Warehouse                   : {}'.format(SNOWFLAKE_WAREHOUSE))
 print('Llama 2 Model               : {}'.format(LLAMA2_MODEL))
 print("Current Directory           :", os.getcwd())
@@ -109,41 +106,40 @@ def hello():
 
 @app.route('/llmpfs', methods=['GET', 'POST'])
 def llmpfs():
-    data = request.get_json()
-    transcript = data['transcript'].replace("'","\\'")
-    ticket_id = data['ticket_id']
-    # transcript = "Customer: Hello, this is Jane. I recently purchased a Snow49 winter jacket and I wanted to let you know how thrilled I am with it.\nSnow49 Representative: Hello Jane! Thank you for reaching out. We are so glad to hear that. What in particular did you like about the jacket?\nCustomer: It is incredibly warm, yet light. I wore it on a trip to the mountains and was amazed at how comfortable I felt. And the pockets are so well-designed!\nSnow49 Representative: We always aim for high quality. Your feedback is much appreciated, Jane. Enjoy your adventures in the mountains!\nCustomer: I certainly will. Thank you and kudos to the Snow49 team."
-    print(f"In llmpfs for ticket id {ticket_id}")
-    llmpfs_prompt = "'[INST] Summarize this transcript in less than 200 words. Also include the product name in a new line, defect in a new line, along with summary in a new line. Do not using any special characters or apostrophes and do no repeat any part of the prompt in your response: " + transcript + " [/INST]'"
-    session = get_snowflake_session() 
-    llmpfs_sql = f"select snowflake.ml.complete('{LLAMA2_MODEL}', {llmpfs_prompt}) as response"
-    print(f"{strftime('%Y-%m-%d %H:%M:%S', gmtime())} >> {llmpfs_sql}")
-    df = session.sql(llmpfs_sql).to_pandas()
-    llmpfs_response = df.iloc[0]['RESPONSE'].replace("'","\\'")
-    print(f"{strftime('%Y-%m-%d %H:%M:%S', gmtime())} >> {llmpfs_response}")
-
-    return jsonify([{'llmpfs_response': llmpfs_response}])
+    llmpfs_response = ""
+    try:
+      data = request.get_json()
+      transcript = data['transcript'].replace("'","\\'")
+      ticket_id = data['ticket_id']
+      # transcript = "Customer: Hello, this is Jane. I recently purchased a Snow49 winter jacket and I wanted to let you know how thrilled I am with it.\nSnow49 Representative: Hello Jane! Thank you for reaching out. We are so glad to hear that. What in particular did you like about the jacket?\nCustomer: It is incredibly warm, yet light. I wore it on a trip to the mountains and was amazed at how comfortable I felt. And the pockets are so well-designed!\nSnow49 Representative: We always aim for high quality. Your feedback is much appreciated, Jane. Enjoy your adventures in the mountains!\nCustomer: I certainly will. Thank you and kudos to the Snow49 team."
+      # print(f"In llmpfs for ticket id {ticket_id}")
+      llmpfs_prompt = "'[INST] Summarize this transcript in less than 200 words. Also include the product name in a new line, defect in a new line, along with summary in a new line. Do not using any special characters or apostrophes and do no repeat any part of the prompt in your response: " + transcript + " [/INST]'"
+      session = get_snowflake_session() 
+      llmpfs_sql = f"select snowflake.ml.complete('{LLAMA2_MODEL}', {llmpfs_prompt}) as response"
+      print(f"{strftime('%Y-%m-%d %H:%M:%S', gmtime())} >> {llmpfs_sql}")
+      df = session.sql(llmpfs_sql).to_pandas()
+      llmpfs_response = df.iloc[0]['RESPONSE'].replace("'","\\'")
+      print(f"{strftime('%Y-%m-%d %H:%M:%S', gmtime())} >> {llmpfs_response}")
+    except Exception as e:
+      print(f'Caught {type(e)} >>> {str(e)} <<< while executing snowflake.ml.complete...')
+    finally:
+      return jsonify([{'llmpfs_response': llmpfs_response}])
 
 @app.route('/llmpfs_save', methods=['GET', 'POST'])
 def llmpfs_save():
-    data = request.get_json()
-    summary = data['summary']
-    ticket_id = data['ticket_id']
-    print(f"In llmpfs_save for ticket id {ticket_id}")
-    session = get_snowflake_session() 
     # Update ticket with the generated call summary
     try:
-      update_sql = f"update {HT_DATABASE}.{HT_SCHEMA}.support_tickets_ht set call_summary = '{summary}' where ticket_id = {ticket_id}"
-      print(f"Executing {update_sql}")
+      data = request.get_json()
+      summary = data['summary']
+      ticket_id = data['ticket_id']
+      session = get_snowflake_session() 
+      update_sql = f"update {DATA_DB}.{DATA_SCHEMA}.support_tickets set call_summary = '{summary}' where ticket_id = {ticket_id}"
+      print(f"{strftime('%Y-%m-%d %H:%M:%S', gmtime())} >> {update_sql}")
       session.sql(update_sql).collect()
     except Exception as e:
-      print(f'Caught {type(e)} >>> {str(e)} <<< while executing {update_sql}')
+      print(f'Caught {type(e)} >>> {str(e)} <<< while executing update support_tickets set call_summary...')
     finally:
       return jsonify([{'Status': 'Ok'}])
-
-@app.route('/cwd')
-def print_cwd():
-    return os.getcwd()
 
 @app.route('/')
 def index():

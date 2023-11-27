@@ -4,8 +4,8 @@ spec:
     image: /dash_db/dash_schema/dash_repo/snowday:latest
     env:
       SNOWFLAKE_WAREHOUSE: DASH_L
-      HT_DATABASE: DASH_DB
-      HT_SCHEMA: DASH_SCHEMA
+      DATA_DB: DASH_DB
+      DATA_SCHEMA: DASH_SCHEMA
       LLAMA2_MODEL: llama2-70b-chat
     volumeMounts: 
     - name: workspace
