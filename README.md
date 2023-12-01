@@ -117,7 +117,7 @@ If all goes well, you should be able to see the app running in a browser window 
 
 ### User Interaction
 
-In the application, clicking on **Generate Call Summary** button will call `/llmpfs` endpoint served by the Flask backend--which will call Snowflake Cortex function `snowflake.ml.complete` using Snowpark Python API to generate call summary for the given transcript. Then, the application will call `llmpfs_save` endpoint which will update the support ticket record with the generated call summary based on the ticket ID.
+In the application, clicking on **Generate Call Summary** button will call `/llmpfs` endpoint served by the Flask backend--which will call Snowflake Cortex function `snowflake.ml.complete` using Snowpark Python API to generate call summary for the given transcript. Then, the application will call `/llmpfs_save` endpoint which will update the support ticket record with the generated call summary based on the ticket ID.
 
 ### Step 3: Push Docker Image to Snowflake Registry
 
@@ -216,7 +216,7 @@ In a new browser window, copy-paste URL from **Step 4** above and you should see
 
 ### User Interaction
 
-In the application, clicking on **Generate Call Summary** button will call `/llmpfs` endpoint served by the Flask backend--which will call Snowflake Cortex function `snowflake.ml.complete` using Snowpark Python API to generate call summary for the given transcript. Then, the application will call `llmpfs_save` endpoint which will update the support ticket record with the generated call summary based on the ticket ID.
+In the application, clicking on **Generate Call Summary** button will call `/llmpfs` endpoint served by the Flask backend--which will call Snowflake Cortex function `snowflake.ml.complete` using Snowpark Python API to generate call summary for the given transcript. Then, the application will call `/llmpfs_save` endpoint which will update the support ticket record with the generated call summary based on the ticket ID.
 
 CONGRATULATIONS!!! :) 
 
