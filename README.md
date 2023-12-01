@@ -208,7 +208,7 @@ Assuming compute pool is in IDLE or ACTIVE state and the service is in READY sta
 show endpoints in service snowday;
 ```
 
-If everything has gone well, you should see `ingress_url` of the application in the **Results** pane--something similar to `bmksamn-sfengineering-llmpfs.awsuswest2qa6.test-snowflakecomputing.app`
+If everything has gone well, you should see `ingress_url` of the application in the **Results** pane--something similar to `pq3ayi-sfdevrel-sfdevrel-enterprise.snowflakecomputing.app`
 
 ### Step 5: Run Application In SPCS
 
