@@ -1,6 +1,8 @@
-# ReactJS Application with Snowflake Cortex in Snowpark Container Sevices (SPCS)
+# ReactJS Application with Snowflake Cortex in Snowpark Container Sevices Snowday 2023
 
-This repo contains instructions for replicating ReactJS application running in Snowpark Container Sevices (SPCS) that was presented at Snowday 2023. It also demonstrates the use of Snowflake Cortex from within the application.
+## Overview
+
+This repo contains instructions for replicating ReactJS application running in Snowpark Container Sevices (SPCS) that was presented during Snowday 2023. It also demonstrates the use of Snowflake Cortex from within the application.
 
 Here is the outline of what's covered:
 
