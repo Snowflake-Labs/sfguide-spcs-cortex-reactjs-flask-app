@@ -1,4 +1,4 @@
-# ReactJS Application with Snowflake Cortex in Snowpark Container Sevices Snowday 2023
+# ReactJS Application with Snowflake Cortex in Snowpark Container Sevices
 
 ## Overview
 
