@@ -1,8 +1,8 @@
-# ReactJS Application with Snowflake Cortex in Snowpark Container Sevices
+# React Application with Snowflake Cortex in Snowpark Container Sevices
 
 ## Overview
 
-This repo contains instructions for replicating ReactJS application running in Snowpark Container Sevices (SPCS) that was presented during Snowday 2023. It also demonstrates the use of Snowflake Cortex from within the application.
+This repo contains instructions for replicating React application running in Snowpark Container Sevices (SPCS) that was presented during Snowday 2023. It also demonstrates the use of Snowflake Cortex from within the application.
 
 Here is the outline of what's covered:
 
@@ -24,7 +24,7 @@ Here is the outline of what's covered:
   * [Update SPCS Specification File](#step-1-update-spcs-specification-file)
   * [Create Service](#step-2-create-service)
   * [Check Service Status](#step-3-check-service-status)
-  * [Get Public (App) Endpoint](#step-4-get-public-app-endpoint)
+  * [Get Public Endpoint](#step-4-get-public-endpoint)
   * [Run Application in SPCS](#step-5-run-application-in-spcs)
 
 For questions, comments, feedback, please reach out to [Dash](dash.desai@snowflake.com).
@@ -182,25 +182,25 @@ To get logs, execute this SQL statment `CALL SYSTEM$GET_SERVICE_LOGS('YOUR_DB.YO
 You should see output similar to this...
 
 ```
-Account                     : LLMPFS
+Account                     : SFDEVREL_ENTERPRISE
 User                        : None
-Host                        : snowflake.qa6.us-west-2.aws.snowflakecomputing.com
+Host                        : snowflake.prod2.us-west-2.aws.snowflakecomputing.com
 Database                    : DASH_DB
 Schema                      : DASH_SCHEMA
 Warehouse                   : DASH_L
 Llama 2 Model               : llama2-70b-chat
 Current Directory           : /app
-Snowflake version           : 7.44.0 b202311242124246c9c7986
+Snowflake version           : 7.41.0 b20231109165211757ca2c8
 Snowpark for Python version : 1.9.0
  * Serving Flask app 'backend/app.py'
  * Debug mode: off
-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
- * Running on http://10.244.5.10:5000
+ * Running on http://10.244.1.8:5000
 ```
 
-### Step 4: Get Public (App) Endpoint
+### Step 4: Get Public Endpoint
 
 Assuming compute pool is in IDLE or ACTIVE state and the service is in READY state, execute the following SQL statement to get the public endpoint of the application.
 
