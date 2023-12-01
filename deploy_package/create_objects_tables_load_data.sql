@@ -1,6 +1,25 @@
--- >>>>>>>>>> Customers Table
+use role ACCOUNTADMIN;
 
--- Option 1: Standard (Non-Hybrid) 
+create stage DASH_STAGE;
+create image repository DASH_REPO;
+
+create security integration SNOWSERVICES_INGRESS_OAUTH
+  type=oauth
+  oauth_client=snowservices_ingress
+  enabled=true;
+
+create database DASH_DB;
+create schema DASH_SCHEMA;
+create warehouse DASH_S WAREHOUSE_SIZE=SMALL;
+
+create compute pool DASH_STANDARD_2
+MIN_NODES = 1
+MAX_NODES = 1
+INSTANCE_FAMILY = STANDARD_2
+AUTO_SUSPEND_SECS = 7200;
+
+-- >>>>>>>>>> Customers Table
+-- Option 1: Standard Table
 create or replace TABLE CUSTOMERS (
 	CUSTOMER_ID NUMBER(38,0) NOT NULL,
 	CUSTOMER_NAME VARCHAR(255),
@@ -20,9 +39,8 @@ CREATE or REPLACE HYBRID TABLE CUSTOMERS (
 -- Load data into CUSTOMERS table using Snowsight from customers.csv
 ---- Header: Skip first line
 
--- >>>>>>>>>> Support Tiekcts Table
-
--- Option 1: Standard (Non-Hybrid) 
+-- >>>>>>>>>> Support Tickets Table
+-- Option 1: Standard Table
 create or replace TABLE SUPPORT_TICKETS (
 	TICKET_ID NUMBER(38,0) NOT NULL,
 	CUSTOMER_ID NUMBER(38,0) NOT NULL,

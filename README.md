@@ -5,23 +5,23 @@ This repo contains instructions for replicating ReactJS application running in S
 Here is the outline of what's covered:
 
 * [Prerequisites](#prerequisites)
-* [Create Tables and Load Data](#create-tables-and-load-data)
-* [Setup Environment And Build Application](#setup-environment-and-build-application)
+* [Create Objects, Tables And Load Data](#create-objects-tables-and-load-data)
+* [Create Role And Grant Previliges](#create-role-and-grant-previliges)
+* [Setup Environment](#setup-environment)
   * [Clone Repository](#step-1-clone-repository)
   * [Create Conda Environment](#step-2-create-conda-environment)
   * [Install Flask](#step-3-install-flask)
   * [Install React And Its Components](#step-4-install-react-and-its-components)
-  * [Build Application](#step-5-build-application)
-  * [Run Application Locally](#step-6-run-application-locally)
+* [Build Application](#build-application)
+  * [Run Application Locally](#run-application-locally)
 * [Docker Setup](#docker-setup)
   * [Build Docker Image](#step-1-build-docker-image)
   * [Run Application in Docker](#step-2-run-application-in-docker)
   * [Push Docker Image to Snowflake Registry](#step-3-push-docker-image-to-snowflake-registry)
-* [Deploy and Run Application in Snowpark Container Sevices (SPCS)](#deploy-and-run-application-in-snowpark-container-sevices-spcs)
+* [Snowpark Container Sevices (SPCS) Setup](#snowpark-container-sevices-spcs-setup)
   * [Update SPCS Specification File](#step-1-update-spcs-specification-file)
-  * [Create Compute Pool](#step-2-create-compute-pool)
-  * [Create Service](#step-3-create-service)
-  * [Check Service Status](#step-4-check-service-status)
+  * [Create Service](#step-2-create-service)
+  * [Check Service Status](#step-3-check-service-status)
   * [Get Public (App) Endpoint](#step-4-get-public-app-endpoint)
   * [Run Application in SPCS](#step-5-run-application-in-spcs)
 
@@ -34,11 +34,15 @@ For questions, comments, feedback, please reach out to [Dash](dash.desai@snowfla
 * npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)  
 * Node.js (https://nodejs.org/en/download)
 
-## Create Tables And Load Data
+## Create Objects, Tables And Load Data
 
-Follow instructions in [create_tables_load_data.sql](deploy_package/create_tables_load_data.sql) to create tables and load data using Snowsight.
+Follow instructions in [create_objects_tables_load_data.sql](deploy_package/create_objects_tables_load_data.sql) to create necessary objects such as database, schema, warehouse, tables and load data using Snowsight.
 
-## Setup Environment And Build Application
+## Create Role And Grant Previliges
+
+Follow instructions in [create_spcs_role.sql](deploy_package/create_spcs_role.sql) to create role and grant necessary privileges using Snowsight.
+
+## Setup Environment
 
 ### Step 1: Clone Repository
 
@@ -46,7 +50,7 @@ Clone this repo and browse to the cloned repo
 
 ### Step 2: Create Conda Environment
 
-In a terminal window, browse to the cloned repo folder and run the following commands:
+In a terminal window, browse to the cloned repo folder and execute the following commands:
 
 * Download and install the miniconda installer from https://conda.io/miniconda.html. (OR, you may use any other Python environment, for example, [virtualenv](https://virtualenv.pypa.io/en/latest/)).
 * Execute `conda create --name snowpark-spcs -c https://repo.anaconda.com/pkgs/snowflake python=3.9`
@@ -55,25 +59,25 @@ In a terminal window, browse to the cloned repo folder and run the following com
 
 ### Step 3: Install Flask
 
-In a terminal window where you have `snowpark-spcs` env activated, execute `pip install Flask`
+In the same terminal window where you have `snowpark-spcs` env activated, execute `pip install Flask`
 
 ### Step 4: Install React And Its Components
 
-In a terminal window where you have `snowpark-spcs` env activated, execute `npm install`
+In the same terminal window where you have `snowpark-spcs` env activated, execute `npm install`
 
-### Step 5: Build Application
+## Build Application
 
-In a terminal window, execute `npm run build` to build the application for basic UI testing.
+In the same terminal window where you have `snowpark-spcs` env activated, execute `npm run build` to build the application.
 
-### Step 6: Run Application Locally
+### Run Application Locally
 
-In a terminal window, execute `npm run start` and you should see the application running locally in a web browser.
+In the same terminal window, execute `npm run start` and you should see the application running locally in a web browser.
 
 At this point, you can test the UI and make sure everything looks good, but in order to test the app end-to-end such that it's wired up to work with Flask backend--which ultimately interacts with your Snowflake account via SPCS, see **Docker Setup** section below.
 
 ## Docker Setup
 
-Assuming you were able to [build](#step-5-build-application) and [run](#step-6-run-application-locally) the application locally just fine, follow the steps below to run it end-to-end in Docker. At that point you should also be able to deploy it in SPCS.
+Assuming you were able to successfully [build](#build-application) and [run](#run-application-locally) the application locally just fine, follow the steps below to run it end-to-end in Docker. At that point you should also be able to deploy it in SPCS.
 
 ### Step 1: Build Docker Image
 
@@ -101,7 +105,7 @@ SNOWFLAKE_WAREHOUSE=
 LLAMA2_MODEL=llama2-70b-chat
 ```
 
-NOTE: Please leave **LLAMA2_MODEL** set to `llama2-70b-chat`
+NOTE: You can leave **LLAMA2_MODEL** set to `llama2-70b-chat`
 
 * After you update the **env.list** file as described above, execute the following command in the terminal window to run the application in Docker.
 
@@ -109,67 +113,47 @@ NOTE: Please leave **LLAMA2_MODEL** set to `llama2-70b-chat`
 
 If all goes well, you should be able to see the app running in a browser window at http://127.0.0.1:5000
 
+### User Interaction
+
 In the application, clicking on **Generate Call Summary** button will call `/llmpfs` endpoint served by the Flask backend--which will call Snowflake Cortex function `snowflake.ml.complete` using Snowpark Python API to generate call summary for the given transcript. Then, the application will call `llmpfs_save` endpoint which will update the support ticket record with the generated call summary based on the ticket ID.
 
 ### Step 3: Push Docker Image to Snowflake Registry
-
-* Create image repository in Snowsight under your database and schema
-
-For example, `create image repository dash_db.dash_schema.dash_repo;`
 
 * Execute the following command in the terminal window to tag image
 
 `docker tag snowday:latest YOUR_IMAGE_URL_GOES_HERE`
 
-For example, `docker tag snowday:latest qa6-llmpfs.registry-dev.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest`
+For example, `docker tag snowday:latest <org>-<account_alias>.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest`
 
 * Execute the following command in the terminal to login to your Snowflake account that's enabled for SPCS
 
-`docker login YOUR_ACCOUNT_URL`
+`docker login YOUR_ACCOUNT_REGISTRY_URL`
 
-For example, `docker login qa6-llmpfs.registry-dev.snowflakecomputing.com`
+For example, `docker login <org>-<account_alias>.registry.snowflakecomputing.com`
 
 * Execute the follwing command in the terminal to push the image to Snowflake registry
 
 `docker push YOUR_IMAGE_URL_GOES_HERE`
 
-For example, `docker push qa6-llmpfs.registry-dev.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest`
+For example, `docker push <org>-<account_alias>.registry.snowflakecomputing.com/dash_db/dash_schema/dash_repo/snowday:latest`
 
-## Deploy and Run Application in Snowpark Container Sevices (SPCS)
+## Snowpark Container Sevices (SPCS) Setup
 
-Assuming you were able to run the application locally and in Docker just fine, follow the steps below to deploy it in SPCS.
+Assuming you were able to successfully run the application in [Docker](#docker-setup) just fine, follow the steps below to deploy and run the application in SPCS.
 
 ### Step 1: Update SPCS Specification File
 
 * Update the following attributes in [snowday.yaml](deploy_package/snowday.yaml)
 
-  * Set `image` to your image URL. For example, `/dash_db/dash_schema/dash_repo/snowday:latest`
-  * Set `SNOWFLAKE_WAREHOUSE` to the name of your warehouse that you'd like to use for this application
-  * Set `DATA_DB` and `DATA_SCHEMA` to the names of database and schema where you created the CUSTOMERS and SUPPORT_TICKETS tables
+  * Set `image` to your image URL. For example, `/dash_db/dash_schema/dash_repo/snowday:latest`.
+  * Set `SNOWFLAKE_WAREHOUSE` to the name of your warehouse that you'd like to use for this application. For example, `DASH_S`.
+  * Set `DATA_DB` and `DATA_SCHEMA` to the names of database and schema where you created the CUSTOMERS and SUPPORT_TICKETS tables. For example,`DASH_DB` and `DASH_SCHEMA`.
 
-* Create a Snowflake internal stage in Snowsight under your database and schema
+* Upload **updated** [snowday.yaml](deploy_package/snowday.yaml) as described above to YOUR_DB.YOUR_SCHEMA.YOUR_STAGE. For example, `DASH_DB.DASH_SCHEMA.DASH_STAGE`.
 
-For example, `create stage dash_db.dash_schema.dash_stage;`and upload **updated** [snowday.yaml](deploy_package/snowday.yaml) as described above.
+### Step 2: Create Service
 
-### Step 2: Create Compute Pool
-
-Execute the following SQL to create a compute pool.
-
-```sql
-create compute pool DASH_SNOWDAY
-MIN_NODES = 1
-MAX_NODES = 1
-INSTANCE_FAMILY = STANDARD_2
-AUTO_SUSPEND_SECS = 7200;
-```
-
-NOTE: This may take a few mins so please be patient and check the status of the compute pool to make sure it's in IDLE or ACTIVE state before proceeding.
-
-`show compute pools like 'DASH_SNOWDAY';`
-
-### Step 3: Create Service
-
-In Snowsight, execute the following SQL statememt to create and launch the application service.
+In Snowsight, execute the following SQL statememt to create and launch the service.
 
 ```sql
 create service snowday
@@ -178,9 +162,7 @@ from @dash_stage
 spec='snowday.yaml';
 ```
 
-NOTE: Replace `@dash_stage` with the name of your stage where you uploaded snowday.yaml.
-
-### Step 4: Check Service Status
+### Step 3: Check Service Status
 
 Execute the following SQL statement and check the status of the service to make sure it's in READY state before proceeding.
 
@@ -229,6 +211,8 @@ If everything has gone well, you should see `ingress_url` of the application in 
 ### Step 5: Run Application In SPCS
 
 In a new browser window, copy-paste URL from **Step 4** above and you should see the login screen. To launch the application, enter your Snowflake credentials and you should see the application up and running!
+
+### User Interaction
 
 In the application, clicking on **Generate Call Summary** button will call `/llmpfs` endpoint served by the Flask backend--which will call Snowflake Cortex function `snowflake.ml.complete` using Snowpark Python API to generate call summary for the given transcript. Then, the application will call `llmpfs_save` endpoint which will update the support ticket record with the generated call summary based on the ticket ID.
 
