@@ -4,6 +4,12 @@
 
 This repo contains instructions for replicating React application running in Snowpark Container Sevices (SPCS) that was presented during Snowday 2023. It also demonstrates the use of Snowflake Cortex from within the application.
 
+
+
+https://github.com/iamontheinet/spcs-reactjs-flask-app-snowday-2023/assets/1723932/47c936cd-65d3-45ea-ad3a-6650763ad842
+
+
+
 Here is the outline of what's covered:
 
 * [Prerequisites](#prerequisites)
