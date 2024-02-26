@@ -163,7 +163,7 @@ In Snowsight, execute the following SQL statememt to create and launch the servi
 
 ```sql
 create service snowday
-in compute pool DASH_SNOWDAY
+in compute pool DASH_STANDARD_2
 from @dash_stage
 spec='snowday.yaml';
 ```
