@@ -115,13 +115,13 @@ def llmpfs():
       # print(f"In llmpfs for ticket id {ticket_id}")
       llmpfs_prompt = "'[INST] Summarize this transcript in less than 200 words. Also include the product name in a new line, defect in a new line, along with summary in a new line. Do not using any special characters or apostrophes and do no repeat any part of the prompt in your response: " + transcript + " [/INST]'"
       session = get_snowflake_session() 
-      llmpfs_sql = f"select snowflake.ml.complete('{LLAMA2_MODEL}', {llmpfs_prompt}) as response"
+      llmpfs_sql = f"select snowflake.cortex.complete('{LLAMA2_MODEL}', {llmpfs_prompt}) as response"
       print(f"{strftime('%Y-%m-%d %H:%M:%S', gmtime())} >> {llmpfs_sql}")
       df = session.sql(llmpfs_sql).to_pandas()
       llmpfs_response = df.iloc[0]['RESPONSE'].replace("'","\\'")
       print(f"{strftime('%Y-%m-%d %H:%M:%S', gmtime())} >> {llmpfs_response}")
     except Exception as e:
-      print(f'Caught {type(e)} >>> {str(e)} <<< while executing snowflake.ml.complete...')
+      print(f'Caught {type(e)} >>> {str(e)} <<< while executing snowflake.cortex.complete...')
     finally:
       return jsonify([{'llmpfs_response': llmpfs_response}])
 
