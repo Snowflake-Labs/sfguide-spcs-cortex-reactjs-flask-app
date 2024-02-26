@@ -4,6 +4,8 @@
 
 This repo contains instructions for replicating React application running in Snowpark Container Sevices (SPCS) that was presented during Snowday 2023. It also demonstrates the use of Snowflake Cortex from within the application.
 
+For questions, comments, feedback, please reach out to [Dash](dash.desai@snowflake.com).
+
 Here is the outline of what's covered:
 
 * [Prerequisites](#prerequisites)
@@ -27,7 +29,9 @@ Here is the outline of what's covered:
   * [Get Public Endpoint](#step-4-get-public-endpoint)
   * [Run Application in SPCS](#step-5-run-application-in-spcs)
 
-For questions, comments, feedback, please reach out to [Dash](dash.desai@snowflake.com).
+## Demo
+
+https://github.com/iamontheinet/spcs-reactjs-flask-app-snowday-2023/assets/1723932/47c936cd-65d3-45ea-ad3a-6650763ad842
 
 ## Prerequisites
 
@@ -159,7 +163,7 @@ In Snowsight, execute the following SQL statememt to create and launch the servi
 
 ```sql
 create service snowday
-in compute pool DASH_SNOWDAY
+in compute pool DASH_STANDARD_2
 from @dash_stage
 spec='snowday.yaml';
 ```
