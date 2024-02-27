@@ -33,6 +33,10 @@ DATA_DB = os.getenv("DATA_DB")
 DATA_SCHEMA = os.getenv("DATA_SCHEMA")
 LLAMA2_MODEL = os.getenv("LLAMA2_MODEL")
 
+if DATA_DB == '' or DATA_DB == None:
+  DATA_DB = SNOWFLAKE_DATABASE
+  DATA_SCHEMA = SNOWFLAKE_SCHEMA
+
 # logger = logging.getLogger("snowflake.connector")
 # logger.setLevel(logging.DEBUG)
 # handler = logging.StreamHandler(sys.stderr)
@@ -117,11 +121,11 @@ def llmpfs():
       session = get_snowflake_session() 
       llmpfs_sql = f"select snowflake.cortex.complete('{LLAMA2_MODEL}', {llmpfs_prompt}) as response"
       print(f"{strftime('%Y-%m-%d %H:%M:%S', gmtime())} >> {llmpfs_sql}")
-      df = session.sql(llmpfs_sql).to_pandas()
+      df = pd.DataFrame(session.sql(llmpfs_sql).collect())
       llmpfs_response = df.iloc[0]['RESPONSE'].replace("'","\\'")
       print(f"{strftime('%Y-%m-%d %H:%M:%S', gmtime())} >> {llmpfs_response}")
     except Exception as e:
-      print(f'Caught {type(e)} >>> {str(e)} <<< while executing snowflake.cortex.complete...')
+      print(f'Caught {type(e)} >>> {str(e)} <<<')
     finally:
       return jsonify([{'llmpfs_response': llmpfs_response}])
 
@@ -137,7 +141,7 @@ def llmpfs_save():
       print(f"{strftime('%Y-%m-%d %H:%M:%S', gmtime())} >> {update_sql}")
       session.sql(update_sql).collect()
     except Exception as e:
-      print(f'Caught {type(e)} >>> {str(e)} <<< while executing update support_tickets set call_summary...')
+      print(f'Caught {type(e)} >>> {str(e)} <<<')
     finally:
       return jsonify([{'Status': 'Ok'}])
 

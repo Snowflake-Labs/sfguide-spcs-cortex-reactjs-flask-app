@@ -35,7 +35,7 @@ COPY backend/requirements.txt .
 RUN pip install -r requirements.txt
 
 # Copy the patch for oscrypto
-COPY support-openssl-3.0.10.patch /tmp/
+# COPY support-openssl-3.0.10.patch /tmp/
 # Apply the patch
 # RUN patch -d /opt/conda/envs/myenv/lib/python3.9/site-packages/ -p1 < /tmp/support-openssl-3.0.10.patch
 
