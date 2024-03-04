@@ -11,3 +11,5 @@ grant READ,WRITE on image repository DASH_REPO to role DASH_SPCS;
 grant usage on compute pool DASH_STANDARD_2 to role DASH_SPCS;
 grant all on table CUSTOMERS to role DASH_SPCS;
 grant all on table SUPPORT_TICKETS to role DASH_SPCS;
+grant database role SNOWFLAKE.CORTEX_USER to role DASH_SPCS;
+
