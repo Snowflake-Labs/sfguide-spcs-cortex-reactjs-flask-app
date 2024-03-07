@@ -159,13 +159,15 @@ Assuming you were able to successfully run the application in [Docker](#docker-s
 
 ### Step 2: Create Service
 
-In Snowsight, execute the following SQL statememt to create and launch the service.
+In Snowsight, execute the following SQL statememts to create and launch the service.
 
 ```sql
+use role DASH_SPCS;
+
 create service snowday
 in compute pool DASH_STANDARD_2
 from @dash_stage
-spec='snowday.yaml';
+specification_file = 'snowday.yaml';
 ```
 
 ### Step 3: Check Service Status
