@@ -2,9 +2,7 @@
 
 ## Overview
 
-This repo contains instructions for replicating React application running in Snowpark Container Sevices (SPCS) that was presented during Snowday 2023. It also demonstrates the use of Snowflake Cortex from within the application.
-
-For questions, comments, feedback, please reach out to [Dash](dash.desai@snowflake.com).
+This repo contains instructions for building a React application running in Snowpark Container Sevices (SPCS) and it also demonstrates the use of Snowflake Cortex from within the application. *Note that both SPCS and Snowflake Cortex are currently in Public Preview.*
 
 Here is the outline of what's covered:
 
@@ -29,13 +27,13 @@ Here is the outline of what's covered:
   * [Get Public Endpoint](#step-4-get-public-endpoint)
   * [Run Application in SPCS](#step-5-run-application-in-spcs)
 
-## Demo
+## Quick Demo
 
 https://github.com/iamontheinet/spcs-reactjs-flask-app-snowday-2023/assets/1723932/47c936cd-65d3-45ea-ad3a-6650763ad842
 
 ## Prerequisites
 
-* Snowflake Account that has SPCS and Snowflake Cortex enabled
+* Snowflake Account that has SPCS and Snowflake Cortex enabled. *Note that both SPCS and Snowflake Cortex are currently in Public Preview.*
 * Docker Desktop (https://docs.docker.com/desktop) 
 * npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)  
 * Node.js (https://nodejs.org/en/download)
@@ -121,7 +119,7 @@ If all goes well, you should be able to see the app running in a browser window 
 
 ### User Interaction
 
-In the application, clicking on **Generate Call Summary** button will call `/llmpfs` endpoint served by the Flask backend--which will call Snowflake Cortex function `snowflake.ml.complete` using Snowpark Python API to generate call summary for the given transcript. Then, the application will call `/llmpfs_save` endpoint which will update the support ticket record with the generated call summary based on the ticket ID.
+In the application, clicking on **Generate Call Summary** button will call `/llmpfs` endpoint served by the Flask backend--which will call Snowflake Cortex function `snowflake.cortex.complete` using Snowpark Python API to generate call summary for the given transcript. Then, the application will call `/llmpfs_save` endpoint which will update the support ticket record with the generated call summary based on the ticket ID.
 
 ### Step 3: Push Docker Image to Snowflake Registry
 
@@ -188,9 +186,9 @@ To get logs, execute this SQL statment `CALL SYSTEM$GET_SERVICE_LOGS('YOUR_DB.YO
 You should see output similar to this...
 
 ```
-Account                     : SFDEVREL_ENTERPRISE
+Account                     : <your_account>
 User                        : None
-Host                        : snowflake.prod2.us-west-2.aws.snowflakecomputing.com
+Host                        : <your-org-name-your-account-name>.snowflakecomputing.com
 Database                    : DASH_DB
 Schema                      : DASH_SCHEMA
 Warehouse                   : DASH_L
@@ -222,10 +220,7 @@ In a new browser window, copy-paste URL from **Step 4** above and you should see
 
 ### User Interaction
 
-In the application, clicking on **Generate Call Summary** button will call `/llmpfs` endpoint served by the Flask backend--which will call Snowflake Cortex function `snowflake.ml.complete` using Snowpark Python API to generate call summary for the given transcript. Then, the application will call `/llmpfs_save` endpoint which will update the support ticket record with the generated call summary based on the ticket ID.
+In the application, clicking on **Generate Call Summary** button will call `/llmpfs` endpoint served by the Flask backend--which will call Snowflake Cortex function `snowflake.cortex.complete` using Snowpark Python API to generate call summary for the given transcript. Then, the application will call `/llmpfs_save` endpoint which will update the support ticket record with the generated call summary based on the ticket ID.
 
 CONGRATULATIONS!!! :) 
 
-## Questions, Comments, Feedback
-
-For questions, comments, feedback, please reach out to [Dash](dash.desai@snowflake.com).
