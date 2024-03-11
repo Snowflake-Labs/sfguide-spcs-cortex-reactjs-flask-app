@@ -27,10 +27,6 @@ Here is the outline of what's covered:
   * [Get Public Endpoint](#step-4-get-public-endpoint)
   * [Run Application in SPCS](#step-5-run-application-in-spcs)
 
-## Quick Demo
-
-https://github.com/iamontheinet/spcs-reactjs-flask-app-snowday-2023/assets/1723932/47c936cd-65d3-45ea-ad3a-6650763ad842
-
 ## Prerequisites
 
 * Snowflake Account that has SPCS and Snowflake Cortex enabled. *Note that both SPCS and Snowflake Cortex are currently in Public Preview.*
@@ -221,6 +217,10 @@ In a new browser window, copy-paste URL from **Step 4** above and you should see
 ### User Interaction
 
 In the application, clicking on **Generate Call Summary** button will call `/llmpfs` endpoint served by the Flask backend--which will call Snowflake Cortex function `snowflake.cortex.complete` using Snowpark Python API to generate call summary for the given transcript. Then, the application will call `/llmpfs_save` endpoint which will update the support ticket record with the generated call summary based on the ticket ID.
+
+## Quick Demo
+
+https://github.com/Snowflake-Labs/sfguide-spcs-cortex-reactjs-flask-app/assets/1723932/3ab95947-f426-4f80-b870-7310ce410ba4
 
 CONGRATULATIONS!!! :) 
 
