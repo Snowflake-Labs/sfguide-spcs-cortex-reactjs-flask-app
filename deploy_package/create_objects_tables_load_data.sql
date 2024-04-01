@@ -4,6 +4,8 @@ create database DASH_DB;
 create schema DASH_SCHEMA;
 create warehouse DASH_S WAREHOUSE_SIZE=SMALL;
 
+use schema DASH_DB.DASH_SCHEMA;
+
 create stage DASH_STAGE;
 create image repository DASH_REPO;
 
