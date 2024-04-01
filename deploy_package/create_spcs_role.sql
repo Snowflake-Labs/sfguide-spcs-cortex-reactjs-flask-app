@@ -13,6 +13,4 @@ grant all on table CUSTOMERS to role DASH_SPCS;
 grant all on table SUPPORT_TICKETS to role DASH_SPCS;
 grant monitor usage on account to role DASH_SPCS;
 grant database role SNOWFLAKE.CORTEX_USER to role DASH_SPCS;
-
-
-
+grant bind service endpoint on account to role DASH_SPCS;
