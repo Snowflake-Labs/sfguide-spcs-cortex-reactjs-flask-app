@@ -8,7 +8,7 @@ Here is the outline of what's covered:
 
 * [Prerequisites](#prerequisites)
 * [Create Objects, Tables And Load Data](#create-objects-tables-and-load-data)
-* [Create Role And Grant Previliges](#create-role-and-grant-previliges)
+* [Create Role And Grant Privileges](#create-role-and-grant-privileges)
 * [Setup Environment](#setup-environment)
   * [Clone Repository](#step-1-clone-repository)
   * [Create Conda Environment](#step-2-create-conda-environment)
@@ -38,7 +38,7 @@ Here is the outline of what's covered:
 
 Follow instructions in [create_objects_tables_load_data.sql](deploy_package/create_objects_tables_load_data.sql) to create necessary objects such as database, schema, warehouse, tables and load data using Snowsight.
 
-## Create Role And Grant Previliges
+## Create Role And Grant Privileges
 
 Follow instructions in [create_spcs_role.sql](deploy_package/create_spcs_role.sql) to create role and grant necessary privileges using Snowsight.
 
