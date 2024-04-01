@@ -1,5 +1,9 @@
 use role ACCOUNTADMIN;
 
+create database DASH_DB;
+create schema DASH_SCHEMA;
+create warehouse DASH_S WAREHOUSE_SIZE=SMALL;
+
 create stage DASH_STAGE;
 create image repository DASH_REPO;
 
@@ -7,10 +11,6 @@ create security integration SNOWSERVICES_INGRESS_OAUTH
   type=oauth
   oauth_client=snowservices_ingress
   enabled=true;
-
-create database DASH_DB;
-create schema DASH_SCHEMA;
-create warehouse DASH_S WAREHOUSE_SIZE=SMALL;
 
 create compute pool DASH_STANDARD_2
 MIN_NODES = 1
