@@ -9,10 +9,6 @@ use schema DASH_DB.DASH_SCHEMA;
 create stage DASH_STAGE;
 create image repository DASH_REPO;
 
-create security integration if not exists SNOWSERVICES_INGRESS_OAUTH 
-  type=oauth
-  oauth_client=snowservices_ingress
-  enabled=true;
 
 create compute pool DASH_STANDARD_2
 MIN_NODES = 1
